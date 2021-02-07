@@ -1,0 +1,744 @@
+fname		mc	mn	mc_onset	mn_onset	timesig	staff	voice	label	globalkey	localkey	pedal	chord	special	numeral	form	figbass	changes	relativeroot	phraseend	chord_type	globalkey_is_minor	localkey_is_minor	chord_tones	added_tones	root	bass_note	bass_name
+n01op18-1_01	167	136	136	1/4	1/4	3/4	1	1	@none	F	ii		@none		@none						m	False	True	()	()			
+n01op18-1_01	168	137	137	0	0	3/4	1	1	#viio7	F	ii		#viio7		#vii	o	7				o7	False	True	(5, 2, -1, -4)	()	5	5	F#
+n01op18-1_01	169	137	137	1/4	1/4	3/4	1	1	VI6	F	ii		VI6		VI		6				M	False	True	(0, -3, -4)	()	-4	0	G
+n01op18-1_01	170	137	137	1/2	1/2	3/4	1	1	V65/ii	F	ii		V65/ii		V		65		ii		Mm7	False	True	(7, 4, 1, 3)	()	3	7	G#
+n01op18-1_01	171	138	138	0	0	3/4	1	1	#viio65	F	ii		#viio65		#vii	o	65				o7	False	True	(2, -1, -4, 5)	()	5	2	A
+n01op18-1_01	172	138	138	1/2	1/2	3/4	1	1	i6	F	ii		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	Bb
+n01op18-1_01	181	143	143	0	0	3/4	1	1	#viio7	F	v		#viio7		#vii	o	7				o7	False	True	(5, 2, -1, -4)	()	5	5	B
+n01op18-1_01	182	143	143	1/4	1/4	3/4	1	1	VI6	F	v		VI6		VI		6				M	False	True	(0, -3, -4)	()	-4	0	C
+n01op18-1_01	183	143	143	1/2	1/2	3/4	1	1	#viio/ii	F	v		#viio/ii		#vii	o			ii		o	False	True	(7, 4, 1)	()	7	7	C#
+n01op18-1_01	184	144	144	0	0	3/4	1	1	V43	F	v		V43		V		43				Mm7	False	True	(2, -1, 1, 5)	()	1	2	D
+n01op18-1_02	48	19	19	0	0	9/8	1	1	V7(4)/bVII	d	III		V7(4)/bVII		V		7	4	bVII		Mm7	True	False	(-1, -2, 0, -3)	()	-1	-1	Bb
+n01op18-1_02	49	19	19	3/8	3/8	9/8	1	1	V7/bVII	d	III		V7/bVII		V		7		bVII		Mm7	True	False	(-1, 3, 0, -3)	()	-1	-1	Bb
+n01op18-1_02	50	19	19	3/4	3/4	9/8	1	1	#viio7/V	d	III		#viio7/V		#vii	o	7		V		o7	True	False	(6, 3, 0, -3)	()	6	6	B
+n01op18-1_02	51	20	20	0	0	9/8	1	1	V\\	d	III		V		V					\\	M	True	False	(1, 5, 2)	()	1	1	C
+n01op18-1_02	52	21	21	0	0	9/8	1	1	iv6	d	III		iv6		iv		6				m	True	False	(-4, 0, -1)	()	-1	-4	Db
+n01op18-1_02	53	21	21	7/8	7/8	9/8	1	1	.Ger6	d	III		Ger6	Ger	vii	o	65	b3	V		Ger	True	False	(-4, 0, -3, 6)	()	6	-4	Db
+n01op18-1_04	13	7	7	1/8	1/8	2/4	1	1	V65	F	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	E
+n01op18-1_04	14	7	7	1/4	1/4	2/4	1	1	V.IV	F	V		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	F
+n01op18-1_04	15	7	7	3/8	3/8	2/4	1	1	V65/V	F	V		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	F#
+n01op18-1_04	16	8	8	0	0	2/4	1	1	V(64)	F	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n01op18-1_04	17	8	8	1/8	1/8	2/4	1	1	V7	F	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n01op18-1_04	32	15	15	1/8	1/8	2/4	1	1	V65	F	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	E
+n01op18-1_04	33	15	15	1/4	1/4	2/4	1	1	I	F	I		I		I						M	False	False	(0, 4, 1)	()	0	0	F
+n01op18-1_04	34	15	15	3/8	3/8	2/4	1	1	#viio7/ii	F	I		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	F#
+n01op18-1_04	35	16	16	0	0	2/4	1	1	ii	F	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	G
+n01op18-1_04	168	97	97	1/8	1/8	2/4	1	1	V65	F	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	E
+n01op18-1_04	169	97	97	1/4	1/4	2/4	1	1	V.IV	F	V		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	F
+n01op18-1_04	170	97	97	3/8	3/8	2/4	1	1	V65/V	F	V		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	F#
+n01op18-1_04	171	98	98	0	0	2/4	1	1	V(64)	F	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n01op18-1_04	172	98	98	1/8	1/8	2/4	1	1	V7	F	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n01op18-1_04	371	241	241	0	0	2/4	1	1	V.I6	F	V		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	E
+n01op18-1_04	372	241	241	1/4	1/4	2/4	1	1	IV	F	V		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	F
+n01op18-1_04	373	241	241	3/8	3/8	2/4	1	1	V65/V	F	V		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	F#
+n01op18-1_04	374	242	242	0	0	2/4	1	1	V(64)	F	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n01op18-1_04	375	242	242	1/8	1/8	2/4	1	1	V7	F	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n01op18-1_04	389	249	249	1/8	1/8	2/4	1	1	V65	F	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	E
+n01op18-1_04	390	249	249	1/4	1/4	2/4	1	1	I	F	I		I		I						M	False	False	(0, 4, 1)	()	0	0	F
+n01op18-1_04	391	249	249	3/8	3/8	2/4	1	1	#viio7/ii	F	I		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	F#
+n01op18-1_04	392	250	250	0	0	2/4	1	1	ii	F	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	G
+n01op18-1_04	572	372	372	1/8	1/8	2/4	1	1	I6	F	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	A
+n01op18-1_04	573	372	372	1/4	1/4	2/4	1	1	ii65	F	I		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	Bb
+n01op18-1_04	574	372	372	3/8	3/8	2/4	1	1	#viio/V	F	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	B
+n01op18-1_04	575	373	373	0	0	2/4	1	1	V(64)	F	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	C
+n01op18-1_04	576	373	373	1/4	1/4	2/4	1	1	V7	F	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n02op18-2_01	152	73	73	7/16	7/16	2/4	1	1	#vii%7/V	G	V		#vii%7/V		#vii	%	7		V		%7	False	False	(6, 3, 0, 4)	()	6	6	G#
+n02op18-2_01	153	74	74	0	0	2/4	1	1	V(64)	G	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	A
+n02op18-2_01	154	74	74	3/16	3/16	2/4	1	1	V6/vi	G	V		V6/vi		V		6		vi		M	False	False	(8, 5, 4)	()	4	8	A#
+n02op18-2_01	155	74	74	5/16	5/16	2/4	1	1	vi	G	V		vi		vi						m	False	False	(3, 0, 4)	()	3	3	B
+n02op18-2_02	24	13	12	1/4	1/4	3/4	1	1	I6	C	V		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	B
+n02op18-2_02	25	14	13	0	0	3/4	1	1	IV	C	V		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	C
+n02op18-2_02	26	14	13	1/8	1/8	3/4	1	1	ii6	C	V		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	C
+n02op18-2_02	27	14	13	3/16	3/16	3/4	1	1	#viio7/V	C	V		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	C#
+n02op18-2_02	28	14	13	1/4	1/4	3/4	1	1	V(64+2)	C	V		V(64+2)		V			64+2			M	False	False	(1, 0, 4)	(3,)	1	1	D
+n02op18-2_02	29	14	13	1/2	1/2	3/4	1	1	V7(4)	C	V		V7(4)		V		7	4			Mm7	False	False	(1, 0, 2, -1)	()	1	1	D
+n02op18-2_02	30	14	13	23/32	23/32	3/4	1	1	V7	C	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	D
+n02op18-2_03	49	34	33	5/8	5/8	3/4	1	1	I+6	G	I		I+6		I	+	6				+	False	False	(4, 8, 0)	()	0	4	B
+n02op18-2_03	50	35	34	0	0	3/4	1	1	IV	G	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	C
+n02op18-2_03	51	35	34	1/8	1/8	3/4	1	1	V65/V	G	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	C#
+n02op18-2_03	52	35	34	1/4	1/4	3/4	1	1	V(64)	G	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	D
+n02op18-2_03	59	38	37	0	0	3/4	1	1	I6	G	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	B
+n02op18-2_03	60	38	37	3/8	3/8	3/4	1	1	I+6	G	I		I+6		I	+	6				+	False	False	(4, 8, 0)	()	0	4	B
+n02op18-2_03	61	38	37	1/2	1/2	3/4	1	1	IV	G	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	C
+n02op18-2_03	62	38	37	5/8	5/8	3/4	1	1	V65/V	G	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	C#
+n02op18-2_03	63	39	38	0	0	3/4	1	1	V(64)	G	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	D
+n02op18-2_03	64	39	38	1/8	1/8	3/4	1	1	#viio7/vi	G	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	D#
+n02op18-2_03	65	39	38	1/4	1/4	3/4	1	1	vi	G	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	E
+n02op18-2_04	96	83	83	1/4	1/4	2/4	1	1	viio64	G	V		viio64		vii	o	64				o	False	False	(-1, 5, 2)	()	5	-1	G
+n02op18-2_04	97	84	84	0	0	2/4	1	1	#viio7/V	G	V		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	G#
+n02op18-2_04	98	86	86	0	0	2/4	1	1	V(64)	G	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	A
+n02op18-2_04	99	87	87	0	0	2/4	1	1	V7	G	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n02op18-2_04	100	89	89	0	0	2/4	1	1	viio2	G	V		viio2		vii	o	2				o7	False	False	(-4, 5, 2, -1)	()	5	-4	Bb
+n02op18-2_04	108	94	94	0	0	2/4	1	1	V7	G	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n02op18-2_04	109	94	94	1/4	1/4	2/4	1	1	viio2	G	V		viio2		vii	o	2				o7	False	False	(-4, 5, 2, -1)	()	5	-4	Bb
+n02op18-2_04	110	95	95	0	0	2/4	1	1	#viio7/bVII	G	V		#viio7/bVII		#vii	o	7		bVII		o7	False	False	(3, 0, -3, -6)	()	3	3	B
+n02op18-2_04	111	96	96	0	0	2/4	1	1	.bVII.V7	G	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n02op18-2_04	112	97	97	0	0	2/4	1	1	V(64)	G	bVII		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	C
+n02op18-2_04	113	98	98	0	0	2/4	1	1	V7	G	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n02op18-2_04	114	99	99	0	0	2/4	1	1	V(64)	G	bVII		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	C
+n02op18-2_04	115	100	100	0	0	2/4	1	1	V7	G	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n02op18-2_04	116	101	101	0	0	2/4	1	1	V(64)	G	bVII		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	C
+n02op18-2_04	117	102	102	0	0	2/4	1	1	V7	G	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n02op18-2_04	166	148	148	0	0	2/4	1	1	V65	G	bVI		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	D
+n02op18-2_04	167	149	149	0	0	2/4	1	1	I	G	bVI		I		I						M	False	False	(0, 4, 1)	()	0	0	Eb
+n02op18-2_04	168	149	149	1/8	1/8	2/4	1	1	V65/ii	G	bVI		V65/ii		V		65		ii		Mm7	False	False	(7, 4, 1, 3)	()	3	7	E
+n02op18-2_04	169	149	149	1/4	1/4	2/4	1	1	ii	G	bVI		ii		ii						m	False	False	(2, -1, 3)	()	2	2	F
+n03op18-3_01	117	85	85	0	0	2/2	1	1	#viio65/ii	D	V		#viio65/ii		#vii	o	65		ii		o7	False	False	(4, 1, -2, 7)	()	7	4	C#
+n03op18-3_01	118	86	86	0	0	2/2	1	1	ii6	D	V		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	D
+n03op18-3_01	119	87	87	0	0	2/2	1	1	#viio7/V	D	V		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	D#
+n03op18-3_01	120	88	88	0	0	2/2	1	1	V(64)	D	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	E
+n03op18-3_01	121	89	89	0	0	2/2	1	1	V7	D	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	E
+n03op18-3_01	244	166	166	0	0	2/2	1	1	V(64)	D	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	A
+n03op18-3_01	245	167	167	0	0	2/2	1	1	V7	D	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n03op18-3_01	246	168	168	0	0	2/2	1	1	#viio7/vi	D	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	A#
+n03op18-3_01	247	169	169	0	0	2/2	1	1	vi\\	D	I		vi		vi					\\	m	False	False	(3, 0, 4)	()	3	3	B
+n03op18-3_01	248	170	170	0	0	2/2	1	1	V2/IV	D	I		V2/IV		V		2		IV		Mm7	False	False	(-2, 0, 4, 1)	()	0	-2	C
+n03op18-3_01	252	174	174	0	0	2/2	1	1	IV6	D	I		IV6		IV		6				M	False	False	(3, 0, -1)	()	-1	3	B
+n03op18-3_01	253	175	175	0	0	2/2	1	1	#viio65/V	D	I		#viio65/V		#vii	o	65		V		o7	False	False	(3, 0, -3, 6)	()	6	3	B
+n03op18-3_01	254	176	176	0	0	2/2	1	1	v6	D	I		v6		v		6				m	False	False	(-2, 2, 1)	()	1	-2	C
+n03op18-3_01	255	177	177	0	0	2/2	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n03op18-3_01	256	178	178	0	0	2/2	1	1	vi6	D	I		vi6		vi		6				m	False	False	(0, 4, 3)	()	3	0	D
+n03op18-3_01	257	179	179	0	0	2/2	1	1	#viio7/ii	D	I		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	D#
+n03op18-3_01	258	180	180	0	0	2/2	1	1	viio65	D	I		viio65		vii	o	65				o7	False	False	(2, -1, -4, 5)	()	5	2	E
+n03op18-3_01	260	181	181	1/8	1/8	2/2	1	1	I6	D	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	F#
+n03op18-3_01	261	182	182	0	0	2/2	1	1	ii%65	D	I		ii%65		ii	%	65				%7	False	False	(-1, -4, 0, 2)	()	2	-1	G
+n03op18-3_01	262	183	183	0	0	2/2	1	1	#viio7/V	D	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	G#
+n03op18-3_01	263	184	184	0	0	2/2	1	1	V\\	D	I		V		V					\\	M	False	False	(1, 5, 2)	()	1	1	A
+n03op18-3_01	264	184	184	1/2	1/2	2/2	1	1	V	D	I		V		V						M	False	False	(1, 5, 2)	()	1	1	A
+n03op18-3_01	265	187	187	0	0	2/2	1	1	V7	D	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n03op18-3_01	299	217	217	0	0	2/2	1	1	#viio65/ii	D	I		#viio65/ii		#vii	o	65		ii		o7	False	False	(4, 1, -2, 7)	()	7	4	F#
+n03op18-3_01	300	219	219	0	0	2/2	1	1	ii6	D	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	G
+n03op18-3_01	301	220	220	0	0	2/2	1	1	#viio7/V	D	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	G#
+n03op18-3_01	302	221	221	0	0	2/2	1	1	V(64)	D	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	A
+n03op18-3_01	303	222	222	0	0	2/2	1	1	V7	D	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n03op18-3_01	338	237	237	0	0	2/2	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_01	339	238	238	0	0	2/2	1	1	.bIII.v6	D	bIII		v6		v		6				m	False	False	(-2, 2, 1)	()	1	-2	Eb
+n03op18-3_01	340	239	239	0	0	2/2	1	1	V6	D	bIII		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	E
+n03op18-3_01	341	240	240	0	0	2/2	1	1	I	D	bIII		I		I						M	False	False	(0, 4, 1)	()	0	0	F
+n03op18-3_01	342	241	241	0	0	2/2	1	1	iv.V65	D	iv		V65		V		65				Mm7	False	True	(5, 2, -1, 1)	()	1	5	F#
+n03op18-3_01	343	243	243	0	0	2/2	1	1	i	D	iv		i		i						m	False	True	(0, -3, 1)	()	0	0	G
+n03op18-3_02	85	31	31	1/4	1/4	2/4	1	1	V65/III	Bb	v		V65/III		V		65		III		Mm7	False	True	(2, -1, -4, -2)	()	-2	2	G
+n03op18-3_02	86	32	32	1/4	1/4	2/4	1	1	III	Bb	v		III		III						M	False	True	(-3, 1, -2)	()	-3	-3	Ab
+n03op18-3_02	87	32	32	3/8	3/8	2/4	1	1	V65/iv	Bb	v		V65/iv		V		65		iv		Mm7	False	True	(4, 1, -2, 0)	()	0	4	A
+n03op18-3_02	88	33	33	0	0	2/4	1	1	iv	Bb	v		iv		iv						m	False	True	(-1, -4, 0)	()	-1	-1	Bb
+n03op18-3_02	89	33	33	1/8	1/8	2/4	1	1	.bII6	Bb	v		bII6		bII		6				M	False	True	(-1, -4, -5)	()	-5	-1	Bb
+n03op18-3_02	90	33	33	3/8	3/8	2/4	1	1	iv7	Bb	v		iv7		iv		7				mm7	False	True	(-1, -4, 0, -3)	()	-1	-1	Bb
+n03op18-3_02	91	34	34	0	0	2/4	1	1	#viio43	Bb	v		#viio43		#vii	o	43				o7	False	True	(-1, -4, 5, 2)	()	5	-1	Bb
+n03op18-3_02	92	36	36	0	0	2/4	1	1	#viio7/V	Bb	v		#viio7/V		#vii	o	7		V		o7	False	True	(6, 3, 0, -3)	()	6	6	B
+n03op18-3_02	93	36	36	1/4	1/4	2/4	1	1	V.V(64)	Bb	V		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	C
+n03op18-3_02	94	36	36	3/8	3/8	2/4	1	1	V7	Bb	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	C
+n03op18-3_02	282	105	105	0	0	2/4	1	1	V65/bIII	Bb	I		V65/bIII		V		65		bIII		Mm7	False	False	(2, -1, -4, -2)	()	-2	2	C
+n03op18-3_02	283	105	105	1/4	1/4	2/4	1	1	.bIII	Bb	I		bIII		bIII						M	False	False	(-3, 1, -2)	()	-3	-3	Db
+n03op18-3_02	284	105	105	3/8	3/8	2/4	1	1	V6/iv	Bb	I		V6/iv		V		6		iv		M	False	False	(4, 1, 0)	()	0	4	D
+n03op18-3_02	285	106	106	0	0	2/4	1	1	iv	Bb	I		iv		iv						m	False	False	(-1, -4, 0)	()	-1	-1	Eb
+n03op18-3_02	286	106	106	1/8	1/8	2/4	1	1	iv(6)	Bb	I		iv(6)		iv			6			m	False	False	(-1, -4, 2)	()	-1	-1	Eb
+n03op18-3_02	287	106	106	3/8	3/8	2/4	1	1	iv	Bb	I		iv		iv						m	False	False	(-1, -4, 0)	()	-1	-1	Eb
+n03op18-3_02	288	107	107	0	0	2/4	1	1	viio43	Bb	I		viio43		vii	o	43				o7	False	False	(-1, -4, 5, 2)	()	5	-1	Eb
+n03op18-3_02	289	109	109	0	0	2/4	1	1	#viio7/V	Bb	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	E
+n03op18-3_02	290	109	109	1/4	1/4	2/4	1	1	V(64)	Bb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	F
+n03op18-3_02	291	109	109	3/8	3/8	2/4	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n03op18-3_02	292	110	110	0	0	2/4	1	1	I64	Bb	I		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	F
+n03op18-3_03	44	21	21	1/2	1/2	3/4	1	1	ii7	D	I		ii7		ii		7				mm7	False	False	(2, -1, 3, 0)	()	2	2	E
+n03op18-3_03	45	22	22	0	0	3/4	1	1	#viio7/iii	D	I		#viio7/iii		#vii	o	7		iii		o7	False	False	(9, 6, 3, 0)	()	9	9	E#
+n03op18-3_03	46	23	23	0	0	3/4	1	1	I6(#4)	D	I		I6(#4)		I		6	#4			M	False	False	(4, 6, 0)	()	0	4	F#
+n03op18-3_03	47	24	24	0	0	3/4	1	1	I6	D	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	F#
+n03op18-3_03	48	24	24	1/2	1/2	3/4	1	1	I+6	D	I		I+6		I	+	6				+	False	False	(4, 8, 0)	()	0	4	F#
+n03op18-3_03	49	26	26	0	0	3/4	1	1	IV	D	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	G
+n03op18-3_03	50	27	27	0	0	3/4	1	1	.Ger6/vi	D	I		Ger6/vi	Ger	vii	o	65	b3	V/vi		Ger	False	False	(-1, 3, 0, 9)	()	9	-1	G
+n03op18-3_03	61	37	37	0	0	3/4	1	1	V6	D	I		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	C#
+n03op18-3_03	62	38	38	1/2	1/2	3/4	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n03op18-3_03	63	39	39	0	0	3/4	1	1	I(4)	D	I		I(4)		I			4			M	False	False	(0, -1, 1)	()	0	0	D
+n03op18-3_03	64	39	39	1/4	1/4	3/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_03	65	40	40	0	0	3/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_03	66	40	40	1/2	1/2	3/4	1	1	V7/IV	D	I		V7/IV		V		7		IV		Mm7	False	False	(0, 4, 1, -2)	()	0	0	D
+n03op18-3_03	67	41	41	0	0	3/4	1	1	V6(2)/ii	D	I		V6(2)/ii		V		6	2	ii		M	False	False	(7, 4, -2)	()	3	7	D#
+n03op18-3_03	68	41	41	1/4	1/4	3/4	1	1	V6/ii	D	I		V6/ii		V		6		ii		M	False	False	(7, 4, 3)	()	3	7	D#
+n03op18-3_03	69	43	43	0	0	3/4	1	1	ii	D	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	E
+n03op18-3_03	70	43	43	1/2	1/2	3/4	1	1	viio65/ii	D	I		viio65/ii		vii	o	65		ii		o7	False	False	(-3, -6, -9, 0)	()	0	-3	F
+n03op18-3_03	85	50	50	0	0	3/4	1	1	V65/V	D	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	G#
+n03op18-3_03	86	51	51	0	0	3/4	1	1	V[I64	D	I	V	I64		I		64				M	False	False	(1, 0, 4)	()	0	1	A
+n03op18-3_03	87	52	52	0	0	3/4	1	1	V7	D	I	V	V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n03op18-3_03	88	52	52	1/4	1/4	3/4	1	1	I64]	D	I	V	I64		I		64				M	False	False	(1, 0, 4)	()	0	1	A
+n03op18-3_03	89	52	52	1/2	1/2	3/4	1	1	#viio/vi	D	I		#viio/vi		#vii	o			vi		o	False	False	(8, 5, 2)	()	8	8	A#
+n03op18-3_03	90	53	53	0	0	3/4	1	1	vi	D	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	B
+n03op18-3_03	228	145	145	0	0	3/4	1	1	V6	D	I		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	C#
+n03op18-3_03	229	146	146	1/2	1/2	3/4	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n03op18-3_03	230	147	147	0	0	3/4	1	1	I(4)	D	I		I(4)		I			4			M	False	False	(0, -1, 1)	()	0	0	D
+n03op18-3_03	231	147	147	1/4	1/4	3/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_03	232	148	148	0	0	3/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_03	233	148	148	1/2	1/2	3/4	1	1	V7/IV	D	I		V7/IV		V		7		IV		Mm7	False	False	(0, 4, 1, -2)	()	0	0	D
+n03op18-3_03	234	149	149	0	0	3/4	1	1	V6(2)/ii	D	I		V6(2)/ii		V		6	2	ii		M	False	False	(7, 4, -2)	()	3	7	D#
+n03op18-3_03	235	149	149	1/4	1/4	3/4	1	1	V6/ii	D	I		V6/ii		V		6		ii		M	False	False	(7, 4, 3)	()	3	7	D#
+n03op18-3_03	236	151	151	0	0	3/4	1	1	ii	D	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	E
+n03op18-3_03	237	151	151	1/2	1/2	3/4	1	1	#viio65/ii	D	I		#viio65/ii		#vii	o	65		ii		o7	False	False	(4, 1, -2, 7)	()	7	4	F#
+n03op18-3_03	238	152	152	0	0	3/4	1	1	ii6	D	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	G
+n03op18-3_03	239	152	152	1/2	1/2	3/4	1	1	#viio7/V	D	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	G#
+n03op18-3_03	240	153	153	0	0	3/4	1	1	V[V	D	I	V	V		V						M	False	False	(1, 5, 2)	()	1	1	A
+n03op18-3_03	241	153	153	1/4	1/4	3/4	1	1	I64	D	I	V	I64		I		64				M	False	False	(1, 0, 4)	()	0	1	A
+n03op18-3_03	252	158	158	0	0	3/4	1	1	V65/V	D	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	G#
+n03op18-3_03	253	159	159	0	0	3/4	1	1	V[I64	D	I	V	I64		I		64				M	False	False	(1, 0, 4)	()	0	1	A
+n03op18-3_03	254	160	160	0	0	3/4	1	1	V7]	D	I	V	V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	A
+n03op18-3_03	255	160	160	1/2	1/2	3/4	1	1	#viio/vi	D	I		#viio/vi		#vii	o			vi		o	False	False	(8, 5, 2)	()	8	8	A#
+n03op18-3_03	256	161	161	0	0	3/4	1	1	vi	D	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	B
+n03op18-3_04	192	111	111	0	0	6/8	1	1	#viio7/vi	D	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	A#
+n03op18-3_04	193	113	113	0	0	6/8	1	1	ii64	D	I		ii64		ii		64				m	False	False	(3, 2, -1)	()	2	3	B
+n03op18-3_04	194	114	114	0	0	6/8	1	1	.bVII7	D	I		bVII7		bVII		7				Mm7	False	False	(-2, 2, -1, -4)	()	-2	-2	C
+n03op18-3_04	195	115	115	0	0	6/8	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n03op18-3_04	507	335	335	3/8	3/8	6/8	1	1	V+6	D	I	V	V+6		V	+	6				+	False	False	(5, 9, 1)	()	1	5	C#
+n03op18-3_04	508	336	336	0	0	6/8	1	1	I	D	I	V	I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n03op18-3_04	509	336	336	3/8	3/8	6/8	1	1	#io	D	I	V	#io		#i	o					o	False	False	(7, 4, 1)	()	7	7	D#
+n03op18-3_04	510	337	337	0	0	6/8	1	1	ii	D	I	V	ii		ii						m	False	False	(2, -1, 3)	()	2	2	E
+n03op18-3_04	511	337	337	3/8	3/8	6/8	1	1	#iio7	D	I	V	#iio7		#ii	o	7				o7	False	False	(9, 6, 3, 0)	()	9	9	E#
+n03op18-3_04	512	338	338	0	0	6/8	1	1	iii	D	I	V	iii		iii						m	False	False	(4, 1, 5)	()	4	4	F#
+n03op18-3_04	513	338	338	3/8	3/8	6/8	1	1	III	D	I	V	III		III						M	False	False	(4, 8, 5)	()	4	4	F#
+n03op18-3_04	514	339	339	0	0	6/8	1	1	IV	D	I	V	IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	G
+n04op18-4_01	494	202	200	1/2	1/2	4/4	1	1	V	c	i		V		V						M	True	True	(1, 5, 2)	()	1	1	G
+n04op18-4_01	495	203	201	0	0	4/4	1	1	VI	c	i		VI		VI						M	True	True	(-4, 0, -3)	()	-4	-4	Ab
+n04op18-4_01	496	203	201	1/2	1/2	4/4	1	1	V7/bII	c	i		V7/bII		V		7		bII		Mm7	True	True	(-4, 0, -3, -6)	()	-4	-4	Ab
+n04op18-4_01	497	204	202	0	0	4/4	1	1	.bII64	c	i		bII64		bII		64				M	True	True	(-4, -5, -1)	()	-5	-4	Ab
+n04op18-4_01	498	204	202	3/4	3/4	4/4	1	1	#viio7/VII	c	i		#viio7/VII		#vii	o	7		VII		o7	True	True	(3, 0, -3, -6)	()	3	3	A
+n04op18-4_01	499	205	203	0	0	4/4	1	1	VII(b64)	c	i		VII(b64)		VII			b64			M	True	True	(-2, -3, -6)	()	-2	-2	Bb
+n04op18-4_01	500	205	203	1/4	1/4	4/4	1	1	VII(4)	c	i		VII(4)		VII			4			M	True	True	(-2, -3, -1)	()	-2	-2	Bb
+n04op18-4_01	501	205	203	1/2	1/2	4/4	1	1	VII	c	i		VII		VII						M	True	True	(-2, 2, -1)	()	-2	-2	Bb
+n04op18-4_01	502	205	203	3/4	3/4	4/4	1	1	VII7	c	i		VII7		VII		7				Mm7	True	True	(-2, 2, -1, -4)	()	-2	-2	Bb
+n04op18-4_01	503	206	204	0	0	4/4	1	1	vi6	c	i		vi6		vi		6				m	True	True	(-7, -3, -4)	()	-4	-7	Cb
+n04op18-4_01	504	206	204	1/4	1/4	4/4	1	1	V65/bII	c	i		V65/bII		V		65		bII		Mm7	True	True	(0, -3, -6, -4)	()	-4	0	C
+n04op18-4_01	505	206	204	1/2	1/2	4/4	1	1	.bII	c	i		bII		bII						M	True	True	(-5, -1, -4)	()	-5	-5	Db
+n04op18-4_01	506	206	204	3/4	3/4	4/4	1	1	#viio6	c	i		#viio6		#vii	o	6				o	True	True	(2, -1, 5)	()	5	2	D
+n04op18-4_01	507	207	205	0	0	4/4	1	1	i6	c	i		i6		i		6				m	True	True	(-3, 1, 0)	()	0	-3	Eb
+n04op18-4_01	508	207	205	1/4	1/4	4/4	1	1	V65/iv	c	i		V65/iv		V		65		iv		Mm7	True	True	(4, 1, -2, 0)	()	0	4	E
+n04op18-4_01	509	207	205	1/2	1/2	4/4	1	1	iv(4)	c	i		iv(4)		iv			4			m	True	True	(-1, -2, 0)	()	-1	-1	F
+n04op18-4_01	510	207	205	5/8	5/8	4/4	1	1	iv	c	i		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	F
+n04op18-4_01	511	207	205	3/4	3/4	4/4	1	1	V6/V	c	i		V6/V		V		6		V		M	True	True	(6, 3, 2)	()	2	6	F#
+n04op18-4_01	512	208	206	0	0	4/4	1	1	V	c	i		V		V						M	True	True	(1, 5, 2)	()	1	1	G
+n04op18-4_01	513	208	206	1/2	1/2	4/4	1	1	VI	c	i		VI		VI						M	True	True	(-4, 0, -3)	()	-4	-4	Ab
+n04op18-4_02	155	106	106	0	0	3/8	1	1	I	C	bIII		I		I						M	False	False	(0, 4, 1)	()	0	0	Eb
+n04op18-4_02	156	107	107	0	0	3/8	1	1	.bvii.#viio7/V	C	bvii		#viio7/V		#vii	o	7		V		o7	False	True	(6, 3, 0, -3)	()	6	6	E
+n04op18-4_02	157	108	108	0	0	3/8	1	1	i64	C	bvii		i64		i		64				m	False	True	(1, 0, -3)	()	0	1	F
+n04op18-4_02	158	109	109	0	0	3/8	1	1	VI	C	bvii		VI		VI						M	False	True	(-4, 0, -3)	()	-4	-4	Gb
+n04op18-4_02	159	110	110	0	0	3/8	1	1	#viio65/V	C	bvii		#viio65/V		#vii	o	65		V		o7	False	True	(3, 0, -3, 6)	()	6	3	G
+n04op18-4_02	220	166	166	5/16	5/16	3/8	1	1	V64/ii	C	I		V64/ii		V		64		ii		M	False	False	(4, 3, 7)	()	3	4	E
+n04op18-4_02	221	167	167	0	0	3/8	1	1	ii6	C	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	F
+n04op18-4_02	222	167	167	5/16	5/16	3/8	1	1	viio/V	C	I		viio/V		vii	o			V		o	False	False	(6, 3, 0)	()	6	6	F#
+n04op18-4_02	223	168	168	0	0	3/8	1	1	V	C	I		V		V						M	False	False	(1, 5, 2)	()	1	1	G
+n04op18-4_02	224	169	169	0	0	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	225	170	170	0	0	3/8	1	1	V7	C	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n04op18-4_02	226	171	171	0	0	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	227	172	172	0	0	3/8	1	1	V	C	I		V		V						M	False	False	(1, 5, 2)	()	1	1	G
+n04op18-4_02	228	172	172	5/16	5/16	3/8	1	1	V7	C	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n04op18-4_02	229	173	173	0	0	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	230	174	174	0	0	3/8	1	1	V7	C	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n04op18-4_02	231	175	175	0	0	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	232	176	176	0	0	3/8	1	1	V	C	I		V		V						M	False	False	(1, 5, 2)	()	1	1	G
+n04op18-4_02	233	176	176	1/4	1/4	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	234	177	177	0	0	3/8	1	1	V	C	I		V		V						M	False	False	(1, 5, 2)	()	1	1	G
+n04op18-4_02	235	177	177	1/4	1/4	3/8	1	1	V(64)	C	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	G
+n04op18-4_02	236	178	178	0	0	3/8	1	1	V	C	I		V		V						M	False	False	(1, 5, 2)	()	1	1	G
+n04op18-4_03	141	96	96	1/2	1/2	3/4	1	1	#viio7(6)/iv	c	iii		#viio7(6)/iv		#vii	o	7	6	iv		o7	True	True	(4, 1, 0, -5)	()	4	4	G
+n04op18-4_03	142	96	96	5/8	5/8	3/4	1	1	#viio7/iv	c	iii		#viio7/iv		#vii	o	7		iv		o7	True	True	(4, 1, -2, -5)	()	4	4	G
+n04op18-4_03	143	97	97	0	0	3/4	1	1	iv	c	iii		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	Ab
+n04op18-4_03	144	98	98	0	0	3/4	1	1	iio6	c	iii		iio6		ii	o	6				o	True	True	(-1, -4, 2)	()	2	-1	Ab
+n04op18-4_03	145	99	99	0	0	3/4	1	1	#viio7/V	c	iii		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	A
+n04op18-4_03	146	100	100	0	0	3/4	1	1	V\\	c	iii		V		V					\\	M	True	True	(1, 5, 2)	()	1	1	Bb
+n04op18-4_04	6	6	6	0	0	2/2	1	1	i	c	i		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n04op18-4_04	7	7	7	0	0	2/2	1	1	v.iv	c	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	C
+n04op18-4_04	8	7	7	3/4	3/4	2/2	1	1	#viio7/V	c	v		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	C#
+n04op18-4_04	9	8	8	0	0	2/2	1	1	V(64)	c	v		V(64)		V			64			M	True	True	(1, 0, -3)	()	1	1	D
+n04op18-4_04	10	8	8	1/4	1/4	2/2	1	1	.It6	c	v		It6	It	vii	o	6	b3	V		It	True	True	(-4, 0, 6)	()	6	-4	Eb
+n04op18-4_04	83	50	50	0	0	2/2	1	1	i	c	i		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n04op18-4_04	84	51	51	0	0	2/2	1	1	v.iv	c	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	C
+n04op18-4_04	85	51	51	3/4	3/4	2/2	1	1	#viio7/V	c	v		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	C#
+n04op18-4_04	86	52	52	0	0	2/2	1	1	V(64)	c	v		V(64)		V			64			M	True	True	(1, 0, -3)	()	1	1	D
+n04op18-4_04	87	52	52	1/4	1/4	2/2	1	1	.It6	c	v		It6	It	vii	o	6	b3	V		It	True	True	(-4, 0, 6)	()	6	-4	Eb
+n04op18-4_04	97	58	58	0	0	2/2	1	1	i	c	i		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n04op18-4_04	98	59	59	0	0	2/2	1	1	v.iv	c	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	C
+n04op18-4_04	99	59	59	1/2	1/2	2/2	1	1	#viio7/V	c	v		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	C#
+n04op18-4_04	100	60	60	0	0	2/2	1	1	i64	c	v		i64		i		64				m	True	True	(1, 0, -3)	()	0	1	D
+n04op18-4_04	101	60	60	1/4	1/4	2/2	1	1	VI	c	v		VI		VI						M	True	True	(-4, 0, -3)	()	-4	-4	Eb
+n04op18-4_04	183	99	99	0	0	2/2	1	1	i	c	i		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n04op18-4_04	184	100	100	0	0	2/2	1	1	v.iv	c	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	C
+n04op18-4_04	185	100	100	3/4	3/4	2/2	1	1	#viio7/V	c	v		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	C#
+n04op18-4_04	186	101	101	0	0	2/2	1	1	V(64)	c	v		V(64)		V			64			M	True	True	(1, 0, -3)	()	1	1	D
+n04op18-4_04	187	101	101	1/4	1/4	2/2	1	1	.Ger6	c	v		Ger6	Ger	vii	o	65	b3	V		Ger	True	True	(-4, 0, -3, 6)	()	6	-4	Eb
+n04op18-4_04	307	176	176	0	0	2/2	1	1	i	c	i		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n04op18-4_04	308	177	177	0	0	2/2	1	1	v.iv	c	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	C
+n04op18-4_04	309	177	177	1/2	1/2	2/2	1	1	#viio7/V	c	v		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	C#
+n04op18-4_04	310	178	178	0	0	2/2	1	1	V(64)	c	v		V(64)		V			64			M	True	True	(1, 0, -3)	()	1	1	D
+n04op18-4_04	311	178	178	1/4	1/4	2/2	1	1	.Ger6	c	v		Ger6	Ger	vii	o	65	b3	V		Ger	True	True	(-4, 0, -3, 6)	()	6	-4	Eb
+n05op18-5_01	46	29	29	1/4	1/4	6/8	1	1	V43	A	v		V43		V		43				Mm7	False	True	(2, -1, 1, 5)	()	1	2	F#
+n05op18-5_01	47	29	29	3/8	3/8	6/8	1	1	i6	A	v		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	G
+n05op18-5_01	48	29	29	5/8	5/8	6/8	1	1	V6/iv	A	v		V6/iv		V		6		iv		M	False	True	(4, 1, 0)	()	0	4	G#
+n05op18-5_01	49	30	30	0	0	6/8	1	1	iv	A	v		iv		iv						m	False	True	(-1, -4, 0)	()	-1	-1	A
+n05op18-5_01	268	152	152	0	0	6/8	1	1	IV6	A	I		IV6		IV		6				M	False	False	(3, 0, -1)	()	-1	3	F#
+n05op18-5_01	269	152	152	3/8	3/8	6/8	1	1	.bVII	A	I		bVII		bVII						M	False	False	(-2, 2, -1)	()	-2	-2	G
+n05op18-5_01	270	153	153	0	0	6/8	1	1	viio	A	I		viio		vii	o					o	False	False	(5, 2, -1)	()	5	5	G#
+n05op18-5_01	271	153	153	3/8	3/8	6/8	1	1	IV64	A	I		IV64		IV		64				M	False	False	(0, -1, 3)	()	-1	0	A
+n05op18-5_01	272	154	154	0	0	6/8	1	1	.bII	A	I		bII		bII						M	False	False	(-5, -1, -4)	()	-5	-5	Bb
+n05op18-5_01	273	154	154	3/8	3/8	6/8	1	1	V6/bIII	A	I		V6/bIII		V		6		bIII		M	False	False	(2, -1, -2)	()	-2	2	B
+n05op18-5_01	274	155	155	0	0	6/8	1	1	V65/bIII	A	I		V65/bIII		V		65		bIII		Mm7	False	False	(2, -1, -4, -2)	()	-2	2	B
+n05op18-5_01	275	155	155	3/8	3/8	6/8	1	1	.bIII	A	I		bIII		bIII						M	False	False	(-3, 1, -2)	()	-3	-3	C
+n05op18-5_01	279	157	157	3/8	3/8	6/8	1	1	iv	A	I		iv		iv						m	False	False	(-1, -4, 0)	()	-1	-1	D
+n05op18-5_01	280	158	158	0	0	6/8	1	1	#viio7/V	A	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	D#
+n05op18-5_01	281	158	158	3/8	3/8	6/8	1	1	i64	A	I		i64		i		64				m	False	False	(1, 0, -3)	()	0	1	E
+n05op18-5_01	282	159	159	0	0	6/8	1	1	.bVI	A	I		bVI		bVI						M	False	False	(-4, 0, -3)	()	-4	-4	F
+n05op18-5_01	310	170	170	1/4	1/4	6/8	1	1	V43	A	i		V43		V		43				Mm7	False	True	(2, -1, 1, 5)	()	1	2	B
+n05op18-5_01	311	170	170	3/8	3/8	6/8	1	1	i6	A	i		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	C
+n05op18-5_01	312	170	170	5/8	5/8	6/8	1	1	V65/iv	A	i		V65/iv		V		65		iv		Mm7	False	True	(4, 1, -2, 0)	()	0	4	C#
+n05op18-5_01	313	171	171	0	0	6/8	1	1	iv	A	i		iv		iv						m	False	True	(-1, -4, 0)	()	-1	-1	D
+n05op18-5_03	142	88	88	1/8	1/8	2/4	1	1	V7/iii	D	I		V7/iii		V		7		iii		Mm7	False	False	(5, 9, 6, 3)	()	5	5	C#
+n05op18-5_03	143	88	88	1/4	1/4	2/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n05op18-5_03	144	88	88	3/8	3/8	2/4	1	1	#viio7/ii	D	I		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	D#
+n05op18-5_03	145	89	89	0	0	2/4	1	1	ii(74)	D	I		ii(74)		ii			74			m	False	False	(2, 1, 3)	(0,)	2	2	E
+n05op18-5_03	146	89	89	1/4	1/4	2/4	1	1	ii	D	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	E
+n05op18-5_03	155	95	95	3/32	3/32	2/4	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n05op18-5_03	156	95	95	1/4	1/4	2/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n05op18-5_03	157	97	97	0	0	2/4	1	1	V.#viio7/V	D	V		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	D#
+n05op18-5_03	158	98	98	0	0	2/4	1	1	V7	D	V		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	E
+n05op18-5_04	413	216	216	1/2	1/2	2/2	1	1	I6	A	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	C#
+n05op18-5_04	414	217	217	0	0	2/2	1	1	ii6(2)	A	I		ii6(2)		ii		6	2			m	False	False	(-1, 3, 4)	()	2	-1	D
+n05op18-5_04	415	217	217	1/4	1/4	2/2	1	1	ii6	A	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	D
+n05op18-5_04	416	217	217	1/2	1/2	2/2	1	1	V6/V	A	I		V6/V		V		6		V		M	False	False	(6, 3, 2)	()	2	6	D#
+n05op18-5_04	417	217	217	3/4	3/4	2/2	1	1	V65/V	A	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D#
+n05op18-5_04	418	218	218	0	0	2/2	1	1	V(4)	A	I		V(4)		V			4			M	False	False	(1, 0, 2)	()	1	1	E
+n05op18-5_04	419	218	218	1/4	1/4	2/2	1	1	V\\	A	I		V		V					\\	M	False	False	(1, 5, 2)	()	1	1	E
+n06op18-6_02	21	9	9	7/16	7/16	2/4	1	1	#viio6/ii	Eb	I	V	#viio6/ii		#vii	o	6		ii		o	False	False	(4, 1, 7)	()	7	4	G
+n06op18-6_02	22	10	10	0	0	2/4	1	1	V2	Eb	I	V	V2		V		2				Mm7	False	False	(-1, 1, 5, 2)	()	1	-1	Ab
+n06op18-6_02	23	10	10	3/16	3/16	2/4	1	1	viio/V	Eb	I	V	viio/V		vii	o			V		o	False	False	(6, 3, 0)	()	6	6	A
+n06op18-6_02	24	10	10	1/4	1/4	2/4	1	1	V]	Eb	I	V	V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n06op18-6_02	25	11	11	0	0	2/4	1	1	V7	Eb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Bb
+n06op18-6_04	303	190	190	0	0	3/8	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n06op18-6_04	304	192	192	0	0	3/8	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n06op18-6_04	305	193	193	0	0	3/8	1	1	#viio2/vi	Bb	I		#viio2/vi		#vii	o	2		vi		o7	False	False	(-1, 8, 5, 2)	()	8	-1	Eb
+n06op18-6_04	306	194	194	0	0	3/8	1	1	#viio7/V	Bb	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	E
+n06op18-6_04	307	196	196	0	0	2/4	1	1	V(64)	Bb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	F
+n06op18-6_04	308	197	197	0	0	2/4	1	1	I64	Bb	I		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	F
+n06op18-6_04	378	242	242	0	0	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n06op18-6_04	379	243	243	0	0	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n06op18-6_04	380	243	243	1/4	1/4	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n06op18-6_04	381	244	244	0	0	3/8	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n06op18-6_04	382	244	244	1/4	1/4	3/8	1	1	#viio7/vi	Bb	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	F#
+n06op18-6_04	383	245	245	0	0	3/8	1	1	vi	Bb	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	G
+n06op18-6_04	384	245	245	1/4	1/4	3/8	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n06op18-6_04	385	246	246	0	0	3/8	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n06op18-6_04	386	246	246	1/16	1/16	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n06op18-6_04	387	246	246	1/8	1/8	3/8	1	1	V(64)	Bb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	F
+n06op18-6_04	388	246	246	1/4	1/4	3/8	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n06op18-6_04	399	253	253	0	0	3/8	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n06op18-6_04	400	254	254	1/8	1/8	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n06op18-6_04	401	254	254	1/4	1/4	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n06op18-6_04	402	255	255	0	0	3/8	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n06op18-6_04	403	255	255	1/4	1/4	3/8	1	1	#viio7/vi	Bb	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	F#
+n06op18-6_04	404	256	256	0	0	3/8	1	1	vi	Bb	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	G
+n06op18-6_04	405	256	256	1/8	1/8	3/8	1	1	V2/IV	Bb	I		V2/IV		V		2		IV		Mm7	False	False	(-2, 0, 4, 1)	()	0	-2	Ab
+n06op18-6_04	406	256	256	1/4	1/4	3/8	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n06op18-6_04	407	257	257	0	0	3/8	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n06op18-6_04	408	258	258	0	0	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n06op18-6_04	409	259	259	0	0	3/8	1	1	V(64)	Bb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	F
+n06op18-6_04	410	260	260	0	0	3/8	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n06op18-6_04	434	283	283	0	0	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n06op18-6_04	435	283	283	1/8	1/8	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n06op18-6_04	436	283	283	1/4	1/4	3/8	1	1	V6/V	Bb	I		V6/V		V		6		V		M	False	False	(6, 3, 2)	()	2	6	E
+n06op18-6_04	437	284	284	0	0	3/8	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n06op18-6_04	443	287	287	0	0	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n06op18-6_04	444	287	287	1/8	1/8	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n06op18-6_04	445	287	287	1/4	1/4	3/8	1	1	V6/V	Bb	I		V6/V		V		6		V		M	False	False	(6, 3, 2)	()	2	6	E
+n06op18-6_04	446	288	288	0	0	3/8	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n06op18-6_04	454	291	291	0	0	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n06op18-6_04	455	291	291	1/8	1/8	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n06op18-6_04	456	291	291	1/4	1/4	3/8	1	1	V6/V	Bb	I		V6/V		V		6		V		M	False	False	(6, 3, 2)	()	2	6	E
+n06op18-6_04	457	292	292	0	0	3/8	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n07op59-1_02	317	236	236	1/16	1/16	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n07op59-1_02	318	236	236	1/8	1/8	3/8	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n07op59-1_02	319	236	236	3/16	3/16	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n07op59-1_02	320	236	236	1/4	1/4	3/8	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n07op59-1_02	321	237	237	0	0	3/8	1	1	#viio7/vi	Bb	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	F#
+n07op59-1_02	458	346	346	0	0	3/8	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n07op59-1_02	459	347	347	0	0	3/8	1	1	ii65	Bb	I		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	Eb
+n07op59-1_02	460	347	347	1/4	1/4	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n07op59-1_02	461	348	348	0	0	3/8	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n07op59-1_02	543	412	412	1/8	1/8	3/8	1	1	V65/ii	Bb	I		V65/ii		V		65		ii		Mm7	False	False	(7, 4, 1, 3)	()	3	7	B
+n07op59-1_02	544	412	412	1/4	1/4	3/8	1	1	ii	Bb	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	C
+n07op59-1_02	545	413	413	0	0	3/8	1	1	V65/iii	Bb	I		V65/iii		V		65		iii		Mm7	False	False	(9, 6, 3, 5)	()	5	9	C#
+n07op59-1_02	546	413	413	1/8	1/8	3/8	1	1	iii	Bb	I		iii		iii						m	False	False	(4, 1, 5)	()	4	4	D
+n07op59-1_02	547	413	413	1/4	1/4	3/8	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n07op59-1_02	548	414	414	0	0	3/8	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n07op59-1_02	549	414	414	1/8	1/8	3/8	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n07op59-1_02	550	414	414	1/4	1/4	3/8	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n07op59-1_02	551	415	415	0	0	3/8	1	1	V65/vi	Bb	I		V65/vi		V		65		vi		Mm7	False	False	(8, 5, 2, 4)	()	4	8	F#
+n07op59-1_02	552	415	415	1/8	1/8	3/8	1	1	vi	Bb	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	G
+n07op59-1_02	553	415	415	1/4	1/4	3/8	1	1	IV6	Bb	I		IV6		IV		6				M	False	False	(3, 0, -1)	()	-1	3	G
+n07op59-1_03	103	34	33	1/4	1/4	2/4	1	1	#viio7	f	v		#viio7		#vii	o	7				o7	True	True	(5, 2, -1, -4)	()	5	5	B
+n07op59-1_03	104	34	33	3/8	3/8	2/4	1	1	i	f	v		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n07op59-1_03	105	35	34	0	0	2/4	1	1	i	f	v		i		i						m	True	True	(0, -3, 1)	()	0	0	C
+n07op59-1_03	106	35	34	1/32	1/32	2/4	1	1	ii%43/iv	f	v		ii%43/iv		ii	%	43		iv		%7	True	True	(-5, -1, 1, -2)	()	1	-5	Db
+n07op59-1_03	107	35	34	3/32	3/32	2/4	1	1	#viio65	f	v		#viio65		#vii	o	65				o7	True	True	(2, -1, -4, 5)	()	5	2	D
+n07op59-1_03	108	35	34	5/32	5/32	2/4	1	1	i6	f	v		i6		i		6				m	True	True	(-3, 1, 0)	()	0	-3	Eb
+n07op59-1_03	109	35	34	7/32	7/32	2/4	1	1	@none	f	v		@none		@none						m	True	True	()	()			
+n07op59-1_03	110	35	34	3/8	3/8	2/4	1	1	V65/iv	f	v		V65/iv		V		65		iv		Mm7	True	True	(4, 1, -2, 0)	()	0	4	E
+n07op59-1_03	174	62	61	1/4	1/4	2/4	1	1	V(4)/III	f	v		V(4)/III		V			4	III		M	True	True	(-2, -3, -1)	()	-2	-2	Bb
+n07op59-1_03	175	62	61	5/16	5/16	2/4	1	1	V7/III	f	v		V7/III		V		7		III		Mm7	True	True	(-2, 2, -1, -4)	()	-2	-2	Bb
+n07op59-1_03	176	62	61	7/16	7/16	2/4	1	1	V6	f	v		V6		V		6				M	True	True	(5, 2, 1)	()	1	5	B
+n07op59-1_03	177	63	62	0	0	2/4	1	1	i(4)	f	v		i(4)		i			4			m	True	True	(0, -1, 1)	()	0	0	C
+n07op59-1_03	178	63	62	1/16	1/16	2/4	1	1	V6/bII	f	v		V6/bII		V		6		bII		M	True	True	(0, -3, -4)	()	-4	0	C
+n07op59-1_03	179	63	62	1/4	1/4	2/4	1	1	.bII	f	v		bII		bII						M	True	True	(-5, -1, -4)	()	-5	-5	Db
+n07op59-1_03	180	63	62	3/8	3/8	2/4	1	1	V65/III	f	v		V65/III		V		65		III		Mm7	True	True	(2, -1, -4, -2)	()	-2	2	D
+n07op59-1_03	181	64	63	0	0	2/4	1	1	III	f	v		III		III						M	True	True	(-3, 1, -2)	()	-3	-3	Eb
+n07op59-1_03	182	64	63	3/16	3/16	2/4	1	1	V6/iv	f	v		V6/iv		V		6		iv		M	True	True	(4, 1, 0)	()	0	4	E
+n07op59-1_03	183	64	63	1/4	1/4	2/4	1	1	iv	f	v		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	F
+n07op59-1_03	184	64	63	3/8	3/8	2/4	1	1	i.V6/III	f	i		V6/III		V		6		III		M	True	True	(2, -1, -2)	()	-2	2	G
+n07op59-1_03	185	65	64	0	0	2/4	1	1	III	f	i		III		III						M	True	True	(-3, 1, -2)	()	-3	-3	Ab
+n07op59-1_03	186	65	64	1/8	1/8	2/4	1	1	#viio7/iv	f	i		#viio7/iv		#vii	o	7		iv		o7	True	True	(4, 1, -2, -5)	()	4	4	A
+n07op59-1_03	187	65	64	1/4	1/4	2/4	1	1	iv	f	i		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	Bb
+n07op59-1_03	354	122	121	1/8	1/8	2/4	1	1	#viio6/iv	f	i		#viio6/iv		#vii	o	6		iv		o	True	True	(1, -2, 4)	()	4	1	C
+n07op59-1_03	355	122	121	1/4	1/4	2/4	1	1	iv6	f	i		iv6		iv		6				m	True	True	(-4, 0, -1)	()	-1	-4	Db
+n07op59-1_03	356	122	121	7/16	7/16	2/4	1	1	V65/VII	f	i		V65/VII		V		65		VII		Mm7	True	True	(3, 0, -3, -1)	()	-1	3	D
+n07op59-1_03	357	123	122	0	0	2/4	1	1	VII	f	i		VII		VII						M	True	True	(-2, 2, -1)	()	-2	-2	Eb
+n07op59-1_03	359	123	122	1/4	1/4	2/4	1	1	VII6	f	i		VII6		VII		6				M	True	True	(2, -1, -2)	()	-2	2	G
+n07op59-1_03	360	123	122	7/16	7/16	2/4	1	1	#viio65	f	i		#viio65		#vii	o	65				o7	True	True	(2, -1, -4, 5)	()	5	2	G
+n07op59-1_03	361	124	123	0	0	2/4	1	1	i6	f	i		i6		i		6				m	True	True	(-3, 1, 0)	()	0	-3	Ab
+n07op59-1_03	362	124	123	1/8	1/8	2/4	1	1	#viio7/iv	f	i		#viio7/iv		#vii	o	7		iv		o7	True	True	(4, 1, -2, -5)	()	4	4	A
+n07op59-1_03	363	124	123	1/4	1/4	2/4	1	1	.bII6	f	i		bII6		bII		6				M	True	True	(-1, -4, -5)	()	-5	-1	Bb
+n07op59-1_03	364	124	123	3/8	3/8	2/4	1	1	#viio7/V	f	i		#viio7/V		#vii	o	7		V		o7	True	True	(6, 3, 0, -3)	()	6	6	B
+n07op59-1_03	365	125	124	0	0	2/4	1	1	V	f	i		V		V						M	True	True	(1, 5, 2)	()	1	1	C
+n07op59-1_03	366	125	124	1/4	1/4	2/4	1	1	ii%43	f	i		ii%43		ii	%	43				%7	True	True	(-4, 0, 2, -1)	()	2	-4	Db
+n07op59-1_03	367	125	124	3/8	3/8	2/4	1	1	V43/V	f	i		V43/V		V		43		V		Mm7	True	True	(3, 0, 2, 6)	()	2	3	D
+n07op59-1_04	102	54	54	1/4	1/4	2/4	1	1	V64	F	v		V64		V		64				M	False	True	(2, 1, 5)	()	1	2	D
+n07op59-1_04	103	55	55	0	0	2/4	1	1	i6	F	v		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	Eb
+n07op59-1_04	104	55	55	1/4	1/4	2/4	1	1	#viio7/iv	F	v		#viio7/iv		#vii	o	7		iv		o7	False	True	(4, 1, -2, -5)	()	4	4	E
+n07op59-1_04	105	56	56	0	0	2/4	1	1	V2	F	v		V2		V		2				Mm7	False	True	(-1, 1, 5, 2)	()	1	-1	F
+n07op59-1_04	225	123	123	7/16	7/16	2/4	1	1	V43	F	vi		V43		V		43				Mm7	False	True	(2, -1, 1, 5)	()	1	2	E
+n07op59-1_04	226	124	124	1/16	1/16	2/4	1	1	i6	F	vi		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	F
+n07op59-1_04	227	124	124	3/16	3/16	2/4	1	1	#viio7/iv	F	vi		#viio7/iv		#vii	o	7		iv		o7	False	True	(4, 1, -2, -5)	()	4	4	F#
+n07op59-1_04	228	124	124	5/16	5/16	2/4	1	1	iv	F	vi		iv		iv						m	False	True	(-1, -4, 0)	()	-1	-1	G
+n07op59-1_04	255	135	135	0	0	2/4	1	1	VI	F	vi		VI		VI						M	False	True	(-4, 0, -3)	()	-4	-4	Bb
+n07op59-1_04	256	135	135	1/4	1/4	2/4	1	1	.bVII.V	F	bVII		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n07op59-1_04	257	136	136	0	0	2/4	1	1	I64	F	bVII		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	Bb
+n07op59-1_04	258	136	136	3/8	3/8	2/4	1	1	V7	F	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Bb
+n07op59-1_04	259	137	137	0	0	2/4	1	1	I64	F	bVII		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	Bb
+n07op59-1_04	260	137	137	1/4	1/4	2/4	1	1	V7	F	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Bb
+n07op59-1_04	261	138	138	0	0	2/4	1	1	I64	F	bVII		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	Bb
+n07op59-1_04	262	138	138	1/4	1/4	2/4	1	1	V	F	bVII		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n07op59-1_04	263	138	138	7/16	7/16	2/4	1	1	#viio7/vi	F	bVII		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	B
+n07op59-1_04	264	139	139	0	0	2/4	1	1	V/ii	F	bVII		V/ii		V				ii		M	False	False	(3, 7, 4)	()	3	3	C
+n07op59-1_04	265	139	139	1/4	1/4	2/4	1	1	V7/ii	F	bVII		V7/ii		V		7		ii		Mm7	False	False	(3, 7, 4, 1)	()	3	3	C
+n07op59-1_04	266	141	141	0	0	2/4	1	1	vi.V65	F	vi		V65		V		65				Mm7	False	True	(5, 2, -1, 1)	()	1	5	C#
+n07op59-1_04	536	280	280	0	0	2/4	1	1	I.V[V6	F	I	V	V6		V		6				M	False	False	(5, 2, 1)	()	1	5	E
+n07op59-1_04	537	280	280	1/4	1/4	2/4	1	1	I	F	I	V	I		I						M	False	False	(0, 4, 1)	()	0	0	F
+n07op59-1_04	538	280	280	3/8	3/8	2/4	1	1	V6/ii	F	I	V	V6/ii		V		6		ii		M	False	False	(7, 4, 3)	()	3	7	F#
+n07op59-1_04	539	281	281	0	0	2/4	1	1	ii	F	I	V	ii		ii						m	False	False	(2, -1, 3)	()	2	2	G
+n08op59-2_01	146	59	59	1/8	1/8	6/8	1	1	I6	e	III		I6		I		6				M	True	False	(4, 1, 0)	()	0	4	B
+n08op59-2_01	147	59	59	3/8	3/8	6/8	1	1	#viio65/ii	e	III		#viio65/ii		#vii	o	65		ii		o7	True	False	(4, 1, -2, 7)	()	7	4	B
+n08op59-2_01	148	59	59	5/8	5/8	6/8	1	1	ii6	e	III		ii6		ii		6				m	True	False	(-1, 3, 2)	()	2	-1	C
+n08op59-2_01	149	60	60	1/8	1/8	6/8	1	1	#viio7/V	e	III		#viio7/V		#vii	o	7		V		o7	True	False	(6, 3, 0, -3)	()	6	6	C#
+n08op59-2_01	150	60	60	3/8	3/8	6/8	1	1	I64	e	III		I64		I		64				M	True	False	(1, 0, 4)	()	0	1	D
+n08op59-2_01	151	60	60	5/8	5/8	6/8	1	1	.Ger6	e	III		Ger6	Ger	vii	o	65	b3	V		Ger	True	False	(-4, 0, -3, 6)	()	6	-4	Eb
+n08op59-2_01	152	61	61	1/8	1/8	6/8	1	1	#viio65/V	e	III		#viio65/V		#vii	o	65		V		o7	True	False	(3, 0, -3, 6)	()	6	3	E
+n08op59-2_01	239	126	124	1/4	1/4	6/8	1	1	.bII	e	iv		bII		bII						M	True	True	(-5, -1, -4)	()	-5	-5	Bb
+n08op59-2_01	240	129	127	0	0	6/8	1	1	VI.V7/bIII	e	VI		V7/bIII		V		7		bIII		Mm7	True	False	(-2, 2, -1, -4)	()	-2	-2	Bb
+n08op59-2_01	241	130	128	0	0	6/8	1	1	V65	e	VI		V65		V		65				Mm7	True	False	(5, 2, -1, 1)	()	1	5	B
+n08op59-2_01	242	131	129	0	0	6/8	1	1	I	e	VI		I		I						M	True	False	(0, 4, 1)	()	0	0	C
+n08op59-2_01	243	131	129	5/8	5/8	6/8	1	1	V7/IV	e	VI		V7/IV		V		7		IV		Mm7	True	False	(0, 4, 1, -2)	()	0	0	C
+n08op59-2_01	244	132	130	0	0	6/8	1	1	V65/ii	e	VI		V65/ii		V		65		ii		Mm7	True	False	(7, 4, 1, 3)	()	3	7	C#
+n08op59-2_01	245	133	131	0	0	6/8	1	1	ii	e	VI		ii		ii						m	True	False	(2, -1, 3)	()	2	2	D
+n08op59-2_01	246	133	131	5/8	5/8	6/8	1	1	ii7	e	VI		ii7		ii		7				mm7	True	False	(2, -1, 3, 0)	()	2	2	D
+n08op59-2_01	247	134	132	0	0	6/8	1	1	i.V65	e	i		V65		V		65				Mm7	True	True	(5, 2, -1, 1)	()	1	5	D#
+n08op59-2_01	248	135	133	0	0	6/8	1	1	i	e	i		i		i						m	True	True	(0, -3, 1)	()	0	0	E
+n08op59-2_01	375	201	199	1/8	1/8	6/8	1	1	I6	e	I		I6		I		6				M	True	False	(4, 1, 0)	()	0	4	G#
+n08op59-2_01	376	201	199	3/8	3/8	6/8	1	1	#io65	e	I		#io65		#i	o	65				o7	True	False	(4, 1, -2, 7)	()	7	4	G#
+n08op59-2_01	377	201	199	5/8	5/8	6/8	1	1	ii6	e	I		ii6		ii		6				m	True	False	(-1, 3, 2)	()	2	-1	A
+n08op59-2_01	378	202	200	1/8	1/8	6/8	1	1	#ivo7	e	I		#ivo7		#iv	o	7				o7	True	False	(6, 3, 0, -3)	()	6	6	A#
+n08op59-2_01	379	202	200	3/8	3/8	6/8	1	1	i64	e	I		i64		i		64				m	True	False	(1, 0, -3)	()	0	1	B
+n08op59-2_01	380	202	200	5/8	5/8	6/8	1	1	.Ger6	e	I		Ger6	Ger	vii	o	65	b3	V		Ger	True	False	(-4, 0, -3, 6)	()	6	-4	C
+n08op59-2_01	381	203	201	1/8	1/8	6/8	1	1	#ivo65	e	I		#ivo65		#iv	o	65				o7	True	False	(3, 0, -3, 6)	()	6	3	C#
+n08op59-2_02	292	137	137	1/4	1/4	4/4	1	1	I6	E	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G#
+n08op59-2_02	293	137	137	1/2	1/2	4/4	1	1	ii6	E	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	A
+n08op59-2_02	294	137	137	3/4	3/4	4/4	1	1	#viio7/V	E	I		#viio7/V		#vii	o	7		V		o7	False	False	(6, 3, 0, -3)	()	6	6	A#
+n08op59-2_02	295	138	138	0	0	4/4	1	1	V(64)	E	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	B
+n08op59-2_02	296	138	138	1/2	1/2	4/4	1	1	viio2	E	I		viio2		vii	o	2				o7	False	False	(-4, 5, 2, -1)	()	5	-4	C
+n08op59-2_02	297	139	139	1/2	1/2	4/4	1	1	vi	E	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	C#
+n08op59-2_02	298	140	140	0	0	4/4	1	1	IV6	E	I		IV6		IV		6				M	False	False	(3, 0, -1)	()	-1	3	C#
+n08op59-2_03	13	11	9	0	0	3/4	1	1	VII6	e	i		VII6		VII		6				M	True	True	(2, -1, -2)	()	-2	2	F#
+n08op59-2_03	14	11	9	1/4	1/4	3/4	1	1	III.viio7	e	III		viio7		vii	o	7				o7	True	False	(5, 2, -1, -4)	()	5	5	F#
+n08op59-2_03	15	12	10	0	0	3/4	1	1	I(4)	e	III		I(4)		I			4			M	True	False	(0, -1, 1)	()	0	0	G
+n08op59-2_03	16	12	10	1/4	1/4	3/4	1	1	I(#2)	e	III		I(#2)		I			#2			M	True	False	(0, 9, 1)	()	0	0	G
+n08op59-2_03	17	12	10	1/2	1/2	3/4	1	1	I	e	III		I		I						M	True	False	(0, 4, 1)	()	0	0	G
+n08op59-2_03	18	13	11	0	0	3/4	1	1	#viio7/ii	e	III		#viio7/ii		#vii	o	7		ii		o7	True	False	(7, 4, 1, -2)	()	7	7	G#
+n08op59-2_03	19	14	12	0	0	3/4	1	1	ii(94)	e	III		ii(94)		ii			94			m	True	False	(2, 1, 3)	(4,)	2	2	A
+n08op59-2_03	20	14	12	1/2	1/2	3/4	1	1	ii	e	III		ii		ii						m	True	False	(2, -1, 3)	()	2	2	A
+n08op59-2_04	275	190	190	0	0	2/2	1	1	VI.I	e	VI		I		I						M	True	False	(0, 4, 1)	()	0	0	C
+n08op59-2_04	276	191	191	0	0	2/2	1	1	V6/ii	e	VI		V6/ii		V		6		ii		M	True	False	(7, 4, 3)	()	3	7	C#
+n08op59-2_04	277	192	192	0	0	2/2	1	1	ii	e	VI		ii		ii						m	True	False	(2, -1, 3)	()	2	2	D
+n08op59-2_04	278	193	193	0	0	2/2	1	1	V6/iii	e	VI		V6/iii		V		6		iii		M	True	False	(9, 6, 5)	()	5	9	D#
+n08op59-2_04	279	194	194	0	0	2/2	1	1	iii	e	VI		iii		iii						m	True	False	(4, 1, 5)	()	4	4	E
+n09op59-3_03	67	29	29	0	0	3/4	1	1	ii65	C	I		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	F
+n09op59-3_03	68	29	29	1/4	1/4	3/4	1	1	V65/V	C	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	F#
+n09op59-3_03	69	29	29	1/2	1/2	3/4	1	1	V7	C	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	G
+n09op59-3_03	70	30	30	0	0	3/4	1	1	V65/vi	C	I		V65/vi		V		65		vi		Mm7	False	False	(8, 5, 2, 4)	()	4	8	G#
+n09op59-3_03	71	30	30	1/4	1/4	3/4	1	1	vi	C	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	A
+n09op59-3_03	72	30	30	5/8	5/8	3/4	1	1	IV6	C	I		IV6		IV		6				M	False	False	(3, 0, -1)	()	-1	3	A
+n09op59-3_04	57	31	30	5/8	5/8	2/2	1	1	V6	C	I		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	B
+n09op59-3_04	58	31	30	3/4	3/4	2/2	1	1	vi6	C	I		vi6		vi		6				m	False	False	(0, 4, 3)	()	3	0	C
+n09op59-3_04	59	31	30	7/8	7/8	2/2	1	1	V65/ii	C	I		V65/ii		V		65		ii		Mm7	False	False	(7, 4, 1, 3)	()	3	7	C#
+n09op59-3_04	60	32	31	0	0	2/2	1	1	ii	C	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	D
+n09op59-3_04	436	265	264	0	0	2/2	1	1	V65	C	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	B
+n09op59-3_04	437	265	264	1/2	1/2	2/2	1	1	I	C	I		I		I						M	False	False	(0, 4, 1)	()	0	0	C
+n09op59-3_04	438	266	265	0	0	2/2	1	1	V65/ii	C	I		V65/ii		V		65		ii		Mm7	False	False	(7, 4, 1, 3)	()	3	7	C#
+n09op59-3_04	439	266	265	1/2	1/2	2/2	1	1	ii	C	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	D
+n09op59-3_04	545	327	326	0	0	2/2	1	1	V65	C	i		V65		V		65				Mm7	False	True	(5, 2, -1, 1)	()	1	5	B
+n09op59-3_04	546	329	328	0	0	2/2	1	1	I	C	i		I		I						M	False	True	(0, 4, 1)	()	0	0	C
+n09op59-3_04	547	329	328	1/2	1/2	2/2	1	1	#viio/ii	C	i		#viio/ii		#vii	o			ii		o	False	True	(7, 4, 1)	()	7	7	C#
+n09op59-3_04	548	330	329	0	0	2/2	1	1	ii	C	i		ii		ii						m	False	True	(2, -1, 3)	()	2	2	D
+n10op74_01	231	112	112	0	0	4/4	1	1	V7/IV	Eb	VI		V7/IV		V		7		IV		Mm7	False	False	(0, 4, 1, -2)	()	0	0	C
+n10op74_01	232	113	113	0	0	4/4	1	1	iv64	Eb	VI		iv64		iv		64				m	False	False	(0, -1, -4)	()	-1	0	C
+n10op74_01	233	114	114	0	0	4/4	1	1	viio7/biii	Eb	VI		viio7/biii		vii	o	7		biii		o7	False	False	(-5, -8, -11, -14)	()	-5	-5	Db
+n10op74_01	234	115	115	0	0	4/4	1	1	V65/biii	Eb	VI		V65/biii		V		65		biii		Mm7	False	False	(2, -1, -4, -2)	()	-2	2	D
+n10op74_01	235	116	116	0	0	4/4	1	1	.biii	Eb	VI		biii		biii						m	False	False	(-3, -6, -2)	()	-3	-3	Eb
+n10op74_02	83	38	38	0	0	3/8	1	1	viio7	Ab	bIII	I	viio7		vii	o	7				o7	False	False	(5, 2, -1, -4)	()	5	5	Bb
+n10op74_02	84	39	39	0	0	3/8	1	1	I]	Ab	bIII	I	I		I						M	False	False	(0, 4, 1)	()	0	0	Cb
+n10op74_02	85	39	39	5/16	5/16	3/8	1	1	V/IV	Ab	bIII		V/IV		V				IV		M	False	False	(0, 4, 1)	()	0	0	Cb
+n10op74_02	86	40	40	0	0	3/8	1	1	#viio7/ii	Ab	bIII		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	C
+n10op74_02	87	41	41	0	0	3/8	1	1	V65/ii	Ab	bIII		V65/ii		V		65		ii		Mm7	False	False	(7, 4, 1, 3)	()	3	7	C
+n10op74_02	88	42	42	0	0	3/8	1	1	ii	Ab	bIII		ii		ii						m	False	False	(2, -1, 3)	()	2	2	Db
+n10op74_02	111	57	57	0	0	3/8	1	1	V/vi	Ab	I		V/vi		V				vi		M	False	False	(4, 8, 5)	()	4	4	C
+n10op74_02	112	58	58	1/8	1/8	3/8	1	1	ii6	Ab	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Db
+n10op74_02	113	59	59	1/8	1/8	3/8	1	1	V65/V	Ab	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D
+n10op74_02	114	61	61	1/8	1/8	3/8	1	1	V7(4)	Ab	I		V7(4)		V		7	4			Mm7	False	False	(1, 0, 2, -1)	()	1	1	Eb
+n10op74_02	115	62	62	0	0	3/8	1	1	V7	Ab	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Eb
+n10op74_02	269	145	145	0	0	3/8	1	1	I6	Ab	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	C
+n10op74_02	270	145	145	1/8	1/8	3/8	1	1	IV	Ab	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Db
+n10op74_02	271	145	145	3/16	3/16	3/8	1	1	IV+	Ab	I		IV+		IV	+					+	False	False	(-1, 3, 7)	()	-1	-1	Db
+n10op74_02	272	145	145	1/4	1/4	3/8	1	1	ii6	Ab	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Db
+n10op74_02	273	145	145	5/16	5/16	3/8	1	1	V6/V	Ab	I		V6/V		V		6		V		M	False	False	(6, 3, 2)	()	2	6	D
+n10op74_02	274	146	146	0	0	3/8	1	1	V7(4)	Ab	I		V7(4)		V		7	4			Mm7	False	False	(1, 0, 2, -1)	()	1	1	Eb
+n10op74_02	275	146	146	1/8	1/8	3/8	1	1	V7	Ab	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Eb
+n11op95_01	107	66	66	0	0	4/4	1	1	#viio	f	i		#viio		#vii	o					o	True	True	(5, 2, -1)	()	5	5	E
+n11op95_01	108	67	67	0	0	4/4	1	1	i	f	i		i		i						m	True	True	(0, -3, 1)	()	0	0	F
+n11op95_01	109	67	67	1/2	1/2	4/4	1	1	.Ger6/iv	f	i		Ger6/iv	Ger	vii	o	65	b3	V/iv		Ger	True	True	(-5, -1, -4, 5)	()	5	-5	Gb
+n11op95_01	110	68	68	0	0	4/4	1	1	iio	f	i		iio		ii	o					o	True	True	(2, -1, -4)	()	2	2	G
+n11op95_01	111	69	69	0	0	4/4	1	1	III	f	i		III		III						M	True	True	(-3, 1, -2)	()	-3	-3	Ab
+n11op95_02	84	48	48	1/4	1/4	2/4	1	1	#viio6(2)/V	D	I		#viio6(2)/V		#vii	o	6	2	V		o	False	False	(3, 0, 1)	()	6	3	B
+n11op95_02	85	48	48	3/8	3/8	2/4	1	1	#viio6/V	D	I		#viio6/V		#vii	o	6		V		o	False	False	(3, 0, 6)	()	6	3	B
+n11op95_02	86	49	49	0	0	2/4	1	1	V/bIII	D	I		V/bIII		V				bIII		M	False	False	(-2, 2, -1)	()	-2	-2	C
+n11op95_02	87	49	49	1/4	1/4	2/4	1	1	V65	D	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	C#
+n11op95_02	88	50	50	0	0	2/4	1	1	I	D	I		I		I						M	False	False	(0, 4, 1)	()	0	0	D
+n11op95_02	89	50	50	1/8	1/8	2/4	1	1	.bVI6	D	I		bVI6		bVI		6				M	False	False	(0, -3, -4)	()	-4	0	D
+n11op95_02	90	51	51	1/8	1/8	2/4	1	1	i	D	I		i		i						m	False	False	(0, -3, 1)	()	0	0	D
+n11op95_02	91	51	51	1/4	1/4	2/4	1	1	#viio43/V	D	I		#viio43/V		#vii	o	43		V		o7	False	False	(0, -3, 6, 3)	()	6	0	D
+n11op95_04	74	31	30	0	0	6/8	1	1	VI7(7)	f	i		VI7(7)		VI		7	7			Mm7	True	True	(-4, 0, -3, -6)	()	-4	-4	Db
+n11op95_04	75	31	30	1/4	1/4	6/8	1	1	#viio6/v	f	i		#viio6/v		#vii	o	6		v		o	True	True	(3, 0, 6)	()	6	3	D
+n11op95_04	76	31	30	3/8	3/8	6/8	1	1	v6	f	i		v6		v		6				m	True	True	(-2, 2, 1)	()	1	-2	Eb
+n11op95_04	77	31	30	5/8	5/8	6/8	1	1	V6(+#1)	f	i		V6(+#1)		V		6	+#1			M	True	True	(5, 2, 1)	()	1	5	E
+n11op95_04	78	32	31	0	0	6/8	1	1	i(7)	f	i		i(7)		i			7			m	True	True	(0, -3, 1)	(-2,)	0	0	F
+n11op95_04	79	32	31	1/8	1/8	6/8	1	1	i(#6)	f	i		i(#6)		i			#6			m	True	True	(0, -3, 1)	(3,)	0	0	F
+n12op127_01	61	28	28	1/2	1/2	3/4	1	1	III7	Eb	I		III7		III		7				Mm7	False	False	(4, 8, 5, 2)	()	4	4	G
+n12op127_01	62	28	28	5/8	5/8	3/4	1	1	ii6	Eb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Ab
+n12op127_01	63	29	29	0	0	3/4	1	1	V65/V	Eb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	A
+n12op127_01	64	29	29	1/8	1/8	3/4	1	1	V(64)	Eb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	Bb
+n12op127_01	65	29	29	1/2	1/2	3/4	1	1	V7	Eb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Bb
+n12op127_01	66	30	30	0	0	3/4	1	1	#viio7/vi	Eb	I		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	B
+n12op127_01	67	30	30	1/8	1/8	3/4	1	1	vi	Eb	I		vi		vi						m	False	False	(3, 0, 4)	()	3	3	C
+n12op127_01	102	45	45	0	0	3/4	1	1	V65/IV	Eb	iii		V65/IV		V		65		IV		Mm7	False	True	(4, 1, -2, 0)	()	0	4	B
+n12op127_01	103	46	46	0	0	3/4	1	1	IV(94)	Eb	iii		IV(94)		IV			94			M	False	True	(-1, -2, 0)	(1,)	-1	-1	C
+n12op127_01	104	46	46	1/4	1/4	3/4	1	1	IV(#2)	Eb	iii		IV(#2)		IV			#2			M	False	True	(-1, 8, 0)	()	-1	-1	C
+n12op127_01	105	46	46	1/2	1/2	3/4	1	1	V65/V	Eb	iii		V65/V		V		65		V		Mm7	False	True	(6, 3, 0, 2)	()	2	6	C#
+n12op127_01	106	47	47	3/8	3/8	3/4	1	1	V	Eb	iii		V		V						M	False	True	(1, 5, 2)	()	1	1	D
+n12op127_02	115	29	29	5/8	5/8	12/8	1	1	vi6	Ab	I		vi6		vi		6				m	False	False	(0, 4, 3)	()	3	0	Ab
+n12op127_02	116	29	29	1	1	12/8	1	1	#viio7/ii	Ab	I		#viio7/ii		#vii	o	7		ii		o7	False	False	(7, 4, 1, -2)	()	7	7	A
+n12op127_02	117	29	29	11/8	11/8	12/8	1	1	V7/V	Ab	I		V7/V		V		7		V		Mm7	False	False	(2, 6, 3, 0)	()	2	2	Bb
+n12op127_02	118	29	29	23/16	23/16	12/8	1	1	V[#viio2/V	Ab	I	V	#viio2/V		#vii	o	2		V		o7	False	False	(-3, 6, 3, 0)	()	6	-3	Cb
+n12op127_02	395	92	92	7/8	7/8	12/8	1	1	V6	Ab	I		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	G
+n12op127_02	396	92	92	1	1	12/8	1	1	vi65	Ab	I		vi65		vi		65				mm7	False	False	(0, 4, 1, 3)	()	3	0	Ab
+n12op127_02	397	92	92	9/8	9/8	12/8	1	1	#vio65	Ab	I		#vio65		#vi	o	65				o7	False	False	(7, 4, 1, 10)	()	10	7	A
+n12op127_02	398	92	92	5/4	5/4	12/8	1	1	V43	Ab	I		V43		V		43				Mm7	False	False	(2, -1, 1, 5)	()	1	2	Bb
+n12op127_03	7	7	7	1/2	1/2	3/4	1	1	V64/ii	Eb	I		V64/ii		V		64		ii		M	False	False	(4, 3, 7)	()	3	4	G
+n12op127_03	8	8	8	0	0	3/4	1	1	ii6	Eb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Ab
+n12op127_03	9	8	8	1/2	1/2	3/4	1	1	#viio/V	Eb	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	A
+n12op127_03	10	9	9	0	0	3/4	1	1	V	Eb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n12op127_03	11	9	9	1/2	1/2	3/4	1	1	@none	Eb	I		@none		@none						m	False	False	()	()			
+n12op127_03	12	10	10	0	0	3/4	1	1	V	Eb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n12op127_03	13	10	10	1/2	1/2	3/4	1	1	V7	Eb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Bb
+n12op127_03	39	21	21	1/2	1/2	3/4	1	1	#viio6/V	Eb	I		#viio6/V		#vii	o	6		V		o	False	False	(3, 0, 6)	()	6	3	C
+n12op127_03	40	22	22	0	0	3/4	1	1	v6	Eb	I		v6		v		6				m	False	False	(-2, 2, 1)	()	1	-2	Db
+n12op127_03	41	22	22	1/4	1/4	3/4	1	1	#io2	Eb	I		#io2		#i	o	2				o7	False	False	(-2, 7, 4, 1)	()	7	-2	Db
+n12op127_03	42	22	22	1/2	1/2	3/4	1	1	V65	Eb	I		V65		V		65				Mm7	False	False	(5, 2, -1, 1)	()	1	5	D
+n12op127_03	43	23	23	0	0	3/4	1	1	I	Eb	I		I		I						M	False	False	(0, 4, 1)	()	0	0	Eb
+n12op127_03	177	92	91	0	0	3/4	1	1	I6	Eb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G
+n12op127_03	178	92	91	1/2	1/2	3/4	1	1	IV	Eb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Ab
+n12op127_03	179	92	91	11/16	11/16	3/4	1	1	#viio/V	Eb	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	A
+n12op127_03	180	93	92	0	0	3/4	1	1	V	Eb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n12op127_03	414	281	278	1/2	1/2	3/4	1	1	#viio6/ii	Eb	I		#viio6/ii		#vii	o	6		ii		o	False	False	(4, 1, 7)	()	7	4	G
+n12op127_03	415	282	279	0	0	3/4	1	1	ii6	Eb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Ab
+n12op127_03	416	282	279	1/2	1/2	3/4	1	1	#viio/V	Eb	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	A
+n12op127_03	417	283	280	0	0	3/4	1	1	V	Eb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n13op130_01	32	11	10	3/8	3/8	3/4	1	1	#viio6/ii	Bb	I		#viio6/ii		#vii	o	6		ii		o	False	False	(4, 1, 7)	()	7	4	D
+n13op130_01	33	11	10	1/2	1/2	3/4	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n13op130_01	34	11	10	5/8	5/8	3/4	1	1	#viio/V	Bb	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	E
+n13op130_01	35	12	11	1/8	1/8	3/4	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n13op130_01	37	12	11	3/8	3/8	3/4	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n13op130_01	38	12	11	1/2	1/2	3/4	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n13op130_01	39	12	11	5/8	5/8	3/4	1	1	#viio65/ii	Bb	I		#viio65/ii		#vii	o	65		ii		o7	False	False	(4, 1, -2, 7)	()	7	4	D
+n13op130_01	40	13	12	0	0	3/4	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n13op130_01	41	13	12	1/8	1/8	3/4	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n13op130_01	42	13	12	1/4	1/4	3/4	1	1	v	Bb	I		v		v						m	False	False	(1, -2, 2)	()	1	1	F
+n13op130_01	142	41	40	1/8	1/8	4/4	1	1	#viio6/ii	Bb	I		#viio6/ii		#vii	o	6		ii		o	False	False	(4, 1, 7)	()	7	4	D
+n13op130_01	143	41	40	1/4	1/4	4/4	1	1	ii6	Bb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Eb
+n13op130_01	144	41	40	3/8	3/8	4/4	1	1	#viio/V	Bb	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	E
+n13op130_01	145	41	40	1/2	1/2	4/4	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n13op130_01	185	62	61	1/2	1/2	4/4	1	1	I6	Bb	bVI		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	Bb
+n13op130_01	186	63	62	0	0	4/4	1	1	ii65	Bb	bVI		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	Cb
+n13op130_01	187	63	62	1/2	1/2	4/4	1	1	V65/V	Bb	bVI		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	C
+n13op130_01	188	64	63	0	0	4/4	1	1	V7	Bb	bVI		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Db
+n13op130_01	189	65	64	0	0	4/4	1	1	I64	Bb	bVI		I64		I		64				M	False	False	(1, 0, 4)	()	0	1	Db
+n13op130_01	478	153	152	1/8	1/8	4/4	1	1	#viio6	Bb	iv		#viio6		#vii	o	6				o	False	True	(2, -1, 5)	()	5	2	F
+n13op130_01	479	153	152	1/4	1/4	4/4	1	1	i6	Bb	iv		i6		i		6				m	False	True	(-3, 1, 0)	()	0	-3	Gb
+n13op130_01	480	153	152	3/8	3/8	4/4	1	1	V65/IV	Bb	iv		V65/IV		V		65		IV		Mm7	False	True	(4, 1, -2, 0)	()	0	4	G
+n13op130_01	481	153	152	1/2	1/2	4/4	1	1	IV	Bb	iv		IV		IV						M	False	True	(-1, 3, 0)	()	-1	-1	Ab
+n13op130_01	530	171	170	1/2	1/2	4/4	1	1	I6	Bb	bVII		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	C
+n13op130_01	531	172	171	0	0	4/4	1	1	ii65	Bb	bVII		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	Db
+n13op130_01	532	172	171	1/2	1/2	4/4	1	1	V65/V	Bb	bVII		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D
+n13op130_01	533	173	172	0	0	4/4	1	1	V	Bb	bVII		V		V						M	False	False	(1, 5, 2)	()	1	1	Eb
+n13op130_01	534	173	172	1/4	1/4	4/4	1	1	#viio7/vi	Bb	bVII		#viio7/vi		#vii	o	7		vi		o7	False	False	(8, 5, 2, -1)	()	8	8	E
+n13op130_01	535	173	172	1/2	1/2	4/4	1	1	vi	Bb	bVII		vi		vi						m	False	False	(3, 0, 4)	()	3	3	F
+n13op130_01	536	174	173	0	0	4/4	1	1	vi	Bb	bVII		vi		vi						m	False	False	(3, 0, 4)	()	3	3	F
+n13op130_01	552	183	182	1/2	1/2	4/4	1	1	I6	Bb	bVII		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	C
+n13op130_01	553	184	183	0	0	4/4	1	1	ii65	Bb	bVII		ii65		ii		65				mm7	False	False	(-1, 3, 0, 2)	()	2	-1	Db
+n13op130_01	554	184	183	1/2	1/2	4/4	1	1	V65/V	Bb	bVII		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D
+n13op130_01	555	185	184	0	0	4/4	1	1	V	Bb	bVII		V		V						M	False	False	(1, 5, 2)	()	1	1	Eb
+n13op130_01	556	185	184	1/2	1/2	4/4	1	1	V7	Bb	bVII		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	Eb
+n13op130_05	6	2	2	1/2	1/2	3/4	1	1	I6	Eb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G
+n13op130_05	7	3	3	0	0	3/4	1	1	ii6	Eb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Ab
+n13op130_05	8	3	3	5/8	5/8	3/4	1	1	#vii%7/V	Eb	I		#vii%7/V		#vii	%	7		V		%7	False	False	(6, 3, 0, 4)	()	6	6	A
+n13op130_05	9	4	4	0	0	3/4	1	1	V	Eb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	Bb
+n13op130_05	139	50	50	1/2	1/2	3/4	1	1	I6	Eb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G
+n13op130_05	140	51	51	0	0	3/4	1	1	ii6	Eb	I		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	Ab
+n13op130_05	141	51	51	1/2	1/2	3/4	1	1	#vii%7/V	Eb	I		#vii%7/V		#vii	%	7		V		%7	False	False	(6, 3, 0, 4)	()	6	6	A
+n13op130_05	142	52	52	0	0	3/4	1	1	V\\	Eb	I		V		V					\\	M	False	False	(1, 5, 2)	()	1	1	Bb
+n13op130_06	102	73	73	0	0	2/4	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n13op130_06	103	74	74	0	0	2/4	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n13op130_06	104	74	74	1/8	1/8	2/4	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n13op130_06	105	74	74	1/4	1/4	2/4	1	1	V	Bb	I		V		V						M	False	False	(1, 5, 2)	()	1	1	F
+n13op130_06	352	276	276	0	0	2/4	1	1	V/V	Bb	I		V/V		V				V		M	False	False	(2, 6, 3)	()	2	2	C
+n13op130_06	353	276	276	1/4	1/4	2/4	1	1	V64	Bb	I		V64		V		64				M	False	False	(2, 1, 5)	()	1	2	C
+n13op130_06	354	277	277	0	0	2/4	1	1	V+6/iii	Bb	I		V+6/iii		V	+	6		iii		+	False	False	(9, 13, 5)	()	5	9	C#
+n13op130_06	355	277	277	1/8	1/8	2/4	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n13op130_06	356	277	277	1/4	1/4	2/4	1	1	V65/IV	Bb	I		V65/IV		V		65		IV		Mm7	False	False	(4, 1, -2, 0)	()	0	4	D
+n13op130_06	357	278	278	1/8	1/8	2/4	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n13op130_06	399	316	316	0	0	2/4	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n13op130_06	400	317	317	0	0	2/4	1	1	IV	Bb	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	Eb
+n13op130_06	401	317	317	1/8	1/8	2/4	1	1	V65/V	Bb	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	E
+n13op130_06	402	317	317	1/4	1/4	2/4	1	1	V(64)	Bb	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	F
+n13op130_06	403	317	317	3/8	3/8	2/4	1	1	V7	Bb	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	F
+n13op130_06	455	368	368	1/4	1/4	2/4	1	1	ii	Bb	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	C
+n13op130_06	456	369	369	0	0	2/4	1	1	#viio7/iii	Bb	I		#viio7/iii		#vii	o	7		iii		o7	False	False	(9, 6, 3, 0)	()	9	9	C#
+n13op130_06	457	369	369	1/4	1/4	2/4	1	1	I6	Bb	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	D
+n13op130_06	458	371	371	0	0	2/4	1	1	V2	Bb	I		V2		V		2				Mm7	False	False	(-1, 1, 5, 2)	()	1	-1	Eb
+n14op131_01	55	19	18	1/4	1/4	2/2	1	1	V64	c#	vii		V64		V		64				M	True	True	(2, 1, 5)	()	1	2	C#
+n14op131_01	56	19	18	1/2	1/2	2/2	1	1	i6	c#	vii		i6		i		6				m	True	True	(-3, 1, 0)	()	0	-3	D
+n14op131_01	57	19	18	3/4	3/4	2/2	1	1	#io6	c#	vii		#io6		#i	o	6				o	True	True	(4, 1, 7)	()	7	4	D#
+n14op131_01	58	20	19	0	0	2/2	1	1	#io65	c#	vii		#io65		#i	o	65				o7	True	True	(4, 1, -2, 7)	()	7	4	D#
+n14op131_01	59	20	19	1/4	1/4	2/2	1	1	ii6	c#	vii		ii6		ii		6				m	True	True	(-1, 3, 2)	()	2	-1	E
+n14op131_01	60	20	19	1/2	1/2	2/2	1	1	#viio6/iv	c#	vii		#viio6/iv		#vii	o	6		iv		o	True	True	(1, -2, 4)	()	4	1	F#
+n14op131_01	61	20	19	3/4	3/4	2/2	1	1	#vo7	c#	vii		#vo7		#v	o	7				o7	True	True	(8, 5, 2, -1)	()	8	8	F##
+n14op131_01	62	21	20	0	0	2/2	1	1	i.V(64)	c#	i		V(64)		V			64			M	True	True	(1, 0, -3)	()	1	1	G#
+n14op131_01	63	21	20	1/4	1/4	2/2	1	1	.Ger6	c#	i		Ger6	Ger	vii	o	65	b3	V		Ger	True	True	(-4, 0, -3, 6)	()	6	-4	A
+n14op131_01	259	89	88	1/2	1/2	2/2	1	1	V43	c#	i		V43		V		43				Mm7	True	True	(2, -1, 1, 5)	()	1	2	D#
+n14op131_01	260	89	88	3/4	3/4	2/2	1	1	i6	c#	i		i6		i		6				m	True	True	(-3, 1, 0)	()	0	-3	E
+n14op131_01	261	90	89	0	0	2/2	1	1	V6/iv	c#	i		V6/iv		V		6		iv		M	True	True	(4, 1, 0)	()	0	4	E#
+n14op131_01	262	90	89	1/4	1/4	2/2	1	1	V65/iv	c#	i		V65/iv		V		65		iv		Mm7	True	True	(4, 1, -2, 0)	()	0	4	E#
+n14op131_01	263	90	89	1/2	1/2	2/2	1	1	iv	c#	i		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	F#
+n14op131_03	22	9	8	3/4	3/4	4/4	1	1	I6	b	VII		I6		I		6				M	True	False	(4, 1, 0)	()	0	4	C#
+n14op131_03	23	10	9	0	0	4/4	1	1	IV	b	VII		IV		IV						M	True	False	(-1, 3, 0)	()	-1	-1	D
+n14op131_03	24	10	9	1/8	1/8	4/4	1	1	V65/V	b	VII		V65/V		V		65		V		Mm7	True	False	(6, 3, 0, 2)	()	2	6	D#
+n14op131_03	25	10	9	5/8	5/8	4/4	1	1	V(64)	b	VII		V(64)		V			64			M	True	False	(1, 0, 4)	()	1	1	E
+n14op131_03	26	10	9	3/4	3/4	4/4	1	1	V7	b	VII		V7		V		7				Mm7	True	False	(1, 5, 2, -1)	()	1	1	E
+n14op131_04	628	262	261	0	0	2/4	1	1	V65/vi	A	bVI		V65/vi		V		65		vi		Mm7	False	False	(8, 5, 2, 4)	()	4	8	C#
+n14op131_04	629	263	262	0	0	2/4	1	1	vi	A	bVI		vi		vi						m	False	False	(3, 0, 4)	()	3	3	D
+n14op131_04	630	263	262	3/8	3/8	2/4	1	1	I.#viio/V	A	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	D#
+n14op131_04	631	265	264	0	0	2/4	1	1	V7(4)	A	I		V7(4)		V		7	4			Mm7	False	False	(1, 0, 2, -1)	()	1	1	E
+n14op131_05	58	64	63	0	0	2/2	1	1	I6	E	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G#
+n14op131_05	59	65	64	0	0	2/2	1	1	IV(4)	E	I		IV(4)		IV			4			M	False	False	(-1, 5, 0)	()	-1	-1	A
+n14op131_05	60	65	64	1/4	1/4	2/2	1	1	V65/V	E	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	A#
+n14op131_05	61	65	64	1/2	1/2	2/2	1	1	V(64)	E	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	B
+n14op131_05	62	65	64	3/4	3/4	2/2	1	1	V7	E	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	B
+n14op131_05	174	139	138	1/2	1/2	2/2	1	1	V/vi	E	IV		V/vi		V				vi		M	False	False	(4, 8, 5)	()	4	4	C#
+n14op131_05	175	140	139	0	0	2/2	1	1	ii6	E	IV		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	D
+n14op131_05	176	140	139	1/2	1/2	2/2	1	1	V65/V	E	IV		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D#
+n14op131_05	177	141	140	0	0	2/2	1	1	V(64)	E	IV		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	E
+n14op131_05	271	232	231	0	0	2/2	1	1	I6	E	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G#
+n14op131_05	272	233	232	0	0	2/2	1	1	IV(6)	E	I		IV(6)		IV			6			M	False	False	(-1, 3, 2)	()	-1	-1	A
+n14op131_05	273	233	232	1/4	1/4	2/2	1	1	V65/V	E	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	A#
+n14op131_05	274	233	232	1/2	1/2	2/2	1	1	V(64)	E	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	B
+n14op131_05	275	233	232	3/4	3/4	2/2	1	1	V7	E	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	B
+n14op131_05	369	297	296	1/2	1/2	2/2	1	1	V/vi	E	IV		V/vi		V				vi		M	False	False	(4, 8, 5)	()	4	4	C#
+n14op131_05	370	298	297	0	0	2/2	1	1	#vo2	E	IV		#vo2		#v	o	2				o7	False	False	(-1, 8, 5, 2)	()	8	-1	D
+n14op131_05	371	298	297	1/2	1/2	2/2	1	1	#ivo7	E	IV		#ivo7		#iv	o	7				o7	False	False	(6, 3, 0, -3)	()	6	6	D#
+n14op131_05	372	299	298	0	0	2/2	1	1	V(64)	E	IV		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	E
+n14op131_05	373	299	298	1/2	1/2	2/2	1	1	V	E	IV		V		V						M	False	False	(1, 5, 2)	()	1	1	E
+n14op131_05	385	305	304	1/2	1/2	2/2	1	1	V/vi	E	IV		V/vi		V				vi		M	False	False	(4, 8, 5)	()	4	4	C#
+n14op131_05	386	306	305	0	0	2/2	1	1	ii6	E	IV		ii6		ii		6				m	False	False	(-1, 3, 2)	()	2	-1	D
+n14op131_05	387	306	305	1/2	1/2	2/2	1	1	V65/V	E	IV		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	D#
+n14op131_05	388	307	306	0	0	2/2	1	1	V(64)	E	IV		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	E
+n14op131_05	389	307	306	1/2	1/2	2/2	1	1	V7	E	IV		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	E
+n14op131_05	481	398	397	0	0	2/2	1	1	I6	E	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G#
+n14op131_05	482	399	398	0	0	2/2	1	1	IV(6)	E	I		IV(6)		IV			6			M	False	False	(-1, 3, 2)	()	-1	-1	A
+n14op131_05	483	399	398	1/4	1/4	2/2	1	1	V65/V	E	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	A#
+n14op131_05	484	399	398	1/2	1/2	2/2	1	1	V(64)	E	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	B
+n14op131_05	485	399	398	3/4	3/4	2/2	1	1	V7	E	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	B
+n14op131_05	526	446	445	0	0	2/2	1	1	I6	E	I		I6		I		6				M	False	False	(4, 1, 0)	()	0	4	G#
+n14op131_05	527	447	446	0	0	2/2	1	1	IV(6)	E	I		IV(6)		IV			6			M	False	False	(-1, 3, 2)	()	-1	-1	A
+n14op131_05	528	447	446	1/4	1/4	2/2	1	1	V65/V	E	I		V65/V		V		65		V		Mm7	False	False	(6, 3, 0, 2)	()	2	6	A#
+n14op131_05	529	447	446	1/2	1/2	2/2	1	1	V(64)	E	I		V(64)		V			64			M	False	False	(1, 0, 4)	()	1	1	B
+n14op131_05	530	447	446	3/4	3/4	2/2	1	1	V7	E	I		V7		V		7				Mm7	False	False	(1, 5, 2, -1)	()	1	1	B
+n15op132_01	31	16	16	3/4	3/4	4/4	1	1	iio7	a	i		iio7		ii	o	7				o7	True	True	(2, -1, -4, -7)	()	2	2	B
+n15op132_01	32	17	17	0	0	4/4	1	1	i6(6)	a	i		i6(6)		i		6	6			m	True	True	(-3, -4, 0)	()	0	-3	C
+n15op132_01	33	17	17	1/4	1/4	4/4	1	1	i6(#7b2)	a	i		i6(#7b2)		i		6	#7b2			m	True	True	(-3, 1, -5, 5)	()	0	-3	C
+n15op132_01	34	17	17	3/4	3/4	4/4	1	1	V6/iv	a	i		V6/iv		V		6		iv		M	True	True	(4, 1, 0)	()	0	4	C#
+n15op132_01	35	18	18	0	0	4/4	1	1	iv(4)	a	i		iv(4)		iv			4			m	True	True	(-1, -2, 0)	()	-1	-1	D
+n15op132_01	36	18	18	1/4	1/4	4/4	1	1	iv	a	i		iv		iv						m	True	True	(-1, -4, 0)	()	-1	-1	D
+n15op132_01	37	18	18	1/2	1/2	4/4	1	1	.bII6(6)	a	i		bII6(6)		bII		6	6			M	True	True	(-1, -2, -5)	()	-5	-1	D
+n15op132_01	94	46	46	1/4	1/4	4/4	1	1	I6	a	VI		I6		I		6				M	True	False	(4, 1, 0)	()	0	4	A
+n15op132_01	95	46	46	1/2	1/2	4/4	1	1	IV	a	VI		IV		IV						M	True	False	(-1, 3, 0)	()	-1	-1	Bb
+n15op132_01	96	47	47	1/4	1/4	4/4	1	1	V65/V	a	VI		V65/V		V		65		V		Mm7	True	False	(6, 3, 0, 2)	()	2	6	B
+n15op132_01	97	47	47	1/2	1/2	4/4	1	1	V(64)	a	VI		V(64)		V			64			M	True	False	(1, 0, 4)	()	1	1	C
+n15op132_01	98	47	47	3/4	3/4	4/4	1	1	V7(6)	a	VI		V7(6)		V		7	6			Mm7	True	False	(1, 5, 4, -1)	()	1	1	C
+n15op132_01	99	47	47	15/16	15/16	4/4	1	1	V7	a	VI		V7		V		7				Mm7	True	False	(1, 5, 2, -1)	()	1	1	C
+n15op132_01	357	157	157	11/16	11/16	4/4	1	1	viio(#3)/IV	a	III		viio(#3)/IV		vii	o		#3	IV		o	True	False	(4, 8, -2)	()	4	4	E
+n15op132_01	358	157	157	15/16	15/16	4/4	1	1	IV	a	III		IV		IV						M	True	False	(-1, 3, 0)	()	-1	-1	F
+n15op132_01	359	158	158	3/16	3/16	4/4	1	1	viio43	a	III		viio43		vii	o	43				o7	True	False	(-1, -4, 5, 2)	()	5	-1	F
+n15op132_01	360	158	158	7/16	7/16	4/4	1	1	#viio7/V	a	III		#viio7/V		#vii	o	7		V		o7	True	False	(6, 3, 0, -3)	()	6	6	F#
+n15op132_01	361	158	158	11/16	11/16	4/4	1	1	V(64)	a	III		V(64)		V			64			M	True	False	(1, 0, 4)	()	1	1	G
+n15op132_01	362	158	158	15/16	15/16	4/4	1	1	V7	a	III		V7		V		7				Mm7	True	False	(1, 5, 2, -1)	()	1	1	G
+n15op132_02	187	85	85	0	0	3/4	1	1	III	A	I		III		III						M	False	False	(4, 8, 5)	()	4	4	C#
+n15op132_02	188	85	85	1/4	1/4	3/4	1	1	IV(11)	A	I		IV(11)		IV			11			M	False	False	(-1, 3, 0)	(5,)	-1	-1	D
+n15op132_02	189	85	85	1/2	1/2	3/4	1	1	IV	A	I		IV		IV						M	False	False	(-1, 3, 0)	()	-1	-1	D
+n15op132_02	190	86	86	0	0	3/4	1	1	#viio/V	A	I		#viio/V		#vii	o			V		o	False	False	(6, 3, 0)	()	6	6	D#
+n15op132_02	191	86	86	1/4	1/4	3/4	1	1	V(9)	A	I		V(9)		V			9			M	False	False	(1, 5, 2)	(3,)	1	1	E
+n15op132_02	192	86	86	1/2	1/2	3/4	1	1	V	A	I		V		V						M	False	False	(1, 5, 2)	()	1	1	E
+n15op132_02	267	112	112	1/4	1/4	3/4	1	1	V6	A	I		V6		V		6				M	False	False	(5, 2, 1)	()	1	5	G#
+n15op132_02	268	112	112	1/2	1/2	3/4	1	1	vii%7	A	I		vii%7		vii	%	7				%7	False	False	(5, 2, -1, 3)	()	5	5	G#
+n15op132_02	269	112	112	5/8	5/8	3/4	1	1	I	A	I		I		I						M	False	False	(0, 4, 1)	()	0	0	A
+n15op132_02	270	113	113	0	0	3/4	1	1	#viio/ii	A	I		#viio/ii		#vii	o			ii		o	False	False	(7, 4, 1)	()	7	7	A#
+n15op132_02	271	113	113	1/4	1/4	3/4	1	1	ii	A	I		ii		ii						m	False	False	(2, -1, 3)	()	2	2	B
+n15op132_05	474	249	249	1/4	1/4	3/4	1	1	III6	a	i		III6		III		6				M	True	True	(1, -2, -3)	()	-3	1	E
+n15op132_05	475	249	249	1/2	1/2	3/4	1	1	VI	a	i		VI		VI						M	True	True	(-4, 0, -3)	()	-4	-4	F
+n15op132_05	476	250	250	0	0	3/4	1	1	iv65	a	i		iv65		iv		65				mm7	True	True	(-4, 0, -3, -1)	()	-1	-4	F
+n15op132_05	477	250	250	1/4	1/4	3/4	1	1	#vio	a	i		#vio		#vi	o					o	True	True	(3, 0, -3)	()	3	3	F#
+n15op132_05	478	250	250	1/2	1/2	3/4	1	1	VII7	a	i		VII7		VII		7				Mm7	True	True	(-2, 2, -1, -4)	()	-2	-2	G
+n15op132_05	581	315	315	0	0	3/4	1	1	I64	a	I		I64		I		64				M	True	False	(1, 0, 4)	()	0	1	E
+n15op132_05	582	315	315	1/2	1/2	3/4	1	1	#viio7/vi	a	I		#viio7/vi		#vii	o	7		vi		o7	True	False	(8, 5, 2, -1)	()	8	8	E#
+n15op132_05	583	316	316	0	0	3/4	1	1	IV6	a	I		IV6		IV		6				M	True	False	(3, 0, -1)	()	-1	3	F#
+n15op132_05	584	316	316	1/4	1/4	3/4	1	1	V2/IV	a	I		V2/IV		V		2		IV		Mm7	True	False	(-2, 0, 4, 1)	()	0	-2	G
+n15op132_05	644	363	363	1/4	1/4	3/4	1	1	I6	a	I		I6		I		6				M	True	False	(4, 1, 0)	()	0	4	C#
+n15op132_05	645	363	363	1/2	1/2	3/4	1	1	IV	a	I		IV		IV						M	True	False	(-1, 3, 0)	()	-1	-1	D
+n15op132_05	646	364	364	0	0	3/4	1	1	I64(#4)	a	I		I64(#4)		I		64	#4			M	True	False	(6, 0, 4)	()	0	6	D#
+n15op132_05	647	364	364	1/4	1/4	3/4	1	1	I64	a	I		I64		I		64				M	True	False	(1, 0, 4)	()	0	1	E
+n15op132_05	648	364	364	1/2	1/2	3/4	1	1	#viio7/vi	a	I		#viio7/vi		#vii	o	7		vi		o7	True	False	(8, 5, 2, -1)	()	8	8	E#
+n15op132_05	649	365	365	1/4	1/4	3/4	1	1	vi	a	I		vi		vi						m	True	False	(3, 0, 4)	()	3	3	F#
+n15op132_05	650	365	365	1/2	1/2	3/4	1	1	IV6	a	I		IV6		IV		6				M	True	False	(3, 0, -1)	()	-1	3	F#
+n15op132_05	702	395	395	0	0	3/4	1	1	i6	a	I		i6		i		6				m	True	False	(-3, 1, 0)	()	0	-3	C
+n15op132_05	703	396	396	0	0	3/4	1	1	vio64	a	I		vio64		vi	o	64				o	True	False	(-3, 3, 0)	()	3	-3	C
+n15op132_05	704	396	396	1/2	1/2	3/4	1	1	vi64	a	I		vi64		vi		64				m	True	False	(4, 3, 0)	()	3	4	C#
+n15op132_05	705	397	397	0	0	3/4	1	1	IV	a	I		IV		IV						M	True	False	(-1, 3, 0)	()	-1	-1	D
+n15op132_05	706	397	397	1/4	1/4	3/4	1	1	#iv	a	I		#iv		#iv						m	True	False	(6, 3, 7)	()	6	6	D#
+n15op132_05	707	398	398	0	0	3/4	1	1	V	a	I		V		V						M	True	False	(1, 5, 2)	()	1	1	E
