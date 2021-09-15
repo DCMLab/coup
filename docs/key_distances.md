@@ -9,3 +9,4 @@
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="abc_keys/key_distribution_minor.html" height="600" width="100%"></iframe>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="abc_keys/agg_seuclidean_ols.html" height="600" width="100%"></iframe>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="abc_keys/agg_seuclidean_lowess.html" height="600" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="abc_keys/seuclidean_by_year.html" height="600" width="100%"></iframe>
