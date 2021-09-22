@@ -5,4 +5,3 @@
 * [Ambitus](ambitus.md)
 * [Slices](slices.md)
 * [Harmony](harmony.md)
-* [Test](harm.md)
