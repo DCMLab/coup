@@ -5,3 +5,4 @@
 * [Ambitus](ambitus.md)
 * [Slices](slices.md)
 * [Harmony](harmony.md)
+* [Phase comparison](phases.md)
