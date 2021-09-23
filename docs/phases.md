@@ -11,8 +11,8 @@
 
 ## Slices
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/jaccard_phase_violin.html" height="600" width="100%"></iframe>
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/jaccard_random_phase_violin.html" height="600" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/fraction_per_phase_violin.html" height="600" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/fraction_per_random_phase_violin.html" height="600" width="100%"></iframe>
 
 ## Harmony
 ### Cosine
