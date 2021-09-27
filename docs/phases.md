@@ -14,6 +14,8 @@
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/phases_midi_vl1.html" height="600" width="100%"></iframe>
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="phases/phases_midi_vc.html" height="600" width="100%"></iframe>
 
+The only significant difference to be found lies between the cello's maximum pitches between phases 1 and 3.
+
 
 ## Key distances
 
