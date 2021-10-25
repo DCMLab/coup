@@ -6,3 +6,7 @@
 * [Slices](slices.md)
 * [Harmony](harmony.md)
 * [Phase comparison](phases.md)
+
+## coup
+
+* [Modulation plans](coup_gantt.md)
