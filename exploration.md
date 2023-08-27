@@ -28,7 +28,7 @@ pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 500)
 ```
 
-# Loading data
+**Loading data**
 
 ```{code-cell} ipython3
 c = ms3.Corpus('~/all_subcorpora/couperin_concerts')
@@ -138,8 +138,8 @@ Another two cases where `vi` was actually `#vi` in minor.
 df[df.bass_note==-6]
 ```
 
-# Intervals between bass notes
-## Get localkey segments
+## Intervals between bass notes
+### Get localkey segments
 
 ```{code-cell} ipython3
 :is_executing: true
@@ -165,7 +165,7 @@ selected = segment_lengths[segment_lengths == L].index
 df[df.key_regions.isin(selected)]
 ```
 
-## Deleting @none labels
+### Deleting @none labels
 This creates progressions between the label before and after the `@none` label that might not actually be perceived as transitions!
 
 ```{code-cell} ipython3
@@ -178,7 +178,7 @@ df.drop(df.index[is_none], inplace=True)
 print(f"Length after: {len(df.index)}")
 ```
 
-## Get bass degree progressions & intervals
+### Get bass degree progressions & intervals
 All scale degrees and intervals expressed as perfect fifths. 0 = local tonic, -3 = m3 above, 4 = M3 above etc.
 
 ```{code-cell} ipython3
@@ -192,7 +192,7 @@ print(bd_intervals[1])
 df.loc[df.key_regions==1, ['bass_note', 'bass_interval']]
 ```
 
-### Count bass intervals
+#### Count bass intervals
 
 ```{code-cell} ipython3
 :is_executing: true
@@ -235,7 +235,7 @@ px.bar(x=iv_counter.keys(), y=iv_counter.values(), labels=dict(x='interval', y='
 px.bar(x=sorted(iv_counter.keys(), key=lambda k: iv_counter[k], reverse=True), y=sorted(iv_counter.values(), reverse=True), labels=dict(x='interval', y='count'), title='Descending frequency')
 ```
 
-## Checking rare intervals
+### Checking rare intervals
 
 **2 occurrences of 10 (-D3)**
 
@@ -259,7 +259,7 @@ selected = df.loc[df.bass_interval==bass_interval].key_regions.unique()
 df[df.key_regions.isin(selected)]
 ```
 
-## Inspecting stepwise bass movement
+### Inspecting stepwise bass movement
 
 **Add column with bass interval in semitones**
 
@@ -272,7 +272,7 @@ df['bass_interval_pc'] = pc_ivs.where(pc_ivs <= 6, pc_ivs % -6)
 df.head(20)
 ```
 
-### Create key region summary
+#### Create key region summary
 
 ```{code-cell} ipython3
 def cnt(S, interval, k_min=1, include_zero=True, df=True):
@@ -409,7 +409,7 @@ minor_regions = key_regions[minor_selector]
 major_regions = key_regions[~minor_selector]
 ```
 
-### Ascending in minor
+#### Ascending in minor
 
 ```{code-cell} ipython3
 ascending_minor = defaultdict(list)
@@ -424,7 +424,7 @@ show_progression = '3 4 5'
 Counter(ascending_minor[show_progression]).most_common()
 ```
 
-### Ascending in major
+#### Ascending in major
 
 ```{code-cell} ipython3
 ascending_major = defaultdict(list)
@@ -439,7 +439,7 @@ show_progression = '6 7 1'
 Counter(ascending_major[show_progression]).most_common()
 ```
 
-### Descending in minor
+#### Descending in minor
 
 ```{code-cell} ipython3
 descending_minor = defaultdict(list)
@@ -454,7 +454,7 @@ show_progression = '3 2 1'
 Counter(descending_minor[show_progression]).most_common()
 ```
 
-### Descending in major
+#### Descending in major
 
 ```{code-cell} ipython3
 descending_major = defaultdict(list)
@@ -469,7 +469,7 @@ show_progression = '5 4 3'
 Counter(descending_major[show_progression]).most_common()
 ```
 
-## Transitions between bass degrees
+### Transitions between bass degrees
 
 ```{code-cell} ipython3
 full_grams = {i: S[( S!=S.shift() ).fillna(True)].to_list() for i, S in bd_series.items()}
@@ -502,7 +502,7 @@ plot_bigram_tables(major_unigrams_norm, minor_unigrams_norm, major_bigrams, mino
 plt.show()
 ```
 
-### Most frequent 2-grams
+#### Most frequent 2-grams
 
 Select number of first k transitions to display:
 
@@ -513,55 +513,55 @@ def sorted_gram_counts(l, n=2, k=k):
     return {t: count for t, count in sorted(Counter(grams(l, n=n)).items(), key=lambda a: a[1], reverse=True)[:k]}
 ```
 
-#### Major
+##### Major
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_major, 2)
 ```
 
-#### Minor
+##### Minor
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_minor, 2)
 ```
 
-### Most frequent 3-grams
+#### Most frequent 3-grams
 
-#### Major
+##### Major
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_major, 3)
 ```
 
-#### Minor
+##### Minor
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_minor, 3)
 ```
 
-### Most frequent 4-grams
+#### Most frequent 4-grams
 
-#### Major
+##### Major
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_major, 4)
 ```
 
-#### Minor
+##### Minor
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_minor, 4)
 ```
 
-### Most frequent 5-grams
+#### Most frequent 5-grams
 
-#### Major
+##### Major
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_major, 5)
 ```
 
-#### Minor
+##### Minor
 
 ```{code-cell} ipython3
 sorted_gram_counts(full_grams_minor, 5)
