@@ -24,7 +24,7 @@ source_suffix = {
 }
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**.ipynb']
+exclude_patterns = ['build', 'Thumbs.db', '.DS_Store', '**.ipynb']
 
 
 
