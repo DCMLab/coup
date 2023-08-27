@@ -5,12 +5,14 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.15.1
+    jupytext_version: 1.15.0
 kernelspec:
-  display_name: ms3
+  display_name: coup
   language: python
-  name: ms3
+  name: coup
 ---
+
++++ {"jupyter": {"outputs_hidden": false}}
 
 # Overview of the `couperin_concerts` corpus
 
@@ -18,6 +20,7 @@ kernelspec:
 %load_ext autoreload
 %autoreload 2
 # pip install ms3 pandas plotly seaborn scipy
+from typing import List
 from collections import Counter, defaultdict
 import ms3
 import pandas as pd
@@ -27,6 +30,8 @@ from helpers import transition_matrix, plot_bigram_tables, grams
 pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 500)
 ```
+
++++ {"jupyter": {"outputs_hidden": false}}
 
 **Loading data**
 
@@ -133,8 +138,6 @@ Another two cases where `vi` was actually `#vi` in minor.
 `parnasse_07`, m. 16 had `vii/iv` instead of `#vii/iv`.
 
 ```{code-cell} ipython3
-:is_executing: true
-
 df[df.bass_note==-6]
 ```
 
@@ -142,23 +145,17 @@ df[df.bass_note==-6]
 ### Get localkey segments
 
 ```{code-cell} ipython3
-:is_executing: true
-
-df['key_regions'] = df.groupby(level=0).localkey.apply(lambda col: col != col.shift()).cumsum()
+df['key_regions'] = df.groupby(level=0, group_keys=False).localkey.apply(lambda col: col != col.shift()).cumsum()
 df['bass_degree'] = ms3.transform(df, ms3.fifths2sd, ['bass_note', 'localkey_is_minor'])
 ```
 
 ```{code-cell} ipython3
-:is_executing: true
-
 segment_lengths = df.groupby('key_regions').size()
 segment_lengths_aggr = segment_lengths.value_counts()
 px.bar(x=segment_lengths_aggr.index, y=segment_lengths_aggr, labels=dict(x='#labels', y='number of key segments with particular length'))
 ```
 
 ```{code-cell} ipython3
-:is_executing: true
-
 # Show all segments of length L
 L = 1
 selected = segment_lengths[segment_lengths == L].index
@@ -169,8 +166,6 @@ df[df.key_regions.isin(selected)]
 This creates progressions between the label before and after the `@none` label that might not actually be perceived as transitions!
 
 ```{code-cell} ipython3
-:is_executing: true
-
 print(f"Length before: {len(df.index)}")
 is_none = df.chord == '@none'
 print(f"There are {is_none.sum()} @none labels which we are going to delete.")
@@ -182,11 +177,9 @@ print(f"Length after: {len(df.index)}")
 All scale degrees and intervals expressed as perfect fifths. 0 = local tonic, -3 = m3 above, 4 = M3 above etc.
 
 ```{code-cell} ipython3
-:is_executing: true
-
 bd_series = {seg: bn for seg, bn in  df.groupby('key_regions').bass_note}
 bd_intervals = {seg: bd - bd.shift() for seg, bd in bd_series.items()}
-df['bass_interval'] = df.groupby('key_regions').bass_note.apply(lambda bd: bd - bd.shift())
+df['bass_interval'] = df.groupby('key_regions', group_keys=False).bass_note.apply(lambda bd: bd - bd.shift())
 print("Example output for the intervals of the first key segment:")
 print(bd_intervals[1])
 df.loc[df.key_regions==1, ['bass_note', 'bass_interval']]
@@ -195,8 +188,6 @@ df.loc[df.key_regions==1, ['bass_note', 'bass_interval']]
 #### Count bass intervals
 
 ```{code-cell} ipython3
-:is_executing: true
-
 interval_counter = Counter()
 for S in bd_intervals.values():
     interval_counter.update(S.dropna())
@@ -204,16 +195,12 @@ interval_counter
 ```
 
 ```{code-cell} ipython3
-:is_executing: true
-
 px.bar(x=interval_counter.keys(), y=interval_counter.values(), labels=dict(x='interval in fifths', y='count'), title='Orderd on the line of fifths')
 ```
 
 **Show fifths interval names**
 
 ```{code-cell} ipython3
-:is_executing: true
-
 center_around_zero = True
 {i: ms3.fifths2iv(i, center_around_zero) for i in range(-12,13)}
 ```
@@ -251,7 +238,6 @@ The other two were correct:
 * `c07n05_gavote` m. 27: progression `V65 VIM7` in minor
 * `c03n05_gavotte` m. 22: progression `V65 ii%43` (in minor)
 
-
 ```{code-cell} ipython3
 # see all key regions containing a certain interval in the bass
 bass_interval = -9
@@ -275,19 +261,29 @@ df.head(20)
 #### Create key region summary
 
 ```{code-cell} ipython3
-def cnt(S, interval, k_min=1, include_zero=True, df=True):
+---
+editable: true
+slideshow:
+  slide_type: ''
+---
+def cnt(
+        S: pd.Series, 
+        interval: int | List[int], 
+        k_min: int = 1, 
+        include_zero: bool = True, 
+        df: bool = True):
     """ Count subsequent occurrences of one or several numbers in a sequence.
     
     Parameters
     ----------
     S : pd.Series
     interval: int or list
-    k_min : int, optional
+    k_min : int
         Minimal sequence length to take into account, defaults to 1
-    include_zero : bool, optional
+    include_zero : bool
         By default, zero is always accepted as part of the sequence. Zeros never increase
         sequence length.
-    df : bool, optional
+    df : bool
         Defaults to True, so the function returns a DataFrame with index segments and sequence lengths.
         Pass False to return a list of index segments only.
     """
@@ -295,7 +291,7 @@ def cnt(S, interval, k_min=1, include_zero=True, df=True):
         interval_list = [int(interval)]  
         if include_zero:
             interval_list.append(0)
-    except:
+    except Exception:
         interval_list = interval
         if include_zero and 0 not in interval_list:
             interval_list.append(0)
@@ -303,8 +299,8 @@ def cnt(S, interval, k_min=1, include_zero=True, df=True):
     ix_chunks = pd.DataFrame(columns=['ixs', 'n']) if df else []
     current = []
     n = 0
-    s = S.append(pd.Series([pd.NA])) # so that else is executed in the end
-    for i, iv in s.iteritems():
+    s = pd.concat([S, pd.Series([pd.NA])]) # so that else is executed in the end
+    for i, iv in s.items():
         if not pd.isnull(iv) and iv in interval_list:
             current.append(i)
             if iv != 0:
@@ -312,7 +308,7 @@ def cnt(S, interval, k_min=1, include_zero=True, df=True):
         else:
             if n >= k_min:
                 if df:
-                    ix_chunks = ix_chunks.append(pd.Series((current, n), index=['ixs', 'n']), ignore_index=True)
+                    ix_chunks.loc[len(ix_chunks)] = (current, n)
                 else:
                     ix_chunks.append((current, n))
             current = [i]
