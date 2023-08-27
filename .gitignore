@@ -1,4 +1,2 @@
-.ipynb*
-Coup*
-plot*
-chord*
+.ipynb_checkpoints
+/_build/jupyter_execute/
