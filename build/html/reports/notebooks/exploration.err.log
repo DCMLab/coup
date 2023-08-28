@@ -30,8 +30,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['def cnt(', '        S: pd.Series, ', '        interval: int | List[int], ', '        k_min: int = 1, ', '        include_zero: bool = True, ']
-...
-['    })', '    return res', '', "key_regions = df.groupby('key_regions').apply(summarize)", 'key_regions.head(20)']
+c = ms3.Corpus(CORPUS_PATH)
+c.parse_tsv()
+c
 -------------------
 

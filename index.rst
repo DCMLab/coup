@@ -12,6 +12,7 @@ Welcome to Coup's documentation!
 
    notebooks/exploration
    notebooks/figures
+   notebooks/coup_gantt
 
 
 
