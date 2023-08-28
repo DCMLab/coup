@@ -384,7 +384,7 @@ key_regions.head(20)
 **Store to file `key_regions.tsv` for easier inspection.**
 
 ```{code-cell} ipython3
-key_regions.to_csv('key_regions.tsv', sep='\t')
+key_regions.to_csv(os.path.join(RESULTS_PATH, 'key_regions.tsv'), sep='\t')
 ```
 
 ```{code-cell} ipython3
