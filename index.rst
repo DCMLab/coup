@@ -11,6 +11,7 @@ Welcome to Coup's documentation!
    :caption: Contents:
 
    notebooks/exploration
+   notebooks/figures
 
 
 
