@@ -1,13 +1,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
 import matplotlib.gridspec as gridspec
 plt.style.use('ggplot')
 from scipy.stats import entropy
 import seaborn as sns
 
-def plot_bigram_tables(major_unigrams, minor_unigrams, major_bigrams, minor_bigrams, top, savefig, two_col_width=1, frequencies=False):
+def plot_bigram_tables(major_unigrams, minor_unigrams, major_bigrams, minor_bigrams, top, two_col_width=1, frequencies=False):
 
     if isinstance(major_unigrams, pd.core.frame.DataFrame):
         major_unigrams = major_unigrams.iloc[:, 0]
@@ -47,8 +46,8 @@ def plot_bigram_tables(major_unigrams, minor_unigrams, major_bigrams, minor_bigr
 
         ax1 = plt.subplot(gs1[0, 0])
 
-        vmin = 0
-        vmax = 5
+        # vmin = 0
+        # vmax = 5
 
         s_maj = pd.Series(
             (major_bigrams.apply(lambda x: entropy(x, base=2), axis=1) / np.log2(major_bigrams.shape[0]))[:top].values,
@@ -177,10 +176,6 @@ def plot_bigram_tables(major_unigrams, minor_unigrams, major_bigrams, minor_bigr
         ax4.tick_params(bottom=False)
 
         fig.align_labels()
-        name = 'bigrams.pdf'
-        if savefig:
-            plt.savefig(name, dpi=400)
-        plt.show()
     return fig
 
 

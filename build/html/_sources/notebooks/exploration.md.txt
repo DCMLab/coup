@@ -21,6 +21,7 @@ kernelspec:
 %autoreload 2
 # pip install ms3 pandas plotly seaborn scipy
 from typing import List
+import os
 from collections import Counter, defaultdict
 import ms3
 import pandas as pd
@@ -31,12 +32,17 @@ pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 500)
 ```
 
+```{code-cell} ipython3
+CORPUS_PATH = '~/all_subcorpora/couperin_concerts'
+RESULTS_PATH = os.path.abspath(os.path.join("..", "results"))
+```
+
 +++ {"jupyter": {"outputs_hidden": false}}
 
 **Loading data**
 
 ```{code-cell} ipython3
-c = ms3.Corpus('~/all_subcorpora/couperin_concerts')
+c = ms3.Corpus(CORPUS_PATH)
 c.parse_tsv()
 c
 ```
@@ -494,7 +500,9 @@ major_bigrams = transition_matrix(full_grams_major, dist_only=True, normalize=Tr
 ```
 
 ```{code-cell} ipython3
-plot_bigram_tables(major_unigrams_norm, minor_unigrams_norm, major_bigrams, minor_bigrams, top=25, savefig=True, two_col_width=12, frequencies=True)
+plot_bigram_tables(major_unigrams_norm, minor_unigrams_norm, major_bigrams, minor_bigrams, top=25, two_col_width=12, frequencies=True)
+save_pdf_path = os.path.join(RESULTS_PATH, 'bass_degree_bigrams.pdf')
+plt.savefig(save_pdf_path, dpi=400)
 plt.show()
 ```
 
