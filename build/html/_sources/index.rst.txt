@@ -10,7 +10,7 @@ Welcome to Coup's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   exploration
+   notebooks/exploration
 
 
 
