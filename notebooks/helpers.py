@@ -1,3 +1,5 @@
+from typing import List
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -363,3 +365,53 @@ def transition_matrix(l=None, gs=None, n=2, k=None, smooth=0, normalize=False, I
         df = df.round(decimals)
 
     return df
+
+
+def cnt(
+        S: pd.Series,
+        interval: int | List[int],
+        k_min: int = 1,
+        include_zero: bool = True,
+        df: bool = True):
+    """ Count subsequent occurrences of one or several numbers in a sequence.
+
+    Parameters
+    ----------
+    S : pd.Series
+    interval: int or list
+    k_min : int
+        Minimal sequence length to take into account, defaults to 1
+    include_zero : bool
+        By default, zero is always accepted as part of the sequence. Zeros never increase
+        sequence length.
+    df : bool
+        Defaults to True, so the function returns a DataFrame with index segments and sequence lengths.
+        Pass False to return a list of index segments only.
+    """
+    try:
+        interval_list = [int(interval)]
+        if include_zero:
+            interval_list.append(0)
+    except Exception:
+        interval_list = interval
+        if include_zero and 0 not in interval_list:
+            interval_list.append(0)
+
+    ix_chunks = pd.DataFrame(columns=['ixs', 'n']) if df else []
+    current = []
+    n = 0
+    s = pd.concat([S, pd.Series([pd.NA])]) # so that else is executed in the end
+    for i, iv in s.items():
+        if not pd.isnull(iv) and iv in interval_list:
+            current.append(i)
+            if iv != 0:
+                n += 1
+        else:
+            if n >= k_min:
+                if df:
+                    ix_chunks.loc[len(ix_chunks)] = (current, n)
+                else:
+                    ix_chunks.append((current, n))
+            current = [i]
+            n = 0
+    return ix_chunks
