@@ -14,7 +14,7 @@ kernelspec:
 
 +++ {"jupyter": {"outputs_hidden": false}}
 
-# Overview of the `couperin_concerts` corpus
+# Bass degrees
 
 ```{code-cell} ipython3
 %load_ext autoreload
@@ -46,10 +46,15 @@ c.parse_tsv()
 c
 ```
 
+**All labels**
+
 ```{code-cell} ipython3
 df = c.expanded()
 df.head(20)
 ```
+
+## Bass degree unigrams
+As expressed by the annotation labels.
 
 ```{code-cell} ipython3
 bd = df.bass_note.value_counts()
@@ -85,69 +90,13 @@ fig.update_xaxes(type='category')
 fig.show()
 ```
 
-**Note: When dropping immediate repetitions of the same bass degree are filtered out (see transition matrices below), minor segments, too, have 1 as the most frequent bass degree. This can be linked to frequent suspensions over bass degree 5.**
+**Note: When dropping immediate repetitions of the same bass degree (see transition matrices below), minor segments, too, have 1 as the most frequent bass degree. This can be linked to frequent suspensions over bass degree 5.**
 
 +++
 
-## Correction of obvious mistakes (Aug 7th)
-
-**5 occurrences of `bb3`**
-
-Corrected by replacing incorrect `vi` (in minor) by `#vi` in `c08n02_ritournele` mm. 11, 17, 43, 51 and `c08n10_air_lentement` m. 38. In the first four mentioned cases, each subsequent `vii` needed correction to `#vii`, too, which could hint at a systematic error in minor segments. If the 'normal' `2` is written as `viio6` instead of `#viio6`, the bass degree will turn out wrongly as `b2`.
-
-**11 remaining occurrences of `b2`**
-
-As suspected above, `vii` had to replaced by `#vii` in:
-
-* `c03n03_courante`, m. 74+
-* `c07n03_sarabande`, m. 30
-* `c10n03_plainte`, m. 24
-* `c11n01_majestueusement`, m. 36
-* `c11n02_allemande`, m. 21
-* `c11n03_seconde_allemande`, m. 15
-* `c14n01_gravement`, m. 6
-* `c14n04_fuguete`, m. 38
-* `parnasse_07`, m. 44 (and in m. 39 `vi/iv` was corrected to `#vi/iv`)
-
-Here, `vii` was actually `ii`:
-
-* `c03n02_allemande`, m. 8
-
-**7 occurrences of `b4`**
-
-Once more, the reason are `viio` chords in minor contexts.
-
-* `c01n06_menuet_en_trio`, m. 4
-* `c05n05_musete`, m. 38
-* `c07n04_fuguete`, mm. 11 & 16
-* `c07n06_siciliene`, m. 16
-
-Here, `bII` was written as minor triad `bii`:
-
-* `c10n01_gravement`, m. 12
-
-**2 occurrences of `b1`**
-
-Another two cases where `vi` was actually `#vi` in minor.
-
-* `c07n03_sarabande`, m. 32
-* `c14n01_gravement`, m. 9
-
-**2 occurrences of `b5`**
-
-* `c03n03_courante`, m. 1: `VI2` => `VIM2` in minor
-* `c08n10_air_lentement`, m. 37: `vi` => `#vi` in minor
-
-**1 occurrence of `bb7`**
-
-`parnasse_07`, m. 16 had `vii/iv` instead of `#vii/iv`.
-
-```{code-cell} ipython3
-df[df.bass_note==-6]
-```
-
-## Intervals between bass notes
-### Get localkey segments
+## Intervals between adjacent bass notes
+### Preparing the data
+#### Get localkey segments
 
 ```{code-cell} ipython3
 df['key_regions'] = df.groupby(level=0, group_keys=False).localkey.apply(lambda col: col != col.shift()).cumsum()
@@ -167,7 +116,7 @@ selected = segment_lengths[segment_lengths == L].index
 df[df.key_regions.isin(selected)]
 ```
 
-### Deleting @none labels
+#### Delete @none labels
 This creates progressions between the label before and after the `@none` label that might not actually be perceived as transitions!
 
 ```{code-cell} ipython3
@@ -178,15 +127,35 @@ df.drop(df.index[is_none], inplace=True)
 print(f"Length after: {len(df.index)}")
 ```
 
+#### Delete non-chord labels (typically, phrase labels)
+
+```{code-cell} ipython3
+print(f"Length before: {len(df.index)}")
+non_chord = df.chord.isna()
+print(f"There are {non_chord.sum()} non-chord labels which we are going to delete:")
+display(df.loc[non_chord, "chord"].value_counts())
+df.drop(df.index[non_chord], inplace=True)
+print(f"Length after: {len(df.index)}")
+```
+
 ### Get bass degree progressions & intervals
-All scale degrees and intervals expressed as perfect fifths. 0 = local tonic, -3 = m3 above, 4 = M3 above etc.
+All scale degrees are expressed as fifth-intervals to the local tonic:
+
+| fifths-interval | interval    |
+|-----------------|-------------|
+| -3              | m3          |
+| -2              | m7          |
+| -1              | P4          |
+| 0               | local tonic |
+| 1               | P5          |
+| 2               | M2          |
+| 3               | M6          |
 
 ```{code-cell} ipython3
 bd_series = {seg: bn for seg, bn in  df.groupby('key_regions').bass_note}
 bd_intervals = {seg: bd - bd.shift() for seg, bd in bd_series.items()}
 df['bass_interval'] = df.groupby('key_regions', group_keys=False).bass_note.apply(lambda bd: bd - bd.shift())
 print("Example output for the intervals of the first key segment:")
-print(bd_intervals[1])
 df.loc[df.key_regions==1, ['bass_note', 'bass_interval']]
 ```
 
@@ -200,14 +169,19 @@ interval_counter
 ```
 
 ```{code-cell} ipython3
-px.bar(x=interval_counter.keys(), y=interval_counter.values(), labels=dict(x='interval in fifths', y='count'), title='Orderd on the line of fifths')
+bar_data = pd.Series(interval_counter).sort_values(ascending=False)
+fig = px.bar(x=ms3.fifths2iv(bar_data.index.to_list()), y=bar_data.values, 
+             labels=dict(x='Interval between adjacent bass notes', y='count'),
+             title="Distribution of all bass intervals (within the same localkey)",
+             color_discrete_sequence =['grey']*len(bd))
+fig.update_xaxes(type='category')
+fig.show()
 ```
 
-**Show fifths interval names**
+**
 
 ```{code-cell} ipython3
-center_around_zero = True
-{i: ms3.fifths2iv(i, center_around_zero) for i in range(-12,13)}
+px.bar(x=interval_counter.keys(), y=interval_counter.values(), labels=dict(x='interval in fifths', y='count'), title='Orderd on the line of fifths')
 ```
 
 ```{code-cell} ipython3
@@ -219,7 +193,7 @@ px.bar(x=iv_counter.keys(), y=iv_counter.values(), labels=dict(x='interval', y='
 
 ```{code-cell} ipython3
 iv_order = [12, 10, -9, -6, -7, 8, -4, 5, 1, 3, -2, 0, -1, 2, -5, 4, -3, 6, 7, -8, 9] # do not occur: -11, -10, 11
-iv_counter = {ms3.fifths2iv(i, True): interval_counter[i] for i in iv_order if i in interval_counter}
+iv_counter = {ms3.fifths2iv(i): interval_counter[i] for i in iv_order if i in interval_counter}
 px.bar(x=iv_counter.keys(), y=iv_counter.values(), labels=dict(x='interval', y='count'), title='Ordered around the unison')
 ```
 
@@ -228,11 +202,6 @@ px.bar(x=sorted(iv_counter.keys(), key=lambda k: iv_counter[k], reverse=True), y
 ```
 
 ### Checking rare intervals
-
-**2 occurrences of 10 (-D3)**
-
-* `c14n03_sarabande` m. 15: the B minor chord, within D minor, needs to be written as `#vi`
-* `c03n08_chaconne_legere` m. 4: was missing the key change back to `i`
 
 **occurrences of -9 (-A2)**
 
@@ -247,12 +216,13 @@ The other two were correct:
 # see all key regions containing a certain interval in the bass
 bass_interval = -9
 selected = df.loc[df.bass_interval==bass_interval].key_regions.unique()
-df[df.key_regions.isin(selected)]
+df.loc[df.key_regions.isin(selected), ["mc", "mn", "chord", "bass_degree", "bass_interval"]]
 ```
 
 ### Inspecting stepwise bass movement
 
-**Add column with bass interval in semitones**
+**Add column with bass interval in semitones.**
+It's called `bass_interval_pc` as in "pitch class"
 
 ```{code-cell} ipython3
 pc_ivs = ms3.transform(df, ms3.fifths2pc, ['bass_interval'])
@@ -260,10 +230,32 @@ df['bass_interval_pc'] = pc_ivs.where(pc_ivs <= 6, pc_ivs % -6)
 ```
 
 ```{code-cell} ipython3
-df.head(20)
+df[["mc", "mn", "bass_degree", "bass_interval", "bass_interval_pc"]].head(15)
 ```
 
 #### Create key region summary
+
+**With one row per key region and the following columns**
+
+| **column**            | what it contains                                               |
+|-----------------------|----------------------------------------------------------------|
+| **globalkey**         | the global key of the segment                                  |
+| **localkey**          | the local key of the segment                                   |
+| **length**            | number of labels                                               |
+| **length_norepeat**   | number of labels without immediate repetitions                 |
+| **n_stepwise**        | number of stepwise bass progressions                           |
+| **%_stepwise**        | percentage of stepwise progressions (based on length_norepeat) |
+| **n_ascending**       | number of stepwise ascending bass progressions                 |
+| **n_descending**      | number of stepwise descending bass progressions                |
+| **bd**                | full sequence of bass degrees                                  |
+| **stepwise_bd**       | all sequences of consecutive stepwise bass progressions        |
+| **stepwise_chords**   | the corresponding chord sequences                              |
+| **ascending_bd**      | the subset of ascending bass progressions                      |
+| **ascending_chords**  | the corresponding chord sequences                              |
+| **descending_bd**     | the subset of descending bass progressions                     |
+| **descending_chords** | the corresponding chord sequences                              |
+| **ixa**               | index of the segment's first row                               |
+| **ixb**               | index of the segment's last row                                |
 
 ```{code-cell} ipython3
 ---
@@ -321,10 +313,10 @@ def summarize(df):
     return res
 
 key_regions = df.groupby('key_regions').apply(summarize)
-key_regions.head(20)
+key_regions.head(10)
 ```
 
-**Store to file `key_regions.tsv` for easier inspection.**
+**Store to file [key_regions.tsv](https://github.com/DCMLab/coup/blob/main/results/key_regions.tsv) for easier inspection.**
 
 ```{code-cell} ipython3
 key_regions.to_csv(os.path.join(RESULTS_PATH, 'key_regions.tsv'), sep='\t')
@@ -335,7 +327,7 @@ print(f"{key_regions.n_stepwise.sum() / key_regions.length_norepeat.sum():.1%} o
 ```
 
 ```{code-cell} ipython3
-def delete_redundant(s):
+def remove_immediate_repetitions(s):
     res = []
     last = ''
     for word in s.split():
@@ -354,64 +346,77 @@ minor_regions = key_regions[minor_selector]
 major_regions = key_regions[~minor_selector]
 ```
 
-#### Ascending in minor
+#### All stepwise ascending bass progressions in minor
+
+```{code-cell} ipython3
+def prettify_counts(counter_object: Counter):
+    N = counter_object.total()
+    print(f"N = {N}")
+    df = pd.DataFrame(counter_object.most_common(), columns=['progression', 'count']).set_index('progression')
+    df["%"] = (df['count'] * 100 / N).round(2)
+    return df
+```
 
 ```{code-cell} ipython3
 ascending_minor = defaultdict(list)
 for bd, chord in zip(minor_regions.ascending_bd.sum(), minor_regions.ascending_chords.sum()):
-    ascending_minor[delete_redundant(bd)].append(chord)
+    ascending_minor[remove_immediate_repetitions(bd)].append(chord)
 ascending_minor_counts = Counter({k: len(v) for k, v in ascending_minor.items()})
-ascending_minor_counts.most_common()
+prettify_counts(ascending_minor_counts)
 ```
 
 ```{code-cell} ipython3
 show_progression = '3 4 5'
-Counter(ascending_minor[show_progression]).most_common()
+chords_3_4_5 = Counter(ascending_minor[show_progression])
+prettify_counts(chords_3_4_5)
 ```
 
-#### Ascending in major
+#### All stepwise ascending bass progressions in major
 
 ```{code-cell} ipython3
 ascending_major = defaultdict(list)
 for bd, chord in zip(major_regions.ascending_bd.sum(), major_regions.ascending_chords.sum()):
-    ascending_major[delete_redundant(bd)].append(chord)
+    ascending_major[remove_immediate_repetitions(bd)].append(chord)
 ascending_major_counts = Counter({k: len(v) for k, v in ascending_major.items()})
-ascending_major_counts.most_common()
+prettify_counts(ascending_major_counts)
 ```
 
 ```{code-cell} ipython3
 show_progression = '6 7 1'
-Counter(ascending_major[show_progression]).most_common()
+chords_6_7_1 = Counter(ascending_major[show_progression])
+prettify_counts(chords_6_7_1)
 ```
 
-#### Descending in minor
+#### All stepwise descending bass progressions in minor
 
 ```{code-cell} ipython3
 descending_minor = defaultdict(list)
 for bd, chord in zip(minor_regions.descending_bd.sum(), minor_regions.descending_chords.sum()):
-    descending_minor[delete_redundant(bd)].append(chord)
+    descending_minor[remove_immediate_repetitions(bd)].append(chord)
 descending_minor_counts = Counter({k: len(v) for k, v in descending_minor.items()})
-descending_minor_counts.most_common()
+prettify_counts(descending_minor_counts)
 ```
 
 ```{code-cell} ipython3
 show_progression = '3 2 1'
-Counter(descending_minor[show_progression]).most_common()
+chords_3_2_1 = Counter(descending_minor[show_progression])
+prettify_counts(chords_3_2_1)
 ```
 
-#### Descending in major
+#### All stepwise descending bass progressions in major
 
 ```{code-cell} ipython3
 descending_major = defaultdict(list)
 for bd, chord in zip(major_regions.descending_bd.sum(), major_regions.descending_chords.sum()):
-    descending_major[delete_redundant(bd)].append(chord)
+    descending_major[remove_immediate_repetitions(bd)].append(chord)
 descending_major_counts = Counter({k: len(v) for k, v in descending_major.items()})
-descending_major_counts.most_common()
+prettify_counts(descending_major_counts)
 ```
 
 ```{code-cell} ipython3
 show_progression = '5 4 3'
-Counter(descending_major[show_progression]).most_common()
+chords_5_4_3 = Counter(descending_major[show_progression])
+prettify_counts(chords_5_4_3)
 ```
 
 ### Transitions between bass degrees
@@ -457,7 +462,7 @@ Select number of first k transitions to display:
 k = 25
 
 def sorted_gram_counts(l, n=2, k=k):
-    return {t: count for t, count in sorted(Counter(grams(l, n=n)).items(), key=lambda a: a[1], reverse=True)[:k]}
+    return prettify_counts(Counter({t: count for t, count in sorted(Counter(grams(l, n=n)).items(), key=lambda a: a[1], reverse=True)[:k]}))
 ```
 
 ##### Major
