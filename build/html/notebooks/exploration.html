@@ -50,7 +50,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/exploration';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Unigrams" href="figures.html" />
+    <link rel="next" title="Chord labels" href="figures.html" />
     <link rel="prev" title="Welcome to Coup’s documentation!" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -142,7 +142,7 @@
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="figures.html">
-                        Unigrams
+                        Chord labels
                       </a>
                     </li>
                 
@@ -246,7 +246,7 @@ document.write(`
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="figures.html">
-                        Unigrams
+                        Chord labels
                       </a>
                     </li>
                 
@@ -371,6 +371,79 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">ms3</span><span class="o">.</span><span class="n">Corpus</span><span class="p">(</span><span class="n">CORPUS_PATH</span><span class="p">)</span>
 <span class="n">c</span><span class="o">.</span><span class="n">parse_tsv</span><span class="p">()</span>
 <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception in thread Thread-9 (_handle_workers):
+Traceback (most recent call last):
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\threading.py&quot;, line 1016, in _bootstrap_inner
+    self.run()
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\threading.py&quot;, line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\pool.py&quot;, line 516, in _handle_workers
+    cls._maintain_pool(ctx, Process, processes, pool, inqueue,
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\pool.py&quot;, line 340, in _maintain_pool
+    Pool._repopulate_pool_static(ctx, Process, processes, pool,
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\pool.py&quot;, line 329, in _repopulate_pool_static
+    w.start()
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\process.py&quot;, line 121, in start
+    self._popen = self._Popen(self)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\context.py&quot;, line 336, in _Popen
+    return Popen(process_obj)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\popen_spawn_win32.py&quot;, line 93, in __init__
+    reduction.dump(process_obj, to_child)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\reduction.py&quot;, line 63, in dump
+    ForkingPickler(file, protocol, *args, **kwds).dump(obj)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 418, in dump
+    StockPickler.dump(self, obj)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 487, in dump
+    self.save(obj)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 717, in save_reduce
+    save(state)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 1212, in save_module_dict
+    StockPickler.save_dict(pickler, obj)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 972, in save_dict
+    self._batch_setitems(obj.items())
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 998, in _batch_setitems
+    save(v)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 902, in save_tuple
+    save(element)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 603, in save
+    self.save_reduce(obj=obj, *rv)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 717, in save_reduce
+    save(state)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 560, in save
+    f(self, obj)  # Call unbound method with explicit self
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 902, in save_tuple
+    save(element)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\dill\_dill.py&quot;, line 412, in save
+    StockPickler.save(self, obj, save_persistent_id)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\pickle.py&quot;, line 578, in save
+    rv = reduce(self.proto)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\synchronize.py&quot;, line 110, in __getstate__
+    h = context.get_spawning_popen().duplicate_for_child(sl.handle)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\popen_spawn_win32.py&quot;, line 99, in duplicate_for_child
+    return reduction.duplicate(handle, self.sentinel)
+  File &quot;C:\Users\hentsche\.conda\envs\coup\lib\site-packages\multiprocess\reduction.py&quot;, line 82, in duplicate
+    return _winapi.DuplicateHandle(
+PermissionError: [WinError 5] Access is denied
 </pre></div>
 </div>
 </div>
@@ -1095,7 +1168,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Unigrams</p>
+        <p class="prev-next-title">Chord labels</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -12,6 +12,8 @@ kernelspec:
   name: coup
 ---
 
+# Chord labels
+
 ```{code-cell} ipython3
 %load_ext autoreload
 %autoreload 2
@@ -46,7 +48,7 @@ df['key_regions'] = df.groupby(level=0, group_keys=False).localkey.apply(lambda 
 df.head(20)
 ```
 
-# Unigrams
+## Unigrams
 
 ```{code-cell} ipython3
 k = 25
@@ -65,7 +67,7 @@ fig.write_image(os.path.join(RESULTS_PATH, 'type_distribution.png'))
 fig
 ```
 
-## Unigrams in major segments
+### Unigrams in major segments
 
 ```{code-cell} ipython3
 minor, major = df[df.localkey_is_minor], df[~df.localkey_is_minor]
@@ -82,7 +84,7 @@ fig.write_image(os.path.join(RESULTS_PATH, 'unigrams_major.png'))
 fig.show()
 ```
 
-## Unigrams in minor segments
+### Unigrams in minor segments
 
 ```{code-cell} ipython3
 print(f"{len(major)} tokens ({len(major.chord.unique())} types) in major and {len(minor)} ({len(minor.chord.unique())} types) in minor.")
@@ -98,7 +100,7 @@ fig.write_image(os.path.join(RESULTS_PATH, 'unigrams_minor.png'))
 fig.show()
 ```
 
-# Bigrams
+## Bigrams
 
 ```{code-cell} ipython3
 chord_successions = [s.to_list() for _, s in df.groupby('key_regions').chord]
@@ -113,25 +115,25 @@ c = Counter(gs)
 dict(sorted(c.items(), key=lambda a: a[1], reverse=True)[:k])
 ```
 
-## Absolute Counts (read from index to column)
+### Absolute Counts (read from index to column)
 
 ```{code-cell} ipython3
 transition_matrix(chord_successions, k=k, dist_only=True)
 ```
 
-## Normalized Counts
+### Normalized Counts
 
 ```{code-cell} ipython3
 transition_matrix(chord_successions, k=k, dist_only=True, normalize=True, decimals=2)
 ```
 
-## Entropy
+### Entropy
 
 ```{code-cell} ipython3
 transition_matrix(chord_successions, k=k, IC=True, dist_only=True, smooth=1, decimals=2)
 ```
 
-## Minor vs. Major
+### Minor vs. Major
 
 ```{code-cell} ipython3
 region_is_minor = df.groupby('key_regions').localkey_is_minor.unique().map(lambda l: l[0]).to_dict()
@@ -153,7 +155,7 @@ transition_matrix(major, k=k, dist_only=True, normalize=True)
 transition_matrix(minor, k=k, dist_only=True, normalize=True)
 ```
 
-## Chord progressions without suspensions
+### Chord progressions without suspensions
 
 Here called *plain chords*, which consist only of numeral, inversion figures, and relative keys.
 
@@ -196,7 +198,7 @@ from statistics import mean
 print(f"Segments being in the same local key have a mean length of {round(mean(plain_chords_per_segment.values()), 2)} plain chords.")
 ```
 
-### Most frequent 3-, 4-, and 5-grams in major
+#### Most frequent 3-, 4-, and 5-grams in major
 
 ```{code-cell} ipython3
 def sorted_gram_counts(l, n=2, k=k):
@@ -213,7 +215,7 @@ sorted_gram_counts(major_plain, 4)
 sorted_gram_counts(major_plain, 5)
 ```
 
-### Most frequent 3-, 4-, and 5-grams in minor
+#### Most frequent 3-, 4-, and 5-grams in minor
 
 ```{code-cell} ipython3
 sorted_gram_counts(minor_plain, 3)
@@ -227,7 +229,7 @@ sorted_gram_counts(minor_plain, 4)
 sorted_gram_counts(minor_plain, 5)
 ```
 
-## Counting particular progressions
+### Counting particular progressions
 
 ```{code-cell} ipython3
 MEMORY = {}
@@ -264,7 +266,7 @@ look_for(('i', 'V6', 'v6'))
 look_for(('V', 'IV6', 'V65'))
 ```
 
-## Chord progressions preceding phrase endings
+### Chord progressions preceding phrase endings
 
 ```{code-cell} ipython3
 def phraseending_progressions(df, n=3, k=k):

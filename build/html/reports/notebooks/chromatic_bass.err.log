@@ -30,11 +30,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-import os
-import ms3
-import pandas as pd
-from helpers import cnt
-pd.options.display.max_columns = 50
-pd.options.display.max_rows = 100
+corpus_obj = ms3.Corpus(CORPUS_PATH)
+corpus_obj.parse_tsv()
+corpus_obj
 -------------------
 
