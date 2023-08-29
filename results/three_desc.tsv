@@ -1,0 +1,29 @@
+piece	i	mc	mn	quarterbeats	duration_qb	mc_onset	mn_onset	timesig	staff	voice	label	globalkey	localkey	pedal	chord	numeral	form	figbass	changes	relativeroot	cadence	phraseend	chord_type	globalkey_is_minor	localkey_is_minor	chord_tones	added_tones	root	bass_note	volta	alt_label	bass_name
+c02n01_prelude	23	13	11	35	2.0	1/4	1/4	3/4	1	1	V.I\\	D	V		I	I						\\	M	False	False	(0, 4, 1)	()	0	0			A
+c02n01_prelude	24	14	12	37	2.0	0	0	3/4	1	1	V6	D	V		V6	V		6					M	False	False	(5, 2, 1)	()	1	5			G#
+c02n01_prelude	25	14	12	39	1.0	1/2	1/2	3/4	1	1	iii%43	D	V		iii%43	iii	%	43					%7	False	False	(-2, 2, 4, 1)	()	4	-2			G
+c02n01_prelude	26	15	13	40	1.0	0	0	3/4	1	1	IV6(2)	D	V		IV6(2)	IV		6	2				M	False	False	(3, 0, 1)	()	-1	3			F#
+c02n01_prelude	27	15	13	41	1.0	1/4	1/4	3/4	1	1	IV6	D	V		IV6	IV		6					M	False	False	(3, 0, -1)	()	-1	3			F#
+c02n01_prelude	53	25	23	70	2.0	0	0	3/4	1	1	I\\	D	I		I	I						\\	M	False	False	(0, 4, 1)	()	0	0			D
+c02n01_prelude	54	25	23	72	1.0	1/2	1/2	3/4	1	1	vi6	D	I		vi6	vi		6					m	False	False	(0, 4, 3)	()	3	0			D
+c02n01_prelude	55	26	24	73	2.0	0	0	3/4	1	1	vii%7	D	I		vii%7	vii	%	7					%7	False	False	(5, 2, -1, 3)	()	5	5			C#
+c02n01_prelude	56	26	24	75	1.0	1/2	1/2	3/4	1	1	iii%43	D	I		iii%43	iii	%	43					%7	False	False	(-2, 2, 4, 1)	()	4	-2			C
+c02n01_prelude	57	27	25	76	1.0	0	0	3/4	1	1	vi7	D	I		vi7	vi		7					mm7	False	False	(3, 0, 4, 1)	()	3	3			B
+c02n01_prelude	58	27	25	77	1.0	1/4	1/4	3/4	1	1	IV6	D	I		IV6	IV		6					M	False	False	(3, 0, -1)	()	-1	3			B
+c02n03_air_tendre	34	17	17	48	2.0	0	0	3/4	1	1	III.I	d	III		I	I							M	True	False	(0, 4, 1)	()	0	0			F
+c02n03_air_tendre	35	17	17	50	1.0	1/2	1/2	3/4	1	1	V2/V	d	III		V2/V	V		2		V			Mm7	True	False	(0, 2, 6, 3)	()	2	0			F
+c02n03_air_tendre	36	18	18	51	1.0	0	0	3/4	1	1	V6	d	III		V6	V		6					M	True	False	(5, 2, 1)	()	1	5			E
+c02n03_air_tendre	37	18	18	52	1.0	1/4	1/4	3/4	1	1	IV/IV	d	III		IV/IV	IV				IV			M	True	False	(-2, 2, -1)	()	-2	-2			Eb
+c02n03_air_tendre	38	18	18	53	1.0	1/2	1/2	3/4	1	1	V2/IV	d	III		V2/IV	V		2		IV			Mm7	True	False	(-2, 0, 4, 1)	()	0	-2			Eb
+c02n03_air_tendre	39	19	19	54	1.0	0	0	3/4	1	1	IV6	d	III		IV6	IV		6					M	True	False	(3, 0, -1)	()	-1	3			D
+c05n02_allemande	37	8	7	30	0.5	7/8	7/8	2/2	1	1	I	F	V		I	I							M	False	False	(0, 4, 1)	()	0	0			C
+c05n02_allemande	38	9	8	61/2	2.0	0	0	2/2	1	1	V6	F	V		V6	V		6					M	False	False	(5, 2, 1)	()	1	5			B
+c05n02_allemande	39	9	8	65/2	1.0	1/2	1/2	2/2	1	1	v6	F	V		v6	v		6					m	False	False	(-2, 2, 1)	()	1	-2			Bb
+c05n02_allemande	40	9	8	67/2	1.0	3/4	3/4	2/2	1	1	V2/IV	F	V		V2/IV	V		2		IV			Mm7	False	False	(-2, 0, 4, 1)	()	0	-2			Bb
+c05n02_allemande	41	10	9	69/2	1.0	0	0	2/2	1	1	vi7	F	V		vi7	vi		7					mm7	False	False	(3, 0, 4, 1)	()	3	3			A
+c05n02_allemande	42	10	9	71/2	1.0	1/4	1/4	2/2	1	1	IV6	F	V		IV6	IV		6					M	False	False	(3, 0, -1)	()	-1	3			A
+c09n07_douceur	86	39	37	56	0.25	5/16	5/16	3/8	1	1	I	e	i		I	I							M	True	True	(0, 4, 1)	()	0	0			E
+c09n07_douceur	87	40	38	225/4	1.0	0	0	3/8	1	1	V6	e	i		V6	V		6					M	True	True	(5, 2, 1)	()	1	5			D#
+c09n07_douceur	88	40	38	229/4	0.5	1/4	1/4	3/8	1	1	v6	e	i		v6	v		6					m	True	True	(-2, 2, 1)	()	1	-2			D
+c09n07_douceur	89	41	39	231/4	1.5	0	0	3/8	1	1	#vi%7	e	i		#vi%7	#vi	%	7					%7	True	True	(3, 0, -3, 1)	()	3	3			C#
+c09n07_douceur	90	42	40	237/4	0.5	0	0	3/8	1	1	ii%43	e	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4			C
