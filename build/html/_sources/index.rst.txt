@@ -10,10 +10,10 @@ Welcome to Coup's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   notebooks/exploration
-   notebooks/figures
+   notebooks/bass_degrees
+   notebooks/harmonies
    notebooks/chromatic_bass
-   notebooks/coup_gantt
+   notebooks/modulations
 
 
 

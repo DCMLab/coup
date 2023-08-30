@@ -1,2 +1,3 @@
 .ipynb_checkpoints
 /build/jupyter_execute/
+*__pycache__/

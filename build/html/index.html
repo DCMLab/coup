@@ -50,7 +50,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Bass degrees" href="notebooks/exploration.html" />
+    <link rel="next" title="Bass degrees" href="notebooks/bass_degrees.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -133,15 +133,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/exploration.html">
+                      <a class="nav-link nav-internal" href="notebooks/bass_degrees.html">
                         Bass degrees
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/figures.html">
-                        Chord labels
+                      <a class="nav-link nav-internal" href="notebooks/harmonies.html">
+                        Unigrams
                       </a>
                     </li>
                 
@@ -154,7 +154,7 @@
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/coup_gantt.html">
+                      <a class="nav-link nav-internal" href="notebooks/modulations.html">
                         Modulation Plans
                       </a>
                     </li>
@@ -237,15 +237,15 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/exploration.html">
+                      <a class="nav-link nav-internal" href="notebooks/bass_degrees.html">
                         Bass degrees
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/figures.html">
-                        Chord labels
+                      <a class="nav-link nav-internal" href="notebooks/harmonies.html">
+                        Unigrams
                       </a>
                     </li>
                 
@@ -258,7 +258,7 @@ document.write(`
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="notebooks/coup_gantt.html">
+                      <a class="nav-link nav-internal" href="notebooks/modulations.html">
                         Modulation Plans
                       </a>
                     </li>
@@ -315,14 +315,24 @@ document.write(`
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/exploration.html">Bass degrees</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/exploration.html#bass-degree-unigrams">Bass degree unigrams</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/exploration.html#intervals-between-adjacent-bass-notes">Intervals between adjacent bass notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/bass_degrees.html">Bass degrees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/bass_degrees.html#bass-degree-unigrams">Bass degree unigrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/bass_degrees.html#intervals-between-adjacent-bass-notes">Intervals between adjacent bass notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/figures.html">Chord labels</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/figures.html#unigrams">Unigrams</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/figures.html#bigrams">Bigrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/harmonies.html">Unigrams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#unigrams-in-major-segments">Unigrams in major segments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#unigrams-in-minor-segments">Unigrams in minor segments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/harmonies.html#bigrams">Bigrams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#absolute-counts-read-from-index-to-column">Absolute Counts (read from index to column)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#normalized-counts">Normalized Counts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#entropy">Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#minor-vs-major">Minor vs. Major</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#chord-progressions-without-suspensions">Chord progressions without suspensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#counting-particular-progressions">Counting particular progressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/harmonies.html#chord-progressions-preceding-phrase-endings">Chord progressions preceding phrase endings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks/chromatic_bass.html">Chromatic bass progressions</a><ul>
@@ -331,20 +341,20 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="notebooks/chromatic_bass.html#filtering-for-particular-progressions-with-length-3">Filtering for particular progressions with length &gt;= 3</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks/coup_gantt.html">Modulation Plans</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c01">c01</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c02">c02</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c03">c03</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c04">c04</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c05">c05</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c06">c06</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c07">c07</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c08">c08</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c09">c09</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c10">c10</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c11">c11</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#c14">c14</a></li>
-<li class="toctree-l2"><a class="reference internal" href="notebooks/coup_gantt.html#parnasse">parnasse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/modulations.html">Modulation Plans</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c01">c01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c02">c02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c03">c03</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c04">c04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c05">c05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c06">c06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c07">c07</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c08">c08</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c09">c09</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c10">c10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c11">c11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#c14">c14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebooks/modulations.html#parnasse">parnasse</a></li>
 </ul>
 </li>
 </ul>
@@ -371,7 +381,7 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="notebooks/exploration.html"
+       href="notebooks/bass_degrees.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
