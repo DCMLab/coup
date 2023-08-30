@@ -17,6 +17,7 @@ kernelspec:
 # Bass degrees
 
 ```{code-cell} ipython3
+from notebooks.helpers import prettify_counts, sorted_gram_counts
 %load_ext autoreload
 %autoreload 2
 # pip install ms3 pandas plotly seaborn scipy
@@ -26,7 +27,8 @@ import ms3
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
-from helpers import cnt, transition_matrix, plot_bigram_tables, grams
+from helpers import cnt, transition_matrix, plot_bigram_tables
+
 pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 500)
 ```
@@ -349,15 +351,6 @@ major_regions = key_regions[~minor_selector]
 #### All stepwise ascending bass progressions in minor
 
 ```{code-cell} ipython3
-def prettify_counts(counter_object: Counter):
-    N = counter_object.total()
-    print(f"N = {N}")
-    df = pd.DataFrame(counter_object.most_common(), columns=['progression', 'count']).set_index('progression')
-    df["%"] = (df['count'] * 100 / N).round(2)
-    return df
-```
-
-```{code-cell} ipython3
 ascending_minor = defaultdict(list)
 for bd, chord in zip(minor_regions.ascending_bd.sum(), minor_regions.ascending_chords.sum()):
     ascending_minor[remove_immediate_repetitions(bd)].append(chord)
@@ -460,9 +453,6 @@ Select number of first k transitions to display:
 
 ```{code-cell} ipython3
 k = 25
-
-def sorted_gram_counts(l, n=2, k=k):
-    return prettify_counts(Counter({t: count for t, count in sorted(Counter(grams(l, n=n)).items(), key=lambda a: a[1], reverse=True)[:k]}))
 ```
 
 ##### Major

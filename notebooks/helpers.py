@@ -1,3 +1,4 @@
+from collections import Counter
 from typing import List
 
 import pandas as pd
@@ -415,3 +416,15 @@ def cnt(
             current = [i]
             n = 0
     return ix_chunks
+
+
+def prettify_counts(counter_object: Counter):
+    N = counter_object.total()
+    print(f"N = {N}")
+    df = pd.DataFrame(counter_object.most_common(), columns=['progression', 'count']).set_index('progression')
+    df["%"] = (df['count'] * 100 / N).round(2)
+    return df
+
+
+def sorted_gram_counts(l, n=2, k=25):
+    return prettify_counts(Counter({t: count for t, count in sorted(Counter(grams(l, n=n)).items(), key=lambda a: a[1], reverse=True)[:k]}))

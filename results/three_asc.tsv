@@ -1,72 +1,77 @@
-piece	i	mc	mn	quarterbeats	duration_qb	mc_onset	mn_onset	timesig	staff	voice	label	globalkey	localkey	pedal	chord	numeral	form	figbass	changes	relativeroot	cadence	phraseend	chord_type	globalkey_is_minor	localkey_is_minor	chord_tones	added_tones	root	bass_note	volta	alt_label	bass_name
-c03n01_prelude	26	8	7	97/4	1.0	0	0	4/4	1	1	I6	A	V		I6	I		6					M	False	False	(4, 1, 0)	()	0	4			G#
-c03n01_prelude	27	8	7	101/4	0.5	1/4	1/4	4/4	1	1	ii65	A	V		ii65	ii		65					mm7	False	False	(-1, 3, 0, 2)	()	2	-1			A
-c03n01_prelude	28	8	7	103/4	0.5	3/8	3/8	4/4	1	1	V65/V	A	V		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6			A#
-c03n01_prelude	29	8	7	105/4	1.0	1/2	1/2	4/4	1	1	V(64)	A	V		V(64)	V			64				M	False	False	(1, 0, 4)	()	1	1			B
-c03n01_prelude	30	8	7	109/4	1.0	3/4	3/4	4/4	1	1	V	A	V		V	V							M	False	False	(1, 5, 2)	()	1	1			B
-c03n02_allemande	52	11	8	35	1.0	0	0	4/4	1	1	V	A	vi		V	V							M	False	True	(1, 5, 2)	()	1	1			C#
-c03n02_allemande	53	11	8	36	1.0	1/4	1/4	4/4	1	1	III+6	A	vi		III+6	III	+	6					+	False	True	(1, 5, -3)	()	-3	1			C#
-c03n02_allemande	54	11	8	37	1.0	1/2	1/2	4/4	1	1	VI	A	vi		VI	VI							M	False	True	(-4, 0, -3)	()	-4	-4			D
-c03n02_allemande	55	11	8	38	0.5	3/4	3/4	4/4	1	1	iv6	A	vi		iv6	iv		6					m	False	True	(-4, 0, -1)	()	-1	-4			D
-c03n02_allemande	56	11	8	77/2	0.5	7/8	7/8	4/4	1	1	V65/VII	A	vi		V65/VII	V		65		VII			Mm7	False	True	(3, 0, -3, -1)	()	-1	3			D#
-c03n02_allemande	57	12	9	39	1.0	0	0	4/4	1	1	VII	A	vi		VII	VII							M	False	True	(-2, 2, -1)	()	-2	-2			E
-c03n02_allemande	58	12	9	40	0.5	1/4	1/4	4/4	1	1	v6	A	vi		v6	v		6					m	False	True	(-2, 2, 1)	()	1	-2			E
-c03n02_allemande	59	12	9	81/2	0.5	3/8	3/8	4/4	1	1	V6	A	vi		V6	V		6					M	False	True	(5, 2, 1)	()	1	5			E#
-c03n02_allemande	60	12	9	41	0.5	1/2	1/2	4/4	1	1	i	A	vi		i	i							m	False	True	(0, -3, 1)	()	0	0			F#
-c03n03_courante	82	23	21	249/2	2.0	1	1	3/2	1	1	ii%65	a	i		ii%65	ii	%	65					%7	True	True	(-1, -4, 0, 2)	()	2	-1			D
-c03n03_courante	83	24	22	253/2	1.0	0	0	3/2	1	1	V65/V	a	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6			D#
-c03n03_courante	84	24	22	255/2	1.0	1/4	1/4	3/2	1	1	V	a	i		V	V							M	True	True	(1, 5, 2)	()	1	1			E
-c03n03_courante	85	24	22	257/2	1.0	1/2	1/2	3/2	1	1	ii%43	a	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4			F
-c03n03_courante	90	26	23	273/2	2.0	1	1	3/2	1	1	II%65	a	i		II%65	II	%	65					%7	True	True	(-1, -4, 0, 2)	()	2	-1	2		D
-c03n03_courante	91	27	24	277/2	1.0	0	0	3/2	1	1	V65/V	a	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6			D#
-c03n03_courante	92	27	24	279/2	1.0	1/4	1/4	3/2	1	1	V	a	i		V	V							M	True	True	(1, 5, 2)	()	1	1			E
-c03n03_courante	93	27	24	281/2	1.0	1/2	1/2	3/2	1	1	ii%43	a	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4			F
-c06n02_allemande	23	8	7	57/2	2.0	1/2	1/2	4/4	1	1	V65/IV	Bb	V		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4			A
-c06n02_allemande	24	9	8	61/2	2.0	0	0	4/4	1	1	IV	Bb	V		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1			Bb
-c06n02_allemande	25	9	8	65/2	1.0	1/2	1/2	4/4	1	1	V6/V	Bb	V		V6/V	V		6		V			M	False	False	(6, 3, 2)	()	2	6			B
-c06n02_allemande	26	9	8	67/2	1.0	3/4	3/4	4/4	1	1	V65/V	Bb	V		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6			B
-c06n02_allemande	27	10	9	69/2	1.0	0	0	4/4	1	1	V	Bb	V		V	V							M	False	False	(1, 5, 2)	()	1	1			C
-c06n04_air_diable	90	41	39	153/2	2.0	0	0	2/4	1	1	V65/IV	B	ii		V65/IV	V		65		IV			Mm7	False	True	(4, 1, -2, 0)	()	0	4			E#
-c06n04_air_diable	91	42	40	157/2	2.0	0	0	2/4	1	1	IV	B	ii		IV	IV							M	False	True	(-1, 3, 0)	()	-1	-1			F#
-c06n04_air_diable	92	43	41	161/2	2.0	0	0	2/4	1	1	V65/V	B	ii		V65/V	V		65		V			Mm7	False	True	(6, 3, 0, 2)	()	2	6			F##
-c06n04_air_diable	93	44	42	165/2	1.0	0	0	2/4	1	1	V	B	ii		V	V							M	False	True	(1, 5, 2)	()	1	1			G#
-c08n01_ouverture	132	84	82	521/2	3.0	0	0	3/4	1	1	V65/IV	G	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4			B
-c08n01_ouverture	133	85	83	527/2	3.0	0	0	3/4	1	1	IV	G	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1			C
-c08n01_ouverture	134	86	84	533/2	3.0	0	0	3/4	1	1	V65/V	G	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6			C#
-c08n01_ouverture	135	87	85	539/2	3.0	0	0	3/4	1	1	V	G	I		V	V							M	False	False	(1, 5, 2)	()	1	1			D
-c09n06_Sarabande	29	17	16	47	1.0	1/2	1/2	3/4	1	1	I\\	e	III		I	I						\\	M	True	False	(0, 4, 1)	()	0	0			G
-c09n06_Sarabande	30	18	17	48	3.0	0	0	3/4	1	1	i.V65/iv	e	i		V65/iv	V		65		iv			Mm7	True	True	(4, 1, -2, 0)	()	0	4			G#
-c09n06_Sarabande	31	19	18	51	3.0	0	0	3/4	1	1	IV	e	i		IV	IV							M	True	True	(-1, 3, 0)	()	-1	-1			A
-c09n06_Sarabande	32	20	19	54	3.0	0	0	3/4	1	1	V65/V	e	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6			A#
-c09n06_Sarabande	33	21	20	57	1.5	0	0	3/4	1	1	V	e	i		V	V							M	True	True	(1, 5, 2)	()	1	1			B
-c09n06_Sarabande	34	21	20	117/2	0.5	3/8	3/8	3/4	1	1	ii%43	e	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4			C
-c09n07_douceur	79	37	35	207/4	0.5	0	0	3/8	1	1	ii%7(9)	e	i		ii%7(9)	ii	%	7	9				%7	True	True	(2, -1, -4, 0)	(-3,)	2	2			F#
-c09n07_douceur	80	37	35	209/4	0.75	1/8	1/8	3/8	1	1	V6/III	e	i		V6/III	V		6		III			M	True	True	(2, -1, -2)	()	-2	2			F#
-c09n07_douceur	81	37	35	53	0.25	5/16	5/16	3/8	1	1	V65/III	e	i		V65/III	V		65		III			Mm7	True	True	(2, -1, -4, -2)	()	-2	2			F#
-c09n07_douceur	82	38	36	213/4	0.5	0	0	3/8	1	1	III	e	i		III	III							M	True	True	(-3, 1, -2)	()	-3	-3			G
-c09n07_douceur	83	38	36	215/4	1.0	1/8	1/8	3/8	1	1	V65/IV	e	i		V65/IV	V		65		IV			Mm7	True	True	(4, 1, -2, 0)	()	0	4			G#
-c09n07_douceur	84	39	37	219/4	0.5	0	0	3/8	1	1	IV	e	i		IV	IV							M	True	True	(-1, 3, 0)	()	-1	-1			A
-c11n02_allemande	81	18	16	131/2	0.5	5/8	5/8	4/4	1	1	i64	c	i		i64	i		64					m	True	True	(1, 0, -3)	()	0	1			G
-c11n02_allemande	82	18	16	66	1.0	3/4	3/4	4/4	1	1	iv6	c	i		iv6	iv		6					m	True	True	(-4, 0, -1)	()	-1	-4			Ab
-c11n02_allemande	83	19	17	67	0.5	0	0	4/4	1	1	V65/VII	c	i		V65/VII	V		65		VII			Mm7	True	True	(3, 0, -3, -1)	()	-1	3			A
-c11n02_allemande	84	19	17	135/2	0.5	1/8	1/8	4/4	1	1	VII	c	i		VII	VII							M	True	True	(-2, 2, -1)	()	-2	-2			Bb
-c11n02_allemande	85	19	17	68	0.5	1/4	1/4	4/4	1	1	V65	c	i		V65	V		65					Mm7	True	True	(5, 2, -1, 1)	()	1	5			B
-parnasse_05	51	15	14	111/2	1.0	0	0	4/4	1	1	V\\	D	ii		V	V						\\	M	False	True	(1, 5, 2)	()	1	1			B
-parnasse_05	52	15	14	113/2	1.0	1/4	1/4	4/4	1	1	III+6	D	ii		III+6	III	+	6					+	False	True	(1, 5, -3)	()	-3	1			B
-parnasse_05	53	15	14	115/2	1.0	1/2	1/2	4/4	1	1	VIM7	D	ii		VIM7	VI	M	7					MM7	False	True	(-4, 0, -3, 1)	()	-4	-4			C
-parnasse_05	54	15	14	117/2	0.5	3/4	3/4	4/4	1	1	iv6	D	ii		iv6	iv		6					m	False	True	(-4, 0, -1)	()	-1	-4			C
-parnasse_05	55	15	14	59	0.5	7/8	7/8	4/4	1	1	V65/VII	D	ii		V65/VII	V		65		VII			Mm7	False	True	(3, 0, -3, -1)	()	-1	3			C#
-parnasse_05	56	16	15	119/2	1.5	0	0	4/4	1	1	VII	D	ii		VII	VII							M	False	True	(-2, 2, -1)	()	-2	-2			D
-parnasse_05	57	16	15	61	0.5	3/8	3/8	4/4	1	1	viio7	D	ii		viio7	vii	o	7					o7	False	True	(-2, -5, -8, -11)	()	-2	-2			D
-parnasse_05	74	23	22	177/2	1.0	1/4	1/4	4/4	1	1	V65/IV	D	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4			F#
-parnasse_05	75	23	22	179/2	0.5	1/2	1/2	4/4	1	1	IV(4)	D	I		IV(4)	IV			4				M	False	False	(-1, 5, 0)	()	-1	-1			G
-parnasse_05	76	23	22	90	0.5	5/8	5/8	4/4	1	1	IV	D	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1			G
-parnasse_05	77	23	22	181/2	1.0	3/4	3/4	4/4	1	1	V65/V	D	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6			G#
-parnasse_05	78	24	23	183/2	0.5	0	0	4/4	1	1	V(4)	D	I		V(4)	V			4				M	False	False	(1, 0, 2)	()	1	1			A
-parnasse_05	79	24	23	92	0.5	1/8	1/8	4/4	1	1	V	D	I		V	V							M	False	False	(1, 5, 2)	()	1	1			A
-parnasse_05	87	25	24	193/2	1.0	1/4	1/4	4/4	1	1	V65/IV	D	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4			F#
-parnasse_05	88	25	24	195/2	0.5	1/2	1/2	4/4	1	1	IV(4)	D	I		IV(4)	IV			4				M	False	False	(-1, 5, 0)	()	-1	-1			G
-parnasse_05	89	25	24	98	0.5	5/8	5/8	4/4	1	1	IV	D	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1			G
-parnasse_05	90	25	24	197/2	1.0	3/4	3/4	4/4	1	1	V65/V	D	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6			G#
-parnasse_05	91	26	25	199/2	0.5	0	0	4/4	1	1	V(4)	D	I		V(4)	V			4				M	False	False	(1, 0, 2)	()	1	1			A
-parnasse_05	92	26	25	100	0.5	1/8	1/8	4/4	1	1	V	D	I		V	V							M	False	False	(1, 5, 2)	()	1	1			A
+piece	i	mc	mn	quarterbeats	duration_qb	mc_onset	mn_onset	timesig	staff	voice	label	alt_label	globalkey	localkey	pedal	chord	numeral	form	figbass	changes	relativeroot	cadence	phraseend	chord_type	globalkey_is_minor	localkey_is_minor	chord_tones	added_tones	root	bass_note	volta	bass_name
+c03n01_prelude	29	8	7	97/4	1.0	0	0	4/4	1	1	I6		A	V		I6	I		6					M	False	False	(4, 1, 0)	()	0	4		G#
+c03n01_prelude	30	8	7	101/4	0.5	1/4	1/4	4/4	1	1	ii65		A	V		ii65	ii		65					mm7	False	False	(-1, 3, 0, 2)	()	2	-1		A
+c03n01_prelude	31	8	7	103/4	0.5	3/8	3/8	4/4	1	1	V65/V		A	V		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		A#
+c03n01_prelude	32	8	7	105/4	1.0	1/2	1/2	4/4	1	1	V(64)		A	V		V(64)	V			64				M	False	False	(1, 0, 4)	()	1	1		B
+c03n01_prelude	33	8	7	109/4	1.0	3/4	3/4	4/4	1	1	V		A	V		V	V							M	False	False	(1, 5, 2)	()	1	1		B
+c03n02_allemande	54	11	8	35	1.0	0	0	4/4	1	1	V|HC.CON}		A	vi		V	V					HC.CON	}	M	False	True	(1, 5, 2)	()	1	1		C#
+c03n02_allemande	55	11	8	36	1.0	1/4	1/4	4/4	1	1	III+6{		A	vi		III+6	III	+	6				{	+	False	True	(1, 5, -3)	()	-3	1		C#
+c03n02_allemande	56	11	8	37	1.0	1/2	1/2	4/4	1	1	VI		A	vi		VI	VI							M	False	True	(-4, 0, -3)	()	-4	-4		D
+c03n02_allemande	57	11	8	38	0.5	3/4	3/4	4/4	1	1	iv6		A	vi		iv6	iv		6					m	False	True	(-4, 0, -1)	()	-1	-4		D
+c03n02_allemande	58	11	8	77/2	0.5	7/8	7/8	4/4	1	1	V65/VII		A	vi		V65/VII	V		65		VII			Mm7	False	True	(3, 0, -3, -1)	()	-1	3		D#
+c03n02_allemande	59	12	9	39	1.0	0	0	4/4	1	1	VII		A	vi		VII	VII							M	False	True	(-2, 2, -1)	()	-2	-2		E
+c03n02_allemande	60	12	9	40	0.5	1/4	1/4	4/4	1	1	v6		A	vi		v6	v		6					m	False	True	(-2, 2, 1)	()	1	-2		E
+c03n02_allemande	61	12	9	81/2	0.5	3/8	3/8	4/4	1	1	V6		A	vi		V6	V		6					M	False	True	(5, 2, 1)	()	1	5		E#
+c03n02_allemande	62	12	9	41	0.5	1/2	1/2	4/4	1	1	i		A	vi		i	i							m	False	True	(0, -3, 1)	()	0	0		F#
+c03n03_courante	89	23	21	249/2	2.0	1	1	3/2	1	1	ii%65		a	i		ii%65	ii	%	65					%7	True	True	(-1, -4, 0, 2)	()	2	-1		D
+c03n03_courante	90	24	22	253/2	1.0	0	0	3/2	1	1	V65/V		a	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6		D#
+c03n03_courante	91	24	22	255/2	1.0	1/4	1/4	3/2	1	1	V		a	i		V	V							M	True	True	(1, 5, 2)	()	1	1		E
+c03n03_courante	92	24	22	257/2	1.0	1/2	1/2	3/2	1	1	ii%43		a	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4		F
+c03n03_courante	98	26	23	273/2	2.0	1	1	3/2	1	1	ii%65{		a	i		ii%65	ii	%	65				{	%7	True	True	(-1, -4, 0, 2)	()	2	-1	2	D
+c03n03_courante	99	27	24	277/2	1.0	0	0	3/2	1	1	V65/V		a	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6		D#
+c03n03_courante	100	27	24	279/2	1.0	1/4	1/4	3/2	1	1	V		a	i		V	V							M	True	True	(1, 5, 2)	()	1	1		E
+c03n03_courante	101	27	24	281/2	1.0	1/2	1/2	3/2	1	1	ii%43		a	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4		F
+c06n02_allemande	25	8	7	57/2	2.0	1/2	1/2	4/4	1	1	V65/IV		Bb	V		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4		A
+c06n02_allemande	26	9	8	61/2	2.0	0	0	4/4	1	1	IV		Bb	V		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1		Bb
+c06n02_allemande	27	9	8	65/2	1.0	1/2	1/2	4/4	1	1	V6/V		Bb	V		V6/V	V		6		V			M	False	False	(6, 3, 2)	()	2	6		B
+c06n02_allemande	28	9	8	67/2	1.0	3/4	3/4	4/4	1	1	V65/V		Bb	V		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		B
+c06n02_allemande	29	10	9	69/2	1.0	0	0	4/4	1	1	V		Bb	V		V	V							M	False	False	(1, 5, 2)	()	1	1		C
+c06n04_air_diable	94	40	38	76	0.0	3/8	3/8	2/4	1	1	{		Bb	I									{		False	False	()	()				
+c06n04_air_diable	95	41	39	153/2	2.0	0	0	2/4	1	1	V65/IV		Bb	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4		D
+c06n04_air_diable	96	42	40	157/2	2.0	0	0	2/4	1	1	IV		Bb	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1		Eb
+c06n04_air_diable	97	43	41	161/2	2.0	0	0	2/4	1	1	V65/V		Bb	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		E
+c06n04_air_diable	98	44	42	165/2	1.0	0	0	2/4	1	1	V		Bb	I		V	V							M	False	False	(1, 5, 2)	()	1	1		F
+c08n01_ouverture	143	84	82	521/2	3.0	0	0	3/4	1	1	V65/IV		G	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4		B
+c08n01_ouverture	144	85	83	527/2	3.0	0	0	3/4	1	1	IV		G	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1		C
+c08n01_ouverture	145	86	84	533/2	3.0	0	0	3/4	1	1	V65/V		G	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		C#
+c08n01_ouverture	146	87	85	539/2	3.0	0	0	3/4	1	1	V		G	I		V	V							M	False	False	(1, 5, 2)	()	1	1		D
+c09n06_Sarabande	29	17	16	47	1.0	1/2	1/2	3/4	1	1	I|PAC}		e	III		I	I					PAC	}	M	True	False	(0, 4, 1)	()	0	0		G
+c09n06_Sarabande	30	18	17	48	3.0	0	0	3/4	1	1	i.V65/iv{		e	i		V65/iv	V		65		iv		{	Mm7	True	True	(4, 1, -2, 0)	()	0	4		G#
+c09n06_Sarabande	31	19	18	51	3.0	0	0	3/4	1	1	IV		e	i		IV	IV							M	True	True	(-1, 3, 0)	()	-1	-1		A
+c09n06_Sarabande	32	20	19	54	3.0	0	0	3/4	1	1	V65/V		e	i		V65/V	V		65		V			Mm7	True	True	(6, 3, 0, 2)	()	2	6		A#
+c09n06_Sarabande	33	21	20	57	1.5	0	0	3/4	1	1	V		e	i		V	V							M	True	True	(1, 5, 2)	()	1	1		B
+c09n06_Sarabande	34	21	20	117/2	0.5	3/8	3/8	3/4	1	1	ii%43		e	i		ii%43	ii	%	43					%7	True	True	(-4, 0, 2, -1)	()	2	-4		C
+c09n07_douceur	82	36	34	205/4	0.0	1/4	1/4	3/8	1	1	{		e	i									{		True	True	()	()				
+c09n07_douceur	83	37	35	207/4	0.5	0	0	3/8	1	1	ii%7(9)		e	i		ii%7(9)	ii	%	7	9				%7	True	True	(2, -1, -4, 0)	(-3,)	2	2		F#
+c09n07_douceur	84	37	35	209/4	0.75	1/8	1/8	3/8	1	1	V6/III		e	i		V6/III	V		6		III			M	True	True	(2, -1, -2)	()	-2	2		F#
+c09n07_douceur	85	37	35	53	0.25	5/16	5/16	3/8	1	1	V65/III		e	i		V65/III	V		65		III			Mm7	True	True	(2, -1, -4, -2)	()	-2	2		F#
+c09n07_douceur	86	38	36	213/4	0.5	0	0	3/8	1	1	III		e	i		III	III							M	True	True	(-3, 1, -2)	()	-3	-3		G
+c09n07_douceur	87	38	36	215/4	1.0	1/8	1/8	3/8	1	1	V65/IV		e	i		V65/IV	V		65		IV			Mm7	True	True	(4, 1, -2, 0)	()	0	4		G#
+c09n07_douceur	88	39	37	219/4	0.5	0	0	3/8	1	1	IV		e	i		IV	IV							M	True	True	(-1, 3, 0)	()	-1	-1		A
+c11n02_allemande	88	18	16	131/2	0.5	5/8	5/8	4/4	1	1	i64		c	i		i64	i		64					m	True	True	(1, 0, -3)	()	0	1		G
+c11n02_allemande	89	18	16	66	1.0	3/4	3/4	4/4	1	1	iv6		c	i		iv6	iv		6					m	True	True	(-4, 0, -1)	()	-1	-4		Ab
+c11n02_allemande	90	19	17	67	0.5	0	0	4/4	1	1	V65/VII		c	i		V65/VII	V		65		VII			Mm7	True	True	(3, 0, -3, -1)	()	-1	3		A
+c11n02_allemande	91	19	17	135/2	0.5	1/8	1/8	4/4	1	1	VII		c	i		VII	VII							M	True	True	(-2, 2, -1)	()	-2	-2		Bb
+c11n02_allemande	92	19	17	68	0.5	1/4	1/4	4/4	1	1	V65		c	i		V65	V		65					Mm7	True	True	(5, 2, -1, 1)	()	1	5		B
+parnasse_05	54	15	14	111/2	1.0	0	0	4/4	1	1	V|HC.SIM}		D	ii		V	V					HC.SIM	}	M	False	True	(1, 5, 2)	()	1	1		B
+parnasse_05	55	15	14	56	0.0	1/8	1/8	4/4	1	1	{		D	ii									{		False	True	()	()				
+parnasse_05	56	15	14	113/2	1.0	1/4	1/4	4/4	1	1	III+6		D	ii		III+6	III	+	6					+	False	True	(1, 5, -3)	()	-3	1		B
+parnasse_05	57	15	14	115/2	1.0	1/2	1/2	4/4	1	1	VIM7		D	ii		VIM7	VI	M	7					MM7	False	True	(-4, 0, -3, 1)	()	-4	-4		C
+parnasse_05	58	15	14	117/2	0.5	3/4	3/4	4/4	1	1	iv6		D	ii		iv6	iv		6					m	False	True	(-4, 0, -1)	()	-1	-4		C
+parnasse_05	59	15	14	59	0.5	7/8	7/8	4/4	1	1	V65/VII		D	ii		V65/VII	V		65		VII			Mm7	False	True	(3, 0, -3, -1)	()	-1	3		C#
+parnasse_05	60	16	15	119/2	1.5	0	0	4/4	1	1	VII		D	ii		VII	VII							M	False	True	(-2, 2, -1)	()	-2	-2		D
+parnasse_05	61	16	15	61	0.5	3/8	3/8	4/4	1	1	#viio7		D	ii		#viio7	#vii	o	7					o7	False	True	(5, 2, -1, -4)	()	5	5		D#
+parnasse_05	62	16	15	123/2	1.5	1/2	1/2	4/4	1	1	i		D	ii		i	i							m	False	True	(0, -3, 1)	()	0	0		E
+parnasse_05	80	23	22	177/2	1.0	1/4	1/4	4/4	1	1	V65/IV		D	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4		F#
+parnasse_05	81	23	22	179/2	0.5	1/2	1/2	4/4	1	1	IV(4)		D	I		IV(4)	IV			4				M	False	False	(-1, 5, 0)	()	-1	-1		G
+parnasse_05	82	23	22	90	0.5	5/8	5/8	4/4	1	1	IV		D	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1		G
+parnasse_05	83	23	22	181/2	1.0	3/4	3/4	4/4	1	1	V65/V		D	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		G#
+parnasse_05	84	24	23	183/2	0.5	0	0	4/4	1	1	V(4)		D	I		V(4)	V			4				M	False	False	(1, 0, 2)	()	1	1		A
+parnasse_05	85	24	23	92	0.5	1/8	1/8	4/4	1	1	V		D	I		V	V							M	False	False	(1, 5, 2)	()	1	1		A
+parnasse_05	93	25	24	193/2	1.0	1/4	1/4	4/4	1	1	V65/IV		D	I		V65/IV	V		65		IV			Mm7	False	False	(4, 1, -2, 0)	()	0	4		F#
+parnasse_05	94	25	24	97	0.0	3/8	3/8	4/4	1	1	{		D	I									{		False	False	()	()				
+parnasse_05	95	25	24	195/2	0.5	1/2	1/2	4/4	1	1	IV(4)		D	I		IV(4)	IV			4				M	False	False	(-1, 5, 0)	()	-1	-1		G
+parnasse_05	96	25	24	98	0.5	5/8	5/8	4/4	1	1	IV		D	I		IV	IV							M	False	False	(-1, 3, 0)	()	-1	-1		G
+parnasse_05	97	25	24	197/2	1.0	3/4	3/4	4/4	1	1	V65/V		D	I		V65/V	V		65		V			Mm7	False	False	(6, 3, 0, 2)	()	2	6		G#
+parnasse_05	98	26	25	199/2	0.5	0	0	4/4	1	1	V(4)		D	I		V(4)	V			4				M	False	False	(1, 0, 2)	()	1	1		A
+parnasse_05	99	26	25	100	0.5	1/8	1/8	4/4	1	1	V		D	I		V	V							M	False	False	(1, 5, 2)	()	1	1		A
