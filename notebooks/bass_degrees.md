@@ -121,7 +121,7 @@ This creates progressions between the label before and after the `@none` label t
 
 ```{code-cell} ipython3
 print(f"Length before: {len(df.index)}")
-is_none = df.chord == '@none'
+is_none = (df.chord == '@none').fillna(False)
 print(f"There are {is_none.sum()} @none labels which we are going to delete.")
 df.drop(df.index[is_none], inplace=True)
 print(f"Length after: {len(df.index)}")
@@ -133,7 +133,7 @@ print(f"Length after: {len(df.index)}")
 print(f"Length before: {len(df.index)}")
 non_chord = df.chord.isna()
 print(f"There are {non_chord.sum()} non-chord labels which we are going to delete:")
-display(df.loc[non_chord, "chord"].value_counts())
+display(df.loc[non_chord, "label"].value_counts())
 df.drop(df.index[non_chord], inplace=True)
 print(f"Length after: {len(df.index)}")
 ```
