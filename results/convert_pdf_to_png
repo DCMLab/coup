@@ -1,0 +1,1 @@
+convert -density 400 bass_degree_bigrams.pdf bass_degree_bigrams.png
