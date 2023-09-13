@@ -5,14 +5,12 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.15.0
+    jupytext_version: 1.15.1
 kernelspec:
   display_name: coup
   language: python
-  name: python3
+  name: coup
 ---
-
-+++ {"jupyter": {"outputs_hidden": false}}
 
 # Bass degrees
 
@@ -21,12 +19,14 @@ kernelspec:
 %autoreload 2
 # pip install ms3 pandas plotly seaborn scipy
 import os
+os.chdir("/home/laser/git/coup/notebooks")
 from collections import Counter, defaultdict
 import ms3
 import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 from helpers import cnt, transition_matrix, plot_bigram_tables, prettify_counts, sorted_gram_counts
+import dimcat as dc
 
 pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 500)
@@ -37,20 +37,19 @@ CORPUS_PATH = '~/all_subcorpora/couperin_concerts'
 RESULTS_PATH = os.path.abspath(os.path.join("..", "results"))
 ```
 
-+++ {"jupyter": {"outputs_hidden": false}}
-
 **Loading data**
 
 ```{code-cell} ipython3
-c = ms3.Corpus(CORPUS_PATH)
-c.parse_tsv()
-c
+package_path = "/home/laser/all_subcorpora/couperin_concerts/couperin_concerts.datapackage.json"
+D = dc.Dataset.from_package(package_path)
+D
 ```
 
 **All labels**
 
 ```{code-cell} ipython3
-df = c.expanded()
+labels = D.get_feature('harmonylabels')
+df = labels.df.droplevel(0)
 df.head(20)
 ```
 
