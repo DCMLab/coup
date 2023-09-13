@@ -2,6 +2,7 @@ dimcat @ git+https://github.com/johentsch/dimcat@3470963d # current development 
 nbformat 
 #seaborn
 scipy
+jupytext
 ipykernel
 jupyterlab>=3 
 ipywidgets>=7.6 # https://plotly.com/python/getting-started/#jupyterlab-support
