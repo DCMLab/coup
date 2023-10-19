@@ -1,0 +1,4 @@
+[submodule "notebooks"]
+	path = notebooks
+	url = git@github.com:DCMLab/data_reports.git
+	branch = couperin
