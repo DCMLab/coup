@@ -1,8 +1,6 @@
-dimcat @ git+https://github.com/johentsch/dimcat@3470963d # current development version
-nbformat 
-#seaborn
-scipy
-jupytext
-ipykernel
-jupyterlab>=3 
-ipywidgets>=7.6 # https://plotly.com/python/getting-started/#jupyterlab-support
+# identical with corpus_docs/requirements.txt
+sphinx==5.3.0
+pydata-sphinx-theme==0.13.3
+myst-nb==0.17.1
+jupyter_sphinx==0.4.0
+-r notebooks/requirements.txt
