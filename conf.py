@@ -24,7 +24,14 @@ source_suffix = {
 }
 
 templates_path = ['_templates']
-exclude_patterns = ['build', 'Thumbs.db', '.DS_Store', '**.ipynb', 'README.md']
+exclude_patterns = [
+    'build',
+    'Thumbs.db',
+    '.DS_Store',
+    '**.ipynb',
+    'README.md'
+]
+
 
 
 
@@ -35,3 +42,14 @@ html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 
 nb_execution_timeout = 120 # seconds
+nb_execution_excludepatterns = [
+    'notebooks/annotations.md',
+    'notebooks/cadences.md',
+    'notebooks/dft.md',
+    'notebooks/keys.md',
+    'notebooks/line_of_fifths.md',
+    'notebooks/modulations_adapted_for_mozart.md',
+    'notebooks/notes_stats.md',
+    'notebooks/overview.md',
+    'notebooks/scale_degrees.md',
+]
