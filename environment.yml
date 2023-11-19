@@ -37,6 +37,7 @@ dependencies:
       - backcall==0.2.0
       - beautifulsoup4==4.12.2
       - bleach==6.0.0
+      - cachetools==5.3.2
       - certifi==2023.7.22
       - cffi==1.16.0
       - cfgv==3.4.0
@@ -53,7 +54,7 @@ dependencies:
       - decorator==5.1.1
       - defusedxml==0.7.1
       - dill==0.3.7
-      - dimcat==0.3.0.post1.dev361+g29194fb.d20231013
+      - dimcat==1.0.0a0.post1.dev0+g5c5aea4.d20231119
       - distlib==0.3.7
       - docutils==0.19
       - executing==2.0.0
@@ -61,7 +62,7 @@ dependencies:
       - filelock==3.12.4
       - fonttools==4.43.0
       - fqdn==1.5.1
-      - frictionless==5.15.12
+      - frictionless==5.16.0
       - gitdb==4.0.10
       - gitpython==3.1.37
       - greenlet==3.0.0
@@ -70,6 +71,7 @@ dependencies:
       - idna==3.4
       - imagesize==1.4.1
       - importlib-metadata==6.8.0
+      - iniconfig==2.0.0
       - ipykernel==6.25.2
       - ipython==8.16.0
       - ipython-genutils==0.2.0
@@ -112,7 +114,7 @@ dependencies:
       - mdurl==0.1.2
       - mistune==3.0.2
       - more-itertools==10.1.0
-      - ms3==2.2.2.post1.dev7+gdfeb32d
+      - ms3==2.4.0
       - multiprocess==0.70.15
       - music21==9.1.0
       - myst-nb==0.17.2
@@ -138,7 +140,8 @@ dependencies:
       - pillow==10.0.1
       - pitchtypes==0.4.0
       - platformdirs==3.11.0
-      - plotly==5.17.0
+      - plotly==5.18.0
+      - pluggy==1.3.0
       - pox==0.3.3
       - ppft==1.7.6.7
       - pre-commit==3.4.0
@@ -150,9 +153,10 @@ dependencies:
       - pycparser==2.21
       - pydantic==2.4.2
       - pydantic-core==2.10.1
-      - pydata-sphinx-theme==0.14.1
+      - pydata-sphinx-theme==0.13.3
       - pygments==2.16.1
       - pyparsing==3.1.1
+      - pyproject-api==1.6.1
       - pyrsistent==0.19.3
       - pytablewriter==1.0.0
       - python-dateutil==2.8.2
