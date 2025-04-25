@@ -10,10 +10,12 @@ Welcome to Coup's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   notebooks/couperin_study
+   notebooks/scale_degrees
    notebooks/bass_degrees
    notebooks/harmonies
-   notebooks/chromatic_bass
    notebooks/modulations
+   notebooks/chromatic_bass
 
 
 

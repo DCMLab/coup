@@ -27,7 +27,7 @@ pd.options.display.max_rows = 100
 ```
 
 ```{code-cell}
-RESULTS_PATH = os.path.abspath(os.path.join(utils.OUTPUT_FOLDER, "harmonies"))
+RESULTS_PATH = os.path.abspath(os.path.join(utils.OUTPUT_FOLDER, "chromatic_bass"))
 os.makedirs(RESULTS_PATH, exist_ok=True)
 def save_figure_as(fig, filename, directory=RESULTS_PATH, **kwargs):
     plotting.write_image(fig, filename, directory, **kwargs)

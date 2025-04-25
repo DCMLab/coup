@@ -25,7 +25,7 @@ exclude_patterns = [
     'Thumbs.db',
     '.DS_Store',
     '**.ipynb',
-    'README.md',
+    '**README.md',
     'notebooks/accents*',
     'notebooks/annotations*',
     'notebooks/cadences*',
@@ -39,7 +39,6 @@ exclude_patterns = [
     'notebooks/notes_stats*',
     'notebooks/overview*',
     'notebooks/reduction*',
-    'notebooks/scale_degrees*',
     'notebooks/specific*'
 ]
 
