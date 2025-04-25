@@ -7,21 +7,17 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Coup'
-copyright = '2023, Johannes Hentschel'
+copyright = '2025, Johannes Hentschel'
 author = 'Johannes Hentschel'
+release = 'v2.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.githubpages',
     "myst_nb", # rendering Jupyter notebooks
     "jupyter_sphinx", # rendering interactive Plotly in notebooks
 ]
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'myst-nb',
-}
 
 templates_path = ['_templates']
 exclude_patterns = [
@@ -55,15 +51,17 @@ exclude_patterns = [
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
 
-nb_execution_timeout = 120 # seconds
-nb_execution_excludepatterns = [
-    'notebooks/annotations.md',
-    'notebooks/cadences.md',
-    'notebooks/dft.md',
-    'notebooks/keys.md',
-    'notebooks/line_of_fifths.md',
-    'notebooks/modulations_adapted_for_mozart.md',
-    'notebooks/notes_stats.md',
-    'notebooks/overview.md',
-    'notebooks/scale_degrees.md',
+html_css_files = [
+    'custom.css',
 ]
+
+# -- MyST Notebook configuration-----------------------------------------------
+# https://myst-nb.readthedocs.io/en/latest/configuration.html
+
+nb_execution_mode = "cache"
+nb_execution_timeout = 300
+nb_execution_allow_errors = False
+nb_execution_show_tb = True
+# toggle text:
+nb_code_prompt_show = "Show {type}"
+nb_code_prompt_hide = "Hide {type}"
