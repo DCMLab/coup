@@ -11,6 +11,7 @@ Welcome to Coup's documentation!
    :caption: Contents:
 
    notebooks/couperin_study
+   notebooks/couperin_corelli_study
    notebooks/scale_degrees
    notebooks/bass_degrees
    notebooks/harmonies
