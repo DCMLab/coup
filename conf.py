@@ -39,7 +39,7 @@ exclude_patterns = [
     'notebooks/notes_stats*',
     'notebooks/overview*',
     'notebooks/reduction*',
-    'notebooks/specific*'
+    #'notebooks/specific*'
 ]
 
 
