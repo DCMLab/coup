@@ -10,6 +10,7 @@ Welcome to Coup's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   notebooks/specific
    notebooks/couperin_study
    notebooks/couperin_corelli_study
    notebooks/scale_degrees
