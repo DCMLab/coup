@@ -5,11 +5,11 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.17.1
+    jupytext_version: 1.17.2
 kernelspec:
-  display_name: revamp
+  display_name: Python 3 (ipykernel)
   language: python
-  name: revamp
+  name: python3
 ---
 
 # Cou
@@ -76,7 +76,7 @@ def style_plotly(
     xaxes: Optional[dict] = None,
     yaxes: Optional[dict] = None,
     match_facet_yaxes=False,
-    font_size=40,
+    font_size=30,
     **layout,
 ):
     layout_args = dict(utils.STD_LAYOUT, **layout)
@@ -495,7 +495,6 @@ interval2fifths = (  # mapping that allows to order the x-axis with intervals ac
 
 **The probability that a randomly picked chord is a RoO chord is 64.6 %**
 
-
 ```{code-cell}
 BN.roo_suspensions.value_counts(normalize=True)
 ```
@@ -529,10 +528,44 @@ BN_dia = filter_diatonic_bass_degrees(BN)
 print(f"len(BN_dia) = {len(BN)} - {len(BN) - len(BN_dia)} = {len(BN_dia)}")
 ```
 
-**Probability that a diatonic bass degree is covered by the corresponding RoO chord: 65.7 %**
+**Probability that a diatonic bass degree is covered by the corresponding RoO chord: 65.7 %
+(+3.4 % a RoO suspension)**
 
 ```{code-cell}
-BN_dia.roo_suspensions.value_counts(normalize=True)
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
+BN_dia.roo_suspensions.value_counts(normalize=True).to_frame().style.format("{:.1%}")
+```
+
+**Probability that a note essentielle is covered by the corresponding RoO chord: 73.7 %
+(+5.2 % a RoO suspension)**\
+**Probability that a note non-essentielle is covered by the corresponding RoO chord: 53.7 %
+(+0.5 % a RoO suspension)**
+
+```{code-cell}
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
+notes_essentielles = ("1", "3", "5")
+ess_selector = BN_dia.bass_degree.isin(notes_essentielles)
+NE = BN_dia[ess_selector]
+NN = BN_dia[~ess_selector]
+pd.concat(
+    [
+        NE.roo_suspensions.value_counts(normalize=True).rename("Notes Essentielles"),
+        NN.roo_suspensions.value_counts(normalize=True).rename(
+            "Notes Non-Essentielles"
+        ),
+    ],
+    axis=1,
+).style.format("{:.1%}")
 ```
 
 ### p(#RoO = {2,1,0} | bass bigram)
@@ -570,9 +603,15 @@ print(
 * none of them carries an RoO chord is **14.6 %**.
 
 ```{code-cell}
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
 all_bigrams[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
-    set, axis=1
-).value_counts(normalize=True)
+    lambda x: str(set(x)), axis=1  # str() is needed because of the styler
+).value_counts(normalize=True).to_frame().style.format("{:.1%}")
 ```
 
 ### p(#RoO = {2,1,0} | diatonic leap)
@@ -585,8 +624,8 @@ all_bigrams[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
 
 ```{code-cell}
 dia_leaps[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
-    set, axis=1
-).value_counts(normalize=True)
+    lambda x: str(set(x)), axis=1
+).value_counts(normalize=True).to_frame().style.format("{:.1%}")
 ```
 
 ### p(#RoO = {2,1,0} | diatonic step)
@@ -599,8 +638,183 @@ dia_leaps[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
 
 ```{code-cell}
 dia_steps[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
-    set, axis=1
-).value_counts(normalize=True)
+    lambda x: str(set(x)), axis=1
+).value_counts(normalize=True).to_frame().style.format("{:.1%}")
+```
+
+### p(#RoO = {2,1,0} | bass ∈ {1, 3, 5})
+
+* both bass notes carry RoO chords is **64.9 %** (**+ 5.6 %** that one is RoO, the other a suspension thereof);
+* one of them carries an RoO chord is **26.5 %** (**+ 0.2 %** that one is an RoO suspension chord);
+* none of them carries an RoO chord is **2.8 %**.
+
+```{code-cell}
+bigrams_135_distinct = all_bigrams.query(
+    "(bass_degree in @notes_essentielles) & (subsequent_bass_degree in @notes_essentielles) "
+    "& bass_degree != subsequent_bass_degree"
+)
+bigrams_135_distinct[["roo_suspensions", "subsequent_roo_suspensions"]].apply(
+    lambda x: str(set(x)), axis=1
+).value_counts(normalize=True).to_frame().style.format("{:.1%}")
+```
+
+### p(movement = {leap,step,other} | bass ∈ {1, 3, 5})
+
+NE := unigrams with diatonic bass degree ∈ {1, 3, 5}\
+NN := unigrams with diatonic bass degree ∈ {2, 4, 6, 7} (and {#6, #7} in minor)
+
+* probability to proceed by leap: NE = **54.4 %**; NN = **36.0 %**
+* probability to proceed by step: NE = **23.1 %**; NN = **53.5 %**
+* probability to remain: NE = **12.8 %**; NN = **8.1 %**
+* probability to be last in key segment: NE = **9.7 %**; NN = **2.5 %**
+
+```{code-cell}
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
+pd.concat(
+    [
+        NE.subsequent_movement.value_counts(normalize=True).rename(
+            "Notes Essentielles"
+        ),
+        NN.subsequent_movement.value_counts(normalize=True).rename(
+            "Notes Non-Essentielles"
+        ),
+    ],
+    axis=1,
+).style.format("{:.1%}")
+```
+
+### p( RoO(subsequent) | bass ∈ {1, 3, 5} moves by {leap, step} )
+
+Probability that the following chord is a RoO chord given
+
+* a note essentielle proceeding by leap: **78.7 % (+0.5 % a suspension)**
+* a note essentielle proceeding by step: **72.4 % (+0.4 % a suspension)**
+* a note non-essentielle proceeding by leap: **35.5 % (+0.2 % a suspension)**
+* a note non-essentielle proceeding by step: **74.3 % (+0.2 % a suspension)**
+
+```{code-cell}
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
+(
+    pd.concat(
+        {
+            "Essentielles": NE.groupby("subsequent_movement")
+            .roo_suspensions.value_counts(normalize=True)
+            .unstack(),
+            "Non-Essentielles": NN.groupby("subsequent_movement")
+            .roo_suspensions.value_counts(normalize=True)
+            .unstack(),
+        }
+    )
+    .fillna(0.0)
+    .rename_axis(["Notes", "Movement"])
+    .rename_axis("Subsequent Chord", axis=1)
+).style.format("{:.1%}")
+```
+
+### Degree-wise movement Sankey
+
+```{code-cell}
+---
+mystnb:
+  code_prompt_hide: Hide helpers
+  code_prompt_show: Show helpers
+tags: [hide-cell]
+---
+def make_summary_sankey_data(
+    BN, extend_right=True, color_edges=True
+) -> Tuple[pd.DataFrame, List[str], List[str]] | Tuple[pd.DataFrame, List[str]]:
+    BN_dia = filter_diatonic_bass_degrees(BN)
+    preceding_movement = "preceding_movement"
+    subsequent_movement = "subsequent_movement"
+    middle_nodes_column = "bass_degree"
+    BN_dia.loc[:, middle_nodes_column] = BN_dia[middle_nodes_column].str.replace(
+        "#", ""
+    )
+    type_counts = BN_dia[middle_nodes_column].value_counts()
+    preceding_movement_counts = BN_dia[preceding_movement].value_counts()
+    subsequent_movement_counts = BN_dia[subsequent_movement].value_counts()
+    preceding_links = BN_dia.groupby([preceding_movement])[
+        middle_nodes_column
+    ].value_counts()
+    subsequent_links = BN_dia.groupby([subsequent_movement])[
+        middle_nodes_column
+    ].value_counts()
+    node_value_counts = [
+        ("preceding", preceding_movement_counts),
+        ("intervals", type_counts),
+        ("subsequent", subsequent_movement_counts),
+    ]
+    if extend_right:
+        subsequent_roo_counts = BN_dia["subsequent_roo_suspensions"].value_counts()
+        node_value_counts.append(("right", subsequent_roo_counts))
+        subsequent_roo_links = BN_dia.groupby([subsequent_movement])[
+            "subsequent_roo_suspensions"
+        ].value_counts()
+
+    node_labels = []
+    label_ids = dict()
+    for key, node_sizes in node_value_counts:
+        for label in node_sizes.index:
+            label_id = len(node_labels)
+            node_labels.append(str(label))
+            label_ids[(key, label)] = label_id
+
+    edge_columns = ["source", "target", "value"]
+    if color_edges:
+        node_colors = utils.make_evenly_distributed_color_map(node_labels)
+        edge_columns.append("color")
+
+    links = []
+    for (prec_mov, iv), cnt in preceding_links.items():
+        source_id = label_ids.get(("preceding", prec_mov))
+        target_id = label_ids.get(("intervals", iv))
+        if color_edges:
+            edge_color = node_colors[source_id]
+            links.append((source_id, target_id, cnt, edge_color))
+        else:
+            links.append((source_id, target_id, cnt))
+
+    for (subs_mov, iv), cnt in subsequent_links.items():
+        source_id = label_ids.get(("intervals", iv))
+        target_id = label_ids.get(("subsequent", subs_mov))
+        if color_edges:
+            edge_color = node_colors[target_id]
+            links.append((source_id, target_id, cnt, edge_color))
+        else:
+            links.append((source_id, target_id, cnt))
+
+    if extend_right:
+        for (subs_mov, roo), cnt in subsequent_roo_links.items():
+            source_id = label_ids.get(("subsequent", subs_mov))
+            target_id = label_ids.get(("right", roo))
+            if color_edges:
+                edge_color = node_colors[target_id]
+                links.append((source_id, target_id, cnt, edge_color))
+            else:
+                links.append((source_id, target_id, cnt))
+
+    edge_data = pd.DataFrame(links, columns=edge_columns)
+    if color_edges:
+        return edge_data, node_labels, node_colors
+    return edge_data, node_labels
+
+
+edge_data, node_labels, node_colors = make_summary_sankey_data(BN)
+fig = utils.make_sankey(
+    edge_data, node_labels, node_color=node_colors, font=dict(size=30)
+)
+save_figure_as(fig, "movement_summary_sankey", height=1000)
+fig
 ```
 
 ## Overview of how the bass moves
@@ -820,7 +1034,7 @@ def make_bass_degree_sankey(
     bass_degree: Optional[str | int] = None,
     precise=None,
     middle_nodes_column="intervals_over_bass",
-    font_size=40,
+    font_size=30,
     **layout,
 ):
     """
