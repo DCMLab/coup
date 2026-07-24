@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,36 +18,34 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pydata-sphinx-theme.css?v=07366fc5" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css?v=572af1d6" />
     <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7bc9918e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=e09f69a6"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/thebelab-helper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/harmonies';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Modulation Plans" href="modulations.html" />
@@ -63,6 +60,15 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -103,12 +109,15 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -120,12 +129,12 @@
     
   </div>
   
-  
   <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -168,20 +177,20 @@
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="modulations.html">
+                      <a class="nav-link dropdown-item nav-internal" href="modulations.html">
                         Modulation Plans
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -193,23 +202,27 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
         <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -220,18 +233,21 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -251,7 +267,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -294,20 +311,20 @@ document.write(`
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="modulations.html">
+                      <a class="nav-link dropdown-item nav-internal" href="modulations.html">
                         Modulation Plans
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -319,12 +336,13 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -357,8 +375,8 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -383,7 +401,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="harmonies">
-<h1>Harmonies<a class="headerlink" href="#harmonies" title="Permalink to this heading">#</a></h1>
+<h1>Harmonies<a class="headerlink" href="#harmonies" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -444,11 +462,11 @@ document.write(`
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dataset
 =======
 {&#39;inputs&#39;: {&#39;basepath&#39;: None,
-            &#39;packages&#39;: {&#39;couperin_concerts&#39;: [&quot;&#39;couperin_concerts.measures&#39; (MuseScoreMeasures)&quot;,
-                                               &quot;&#39;couperin_concerts.notes&#39; (MuseScoreNotes)&quot;,
-                                               &quot;&#39;couperin_concerts.expanded&#39; (MuseScoreHarmonies)&quot;,
-                                               &quot;&#39;couperin_concerts.chords&#39; (MuseScoreChords)&quot;,
-                                               &quot;&#39;couperin_concerts.metadata&#39; (Metadata)&quot;]}},
+            &#39;packages&#39;: {&#39;couperin_concerts&#39;: [&quot;&#39;couperin_concerts.measures&#39; (MuseScoreFacetName.MuseScoreMeasures)&quot;,
+                                               &quot;&#39;couperin_concerts.notes&#39; (MuseScoreFacetName.MuseScoreNotes)&quot;,
+                                               &quot;&#39;couperin_concerts.expanded&#39; (MuseScoreFacetName.MuseScoreHarmonies)&quot;,
+                                               &quot;&#39;couperin_concerts.chords&#39; (MuseScoreFacetName.MuseScoreChords)&quot;,
+                                               &quot;&#39;couperin_concerts.metadata&#39; (FeatureName.Metadata)&quot;]}},
  &#39;outputs&#39;: {&#39;basepath&#39;: None, &#39;packages&#39;: {}},
  &#39;pipeline&#39;: []}
 </pre></div>
@@ -1259,7 +1277,7 @@ There are 0 non-chord labels which we are going to delete:
 </div>
 </div>
 <section id="unigrams">
-<h2>Unigrams<a class="headerlink" href="#unigrams" title="Permalink to this heading">#</a></h2>
+<h2>Unigrams<a class="headerlink" href="#unigrams" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">25</span>
@@ -1350,9 +1368,9 @@ Name: count, dtype: Int64
         });
         }
         </script>
-        </div><div class="output text_html"><div>                            <div id="78a33a86-2636-42e4-a115-9b1bccaeb196" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("78a33a86-2636-42e4-a115-9b1bccaeb196")) {                    Plotly.newPlot(                        "78a33a86-2636-42e4-a115-9b1bccaeb196",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["V","I","i","V65","I6","V7","i6","V43","ii%65","IV","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241],"y":[1175,965,763,470,420,413,395,303,233,212,177,176,154,130,128,123,112,108,102,69,69,69,65,58,57,52,48,45,35,34,34,34,33,33,32,31,28,28,26,25,24,23,23,22,20,19,17,17,17,16,16,15,15,14,14,14,13,13,13,12,12,11,11,11,11,11,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,8,8,8,8,7,7,7,7,7,6,6,6,6,6,6,6,6,5,5,5,5,5,5,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241],"y":[14.028175740210125,25.549188156638014,34.6585482330468,40.26981852913085,45.28414517669532,50.214899713467055,54.93075453677173,58.54823304680038,61.329990448901626,63.86103151862464,65.97421203438395,68.07545367717287,69.91404011461319,71.4660936007641,72.99426934097421,74.46275071633238,75.79990448901623,77.08930276981853,78.30706781279846,79.1308500477555,79.95463228271251,80.77841451766953,81.55444126074498,82.2468958930277,82.92741165234003,83.54823304680038,84.12129894937918,84.6585482330468,85.07640878701051,85.48233046800382,85.88825214899714,86.29417382999046,86.68815663801337,87.0821394460363,87.46418338108882,87.83428844317096,88.16857688634194,88.50286532951289,88.81327602674307,89.11174785100286,89.39828080229226,89.67287488061127,89.94746895893027,90.2101241642789,90.44890162368672,90.67574021012416,90.87870105062082,91.08166189111748,91.28462273161414,91.4756446991404,91.66666666666666,91.84574976122254,92.02483285577841,92.1919770773639,92.35912129894938,92.52626552053485,92.68147086914995,92.83667621776505,92.99188156638013,93.13514804202482,93.27841451766953,93.40974212034384,93.54106972301814,93.67239732569246,93.80372492836676,93.93505253104108,94.05444126074498,94.1738299904489,94.29321872015282,94.40066857688633,94.50811843361987,94.6155682903534,94.72301814708692,94.83046800382043,94.93791786055397,95.04536771728749,95.15281757402101,95.26026743075454,95.36771728748806,95.47516714422159,95.58261700095511,95.67812798471824,95.77363896848138,95.8691499522445,95.96466093600765,96.04823304680038,96.13180515759312,96.21537726838586,96.29894937917861,96.38252148997135,96.45415472779369,96.52578796561605,96.59742120343839,96.66905444126076,96.7406876790831,96.81232091690545,96.88395415472779,96.95558739255014,97.01528175740211,97.07497612225407,97.134670487106,97.19436485195797,97.25405921680994,97.31375358166189,97.36150907354346,97.40926456542502,97.4570200573066,97.50477554918817,97.55253104106973,97.60028653295129,97.64804202483286,97.69579751671442,97.74355300859598,97.77936962750717,97.81518624641834,97.85100286532952,97.88681948424069,97.92263610315186,97.95845272206304,97.99426934097421,98.03008595988538,98.06590257879655,98.10171919770774,98.13753581661892,98.17335243553008,98.20916905444126,98.24498567335243,98.28080229226362,98.31661891117479,98.35243553008596,98.37631327602674,98.40019102196753,98.42406876790831,98.44794651384909,98.47182425978987,98.49570200573066,98.51957975167144,98.54345749761222,98.56733524355302,98.5912129894938,98.61509073543458,98.63896848137536,98.66284622731614,98.68672397325693,98.71060171919771,98.73447946513849,98.75835721107927,98.78223495702005,98.80611270296083,98.82999044890163,98.8538681948424,98.87774594078319,98.90162368672397,98.92550143266476,98.94937917860554,98.97325692454632,98.99713467048711,99.00907354345749,99.0210124164279,99.03295128939828,99.04489016236867,99.05682903533906,99.06876790830945,99.08070678127984,99.09264565425025,99.10458452722062,99.11652340019103,99.1284622731614,99.14040114613181,99.1523400191022,99.16427889207259,99.17621776504298,99.18815663801337,99.20009551098377,99.21203438395415,99.22397325692455,99.23591212989494,99.24785100286533,99.25978987583572,99.27172874880611,99.2836676217765,99.29560649474689,99.30754536771728,99.31948424068769,99.33142311365806,99.34336198662847,99.35530085959886,99.36723973256925,99.37917860553964,99.39111747851003,99.40305635148043,99.4149952244508,99.42693409742121,99.43887297039159,99.45081184336199,99.46275071633238,99.47468958930277,99.48662846227316,99.49856733524355,99.51050620821394,99.52244508118434,99.53438395415472,99.54632282712512,99.55826170009551,99.5702005730659,99.5821394460363,99.59407831900668,99.60601719197709,99.61795606494746,99.62989493791787,99.64183381088824,99.65377268385865,99.66571155682904,99.67765042979943,99.68958930276982,99.70152817574021,99.7134670487106,99.725405921681,99.73734479465138,99.74928366762178,99.76122254059217,99.77316141356256,99.78510028653295,99.79703915950334,99.80897803247373,99.82091690544412,99.83285577841453,99.8447946513849,99.8567335243553,99.8686723973257,99.88061127029609,99.89255014326648,99.90448901623687,99.91642788920726,99.92836676217765,99.94030563514804,99.95224450811844,99.96418338108882,99.97612225405922,99.98806112702961,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.02382017042574868,2.4058372130006167]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+        </div><div class="output text_html"><div>                            <div id="e36e6e13-50c6-454a-90ed-91aa99c37321" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e36e6e13-50c6-454a-90ed-91aa99c37321")) {                    Plotly.newPlot(                        "e36e6e13-50c6-454a-90ed-91aa99c37321",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["V","I","i","V65","I6","V7","i6","V43","ii%65","IV","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241],"y":[1175,965,763,470,420,413,395,303,233,212,177,176,154,130,128,123,112,108,102,69,69,69,65,58,57,52,48,45,35,34,34,34,33,33,32,31,28,28,26,25,24,23,23,22,20,19,17,17,17,16,16,15,15,14,14,14,13,13,13,12,12,11,11,11,11,11,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,8,8,8,8,7,7,7,7,7,6,6,6,6,6,6,6,6,5,5,5,5,5,5,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241],"y":[14.028175740210125,25.549188156638014,34.6585482330468,40.26981852913085,45.28414517669532,50.214899713467055,54.93075453677173,58.54823304680038,61.329990448901626,63.86103151862464,65.97421203438395,68.07545367717287,69.91404011461319,71.4660936007641,72.99426934097421,74.46275071633238,75.79990448901623,77.08930276981853,78.30706781279846,79.1308500477555,79.95463228271251,80.77841451766953,81.55444126074498,82.2468958930277,82.92741165234003,83.54823304680038,84.12129894937918,84.6585482330468,85.07640878701051,85.48233046800382,85.88825214899714,86.29417382999046,86.68815663801337,87.0821394460363,87.46418338108882,87.83428844317096,88.16857688634194,88.50286532951289,88.81327602674307,89.11174785100286,89.39828080229226,89.67287488061127,89.94746895893027,90.2101241642789,90.44890162368672,90.67574021012416,90.87870105062082,91.08166189111748,91.28462273161414,91.4756446991404,91.66666666666666,91.84574976122254,92.02483285577841,92.1919770773639,92.35912129894938,92.52626552053485,92.68147086914995,92.83667621776505,92.99188156638013,93.13514804202482,93.27841451766953,93.40974212034384,93.54106972301814,93.67239732569246,93.80372492836676,93.93505253104108,94.05444126074498,94.1738299904489,94.29321872015282,94.40066857688633,94.50811843361987,94.6155682903534,94.72301814708692,94.83046800382043,94.93791786055397,95.04536771728749,95.15281757402101,95.26026743075454,95.36771728748806,95.47516714422159,95.58261700095511,95.67812798471824,95.77363896848138,95.8691499522445,95.96466093600765,96.04823304680038,96.13180515759312,96.21537726838586,96.29894937917861,96.38252148997135,96.45415472779369,96.52578796561605,96.59742120343839,96.66905444126076,96.7406876790831,96.81232091690545,96.88395415472779,96.95558739255014,97.01528175740211,97.07497612225407,97.134670487106,97.19436485195797,97.25405921680994,97.31375358166189,97.36150907354346,97.40926456542502,97.4570200573066,97.50477554918817,97.55253104106973,97.60028653295129,97.64804202483286,97.69579751671442,97.74355300859598,97.77936962750717,97.81518624641834,97.85100286532952,97.88681948424069,97.92263610315186,97.95845272206304,97.99426934097421,98.03008595988538,98.06590257879655,98.10171919770774,98.13753581661892,98.17335243553008,98.20916905444126,98.24498567335243,98.28080229226362,98.31661891117479,98.35243553008596,98.37631327602674,98.40019102196753,98.42406876790831,98.44794651384909,98.47182425978987,98.49570200573066,98.51957975167144,98.54345749761222,98.56733524355302,98.5912129894938,98.61509073543458,98.63896848137536,98.66284622731614,98.68672397325693,98.71060171919771,98.73447946513849,98.75835721107927,98.78223495702005,98.80611270296083,98.82999044890163,98.8538681948424,98.87774594078319,98.90162368672397,98.92550143266476,98.94937917860554,98.97325692454632,98.99713467048711,99.00907354345749,99.0210124164279,99.03295128939828,99.04489016236867,99.05682903533906,99.06876790830945,99.08070678127984,99.09264565425025,99.10458452722062,99.11652340019103,99.1284622731614,99.14040114613181,99.1523400191022,99.16427889207259,99.17621776504298,99.18815663801337,99.20009551098377,99.21203438395415,99.22397325692455,99.23591212989494,99.24785100286533,99.25978987583572,99.27172874880611,99.2836676217765,99.29560649474689,99.30754536771728,99.31948424068769,99.33142311365806,99.34336198662847,99.35530085959886,99.36723973256925,99.37917860553964,99.39111747851003,99.40305635148043,99.4149952244508,99.42693409742121,99.43887297039159,99.45081184336199,99.46275071633238,99.47468958930277,99.48662846227316,99.49856733524355,99.51050620821394,99.52244508118434,99.53438395415472,99.54632282712512,99.55826170009551,99.5702005730659,99.5821394460363,99.59407831900668,99.60601719197709,99.61795606494746,99.62989493791787,99.64183381088824,99.65377268385865,99.66571155682904,99.67765042979943,99.68958930276982,99.70152817574021,99.7134670487106,99.725405921681,99.73734479465138,99.74928366762178,99.76122254059217,99.77316141356256,99.78510028653295,99.79703915950334,99.80897803247373,99.82091690544412,99.83285577841453,99.8447946513849,99.8567335243553,99.8686723973257,99.88061127029609,99.89255014326648,99.90448901623687,99.91642788920726,99.92836676217765,99.94030563514804,99.95224450811844,99.96418338108882,99.97612225405922,99.98806112702961,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.02382017042574868,2.4058372130006167]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('78a33a86-2636-42e4-a115-9b1bccaeb196');
+var gd = document.getElementById('e36e6e13-50c6-454a-90ed-91aa99c37321');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1377,7 +1395,7 @@ if (outputEl) {{
                         })                };                });            </script>        </div></div></div>
 </div>
 <section id="unigrams-in-major-segments">
-<h3>Unigrams in major segments<a class="headerlink" href="#unigrams-in-major-segments" title="Permalink to this heading">#</a></h3>
+<h3>Unigrams in major segments<a class="headerlink" href="#unigrams-in-major-segments" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minor</span><span class="p">,</span> <span class="n">major</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">localkey_is_minor</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">localkey_is_minor</span><span class="p">]</span>
@@ -1448,9 +1466,9 @@ Name: count, dtype: Int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>                            <div id="03ce4b8c-30ec-4416-8321-622fa6d9ea4a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("03ce4b8c-30ec-4416-8321-622fa6d9ea4a")) {                    Plotly.newPlot(                        "03ce4b8c-30ec-4416-8321-622fa6d9ea4a",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["I","V","I6","V65","V7","IV","ii65","V43","vi","V6","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119],"y":[906,615,416,232,228,165,159,131,122,117,89,83,81,79,52,41,40,34,33,32,30,28,28,24,22,19,18,15,14,14,14,13,12,10,10,9,9,9,9,8,8,7,6,6,6,5,5,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119],"y":[21.894635089415175,36.75688738521025,46.810053165780566,52.41662638956017,57.92653455775737,61.913968100531655,65.75640405993234,68.92218463025617,71.87046882551957,74.69792170130498,76.84871918801353,78.85451909134848,80.81198646689222,82.72112131464475,83.97776703721604,84.96858385693572,85.93523441275978,86.75688738521025,87.5543740937651,88.32769453842437,89.05268245529241,89.72933784436925,90.40599323344611,90.98598356694055,91.5176413726438,91.97680038666022,92.41179313678106,92.77428709521509,93.11261478975351,93.45094248429193,93.78927017883035,94.10343160947318,94.3934267762204,94.63508941517641,94.87675205413242,95.09424842919285,95.31174480425327,95.52924117931367,95.74673755437409,95.9400676655389,96.13339777670372,96.30256162397293,96.44755920734654,96.59255679072015,96.73755437409378,96.85838569357176,96.97921701304978,97.0758820686322,97.17254712421459,97.26921217979701,97.3658772353794,97.43837602706623,97.51087481875302,97.58337361043982,97.65587240212663,97.72837119381343,97.80086998550024,97.87336877718704,97.94586756887385,98.01836636056066,98.09086515224746,98.16336394393427,98.23586273562107,98.28419526341227,98.33252779120349,98.38086031899468,98.42919284678588,98.47752537457708,98.5258579023683,98.5741904301595,98.6225229579507,98.67085548574191,98.71918801353311,98.76752054132432,98.8158530691155,98.86418559690672,98.91251812469793,98.96085065248913,99.00918318028033,99.05751570807153,99.08168197196714,99.10584823586274,99.13001449975833,99.15418076365394,99.17834702754953,99.20251329144514,99.22667955534075,99.25084581923635,99.27501208313195,99.29917834702755,99.32334461092314,99.34751087481875,99.37167713871435,99.39584340260996,99.42000966650556,99.44417593040116,99.46834219429677,99.49250845819236,99.51667472208796,99.54084098598356,99.56500724987917,99.58917351377478,99.61333977767038,99.63750604156597,99.66167230546158,99.68583856935717,99.71000483325277,99.73417109714838,99.75833736104398,99.7825036249396,99.80666988883519,99.83083615273078,99.85500241662639,99.87916868052199,99.9033349444176,99.9275012083132,99.9516674722088,99.9758337361044,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.020755469613925305,2.096302431006456]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+<div class="output text_html"><div>                            <div id="5b69134c-be10-4a88-b192-4e6b852baf21" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("5b69134c-be10-4a88-b192-4e6b852baf21")) {                    Plotly.newPlot(                        "5b69134c-be10-4a88-b192-4e6b852baf21",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["I","V","I6","V65","V7","IV","ii65","V43","vi","V6","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119],"y":[906,615,416,232,228,165,159,131,122,117,89,83,81,79,52,41,40,34,33,32,30,28,28,24,22,19,18,15,14,14,14,13,12,10,10,9,9,9,9,8,8,7,6,6,6,5,5,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119],"y":[21.894635089415175,36.75688738521025,46.810053165780566,52.41662638956017,57.92653455775737,61.913968100531655,65.75640405993234,68.92218463025617,71.87046882551957,74.69792170130498,76.84871918801353,78.85451909134848,80.81198646689222,82.72112131464475,83.97776703721604,84.96858385693572,85.93523441275978,86.75688738521025,87.5543740937651,88.32769453842437,89.05268245529241,89.72933784436925,90.40599323344611,90.98598356694055,91.5176413726438,91.97680038666022,92.41179313678106,92.77428709521509,93.11261478975351,93.45094248429193,93.78927017883035,94.10343160947318,94.3934267762204,94.63508941517641,94.87675205413242,95.09424842919285,95.31174480425327,95.52924117931367,95.74673755437409,95.9400676655389,96.13339777670372,96.30256162397293,96.44755920734654,96.59255679072015,96.73755437409378,96.85838569357176,96.97921701304978,97.0758820686322,97.17254712421459,97.26921217979701,97.3658772353794,97.43837602706623,97.51087481875302,97.58337361043982,97.65587240212663,97.72837119381343,97.80086998550024,97.87336877718704,97.94586756887385,98.01836636056066,98.09086515224746,98.16336394393427,98.23586273562107,98.28419526341227,98.33252779120349,98.38086031899468,98.42919284678588,98.47752537457708,98.5258579023683,98.5741904301595,98.6225229579507,98.67085548574191,98.71918801353311,98.76752054132432,98.8158530691155,98.86418559690672,98.91251812469793,98.96085065248913,99.00918318028033,99.05751570807153,99.08168197196714,99.10584823586274,99.13001449975833,99.15418076365394,99.17834702754953,99.20251329144514,99.22667955534075,99.25084581923635,99.27501208313195,99.29917834702755,99.32334461092314,99.34751087481875,99.37167713871435,99.39584340260996,99.42000966650556,99.44417593040116,99.46834219429677,99.49250845819236,99.51667472208796,99.54084098598356,99.56500724987917,99.58917351377478,99.61333977767038,99.63750604156597,99.66167230546158,99.68583856935717,99.71000483325277,99.73417109714838,99.75833736104398,99.7825036249396,99.80666988883519,99.83083615273078,99.85500241662639,99.87916868052199,99.9033349444176,99.9275012083132,99.9516674722088,99.9758337361044,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.020755469613925305,2.096302431006456]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('03ce4b8c-30ec-4416-8321-622fa6d9ea4a');
+var gd = document.getElementById('5b69134c-be10-4a88-b192-4e6b852baf21');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1476,7 +1494,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="unigrams-in-minor-segments">
-<h3>Unigrams in minor segments<a class="headerlink" href="#unigrams-in-minor-segments" title="Permalink to this heading">#</a></h3>
+<h3>Unigrams in minor segments<a class="headerlink" href="#unigrams-in-minor-segments" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span>
@@ -1546,9 +1564,9 @@ Name: count, dtype: Int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><div>                            <div id="3e171bce-8a77-49e2-b663-b4f8ef6c9cd2" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3e171bce-8a77-49e2-b663-b4f8ef6c9cd2")) {                    Plotly.newPlot(                        "3e171bce-8a77-49e2-b663-b4f8ef6c9cd2",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["i","V","i6","V65","ii%65","V7","V43","ii%43","iv","V2","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169],"y":[761,560,394,238,230,185,172,128,112,98,69,69,59,57,49,47,47,45,43,37,34,33,32,29,26,26,23,23,20,19,19,17,17,17,16,15,15,13,13,13,13,12,12,11,11,11,11,11,10,9,9,9,9,9,9,9,8,8,8,7,7,6,6,6,6,6,6,5,5,5,5,5,5,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169],"y":[17.956583294006606,31.170363378952338,40.467201510146296,46.08305804624823,51.510146295422366,55.875412930627654,59.93393109957527,62.95422369042001,65.59697970740915,67.90939122227466,69.5375176970269,71.16564417177914,72.55781028787163,73.90278433223219,75.05899008966493,76.16800377536573,77.27701746106655,78.3388390750354,79.3534686172723,80.22652194431336,81.02878716375649,81.80745634733366,82.56252949504483,83.2468145351581,83.86031146767343,84.47380840018877,85.01651722510618,85.5592260500236,86.03114676734309,86.4794714487966,86.92779613025013,87.32892873997169,87.73006134969326,88.13119395941482,88.50873053327041,88.86267107126002,89.21661160924964,89.52336007550731,89.83010854176499,90.13685700802266,90.44360547428032,90.72675790467201,91.00991033506371,91.26946672958944,91.52902312411516,91.78857951864087,92.04813591316659,92.3076923076923,92.54365266635205,92.75601698914583,92.9683813119396,93.18074563473337,93.39310995752713,93.6054742803209,93.81783860311468,94.03020292590844,94.21897121283624,94.40773949976405,94.59650778669183,94.76168003775366,94.92685228881548,95.06842850401132,95.21000471920718,95.35158093440302,95.49315714959887,95.63473336479471,95.77630957999055,95.89428975932044,96.0122699386503,96.13025011798018,96.24823029731006,96.36621047663992,96.4841906559698,96.5785747994337,96.6729589428976,96.76734308636149,96.86172722982539,96.95611137328929,97.02689948088721,97.09768758848514,97.16847569608305,97.23926380368098,97.3100519112789,97.38084001887682,97.45162812647476,97.52241623407268,97.5932043416706,97.66399244926852,97.73478055686645,97.7819726285984,97.82916470033034,97.8763567720623,97.92354884379424,97.97074091552619,98.01793298725813,98.06512505899009,98.11231713072203,98.15950920245399,98.20670127418593,98.25389334591789,98.30108541764983,98.34827748938179,98.39546956111374,98.44266163284568,98.48985370457764,98.5134497404436,98.53704577630958,98.56064181217555,98.58423784804154,98.6078338839075,98.63142991977348,98.65502595563946,98.67862199150542,98.7022180273714,98.72581406323737,98.74941009910336,98.77300613496932,98.7966021708353,98.82019820670126,98.84379424256726,98.86739027843322,98.8909863142992,98.91458235016518,98.93817838603115,98.96177442189712,98.9853704577631,99.00896649362907,99.03256252949505,99.05615856536102,99.079754601227,99.10335063709297,99.12694667295894,99.15054270882491,99.1741387446909,99.19773478055687,99.22133081642284,99.24492685228881,99.26852288815479,99.29211892402077,99.31571495988673,99.33931099575271,99.36290703161869,99.38650306748467,99.41009910335063,99.43369513921661,99.45729117508259,99.48088721094857,99.50448324681453,99.52807928268051,99.55167531854649,99.57527135441245,99.59886739027843,99.6224634261444,99.64605946201038,99.66965549787635,99.69325153374233,99.7168475696083,99.74044360547428,99.76403964134025,99.78763567720623,99.8112317130722,99.83482774893818,99.85842378480415,99.88201982067014,99.9056158565361,99.92921189240208,99.95280792826804,99.97640396413404,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.022278867046136734,2.25016557165981]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
+<div class="output text_html"><div>                            <div id="67e74555-2a54-4dd1-b87d-83128e2af036" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("67e74555-2a54-4dd1-b87d-83128e2af036")) {                    Plotly.newPlot(                        "67e74555-2a54-4dd1-b87d-83128e2af036",                        [{"marker":{"size":4},"mode":"markers+text","name":"Absolute count","text":["i","V","i6","V65","ii%65","V7","V43","ii%43","iv","V2","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],"textposition":["bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","bottom center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center","top center"],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169],"y":[761,560,394,238,230,185,172,128,112,98,69,69,59,57,49,47,47,45,43,37,34,33,32,29,26,26,23,23,20,19,19,17,17,17,16,15,15,13,13,13,13,12,12,11,11,11,11,11,10,9,9,9,9,9,9,9,8,8,8,7,7,6,6,6,6,6,6,5,5,5,5,5,5,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"type":"scatter","xaxis":"x","yaxis":"y"},{"marker":{"size":4},"mode":"markers","name":"Cumulative fraction (%)","x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169],"y":[17.956583294006606,31.170363378952338,40.467201510146296,46.08305804624823,51.510146295422366,55.875412930627654,59.93393109957527,62.95422369042001,65.59697970740915,67.90939122227466,69.5375176970269,71.16564417177914,72.55781028787163,73.90278433223219,75.05899008966493,76.16800377536573,77.27701746106655,78.3388390750354,79.3534686172723,80.22652194431336,81.02878716375649,81.80745634733366,82.56252949504483,83.2468145351581,83.86031146767343,84.47380840018877,85.01651722510618,85.5592260500236,86.03114676734309,86.4794714487966,86.92779613025013,87.32892873997169,87.73006134969326,88.13119395941482,88.50873053327041,88.86267107126002,89.21661160924964,89.52336007550731,89.83010854176499,90.13685700802266,90.44360547428032,90.72675790467201,91.00991033506371,91.26946672958944,91.52902312411516,91.78857951864087,92.04813591316659,92.3076923076923,92.54365266635205,92.75601698914583,92.9683813119396,93.18074563473337,93.39310995752713,93.6054742803209,93.81783860311468,94.03020292590844,94.21897121283624,94.40773949976405,94.59650778669183,94.76168003775366,94.92685228881548,95.06842850401132,95.21000471920718,95.35158093440302,95.49315714959887,95.63473336479471,95.77630957999055,95.89428975932044,96.0122699386503,96.13025011798018,96.24823029731006,96.36621047663992,96.4841906559698,96.5785747994337,96.6729589428976,96.76734308636149,96.86172722982539,96.95611137328929,97.02689948088721,97.09768758848514,97.16847569608305,97.23926380368098,97.3100519112789,97.38084001887682,97.45162812647476,97.52241623407268,97.5932043416706,97.66399244926852,97.73478055686645,97.7819726285984,97.82916470033034,97.8763567720623,97.92354884379424,97.97074091552619,98.01793298725813,98.06512505899009,98.11231713072203,98.15950920245399,98.20670127418593,98.25389334591789,98.30108541764983,98.34827748938179,98.39546956111374,98.44266163284568,98.48985370457764,98.5134497404436,98.53704577630958,98.56064181217555,98.58423784804154,98.6078338839075,98.63142991977348,98.65502595563946,98.67862199150542,98.7022180273714,98.72581406323737,98.74941009910336,98.77300613496932,98.7966021708353,98.82019820670126,98.84379424256726,98.86739027843322,98.8909863142992,98.91458235016518,98.93817838603115,98.96177442189712,98.9853704577631,99.00896649362907,99.03256252949505,99.05615856536102,99.079754601227,99.10335063709297,99.12694667295894,99.15054270882491,99.1741387446909,99.19773478055687,99.22133081642284,99.24492685228881,99.26852288815479,99.29211892402077,99.31571495988673,99.33931099575271,99.36290703161869,99.38650306748467,99.41009910335063,99.43369513921661,99.45729117508259,99.48088721094857,99.50448324681453,99.52807928268051,99.55167531854649,99.57527135441245,99.59886739027843,99.6224634261444,99.64605946201038,99.66965549787635,99.69325153374233,99.7168475696083,99.74044360547428,99.76403964134025,99.78763567720623,99.8112317130722,99.83482774893818,99.85842378480415,99.88201982067014,99.9056158565361,99.92921189240208,99.95280792826804,99.97640396413404,100.0],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"Rank of chord label"},"zeroline":false,"gridcolor":"lightgrey","type":"log","range":[-0.022278867046136734,2.25016557165981]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"gridcolor":"lightpink","title":{"text":"Absolute label count"},"type":"log","zeroline":true,"dtick":1,"range":[-0.03,3.7]},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"Cumulative fraction (%)"},"gridcolor":"lightgrey","zeroline":false,"dtick":10.0,"range":[-0.01,1.11]},"margin":{"l":40,"r":0,"b":0,"t":80,"pad":0},"font":{"size":25},"legend":{"orientation":"h","itemsizing":"constant","x":-0.05},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('3e171bce-8a77-49e2-b663-b4f8ef6c9cd2');
+var gd = document.getElementById('67e74555-2a54-4dd1-b87d-83128e2af036');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -1575,7 +1593,7 @@ if (outputEl) {{
 </section>
 </section>
 <section id="bigrams">
-<h2>Bigrams<a class="headerlink" href="#bigrams" title="Permalink to this heading">#</a></h2>
+<h2>Bigrams<a class="headerlink" href="#bigrams" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chord_successions</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;key_regions&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">chord</span><span class="p">]</span>
@@ -1628,7 +1646,7 @@ if (outputEl) {{
 </div>
 </div>
 <section id="absolute-counts-read-from-index-to-column">
-<h3>Absolute Counts (read from index to column)<a class="headerlink" href="#absolute-counts-read-from-index-to-column" title="Permalink to this heading">#</a></h3>
+<h3>Absolute Counts (read from index to column)<a class="headerlink" href="#absolute-counts-read-from-index-to-column" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">make_transition_matrix</span><span class="p">(</span><span class="n">chord_successions</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">distinct_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1661,8 +1679,8 @@ if (outputEl) {{
       <th>I6</th>
       <th>i6</th>
       <th>V43</th>
-      <th>V2</th>
       <th>ii65</th>
+      <th>V2</th>
       <th>ii%65</th>
       <th>V65</th>
       <th>IV</th>
@@ -1691,8 +1709,8 @@ if (outputEl) {{
       <td>119</td>
       <td>81</td>
       <td>11</td>
-      <td>64</td>
       <td>0</td>
+      <td>64</td>
       <td>2</td>
       <td>56</td>
       <td>0</td>
@@ -1719,8 +1737,8 @@ if (outputEl) {{
       <td>2</td>
       <td>5</td>
       <td>1</td>
-      <td>1</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>9</td>
       <td>0</td>
@@ -1747,8 +1765,8 @@ if (outputEl) {{
       <td>74</td>
       <td>0</td>
       <td>22</td>
-      <td>8</td>
       <td>37</td>
+      <td>8</td>
       <td>0</td>
       <td>46</td>
       <td>49</td>
@@ -1775,8 +1793,8 @@ if (outputEl) {{
       <td>0</td>
       <td>55</td>
       <td>25</td>
-      <td>9</td>
       <td>3</td>
+      <td>9</td>
       <td>40</td>
       <td>59</td>
       <td>15</td>
@@ -1803,8 +1821,8 @@ if (outputEl) {{
       <td>2</td>
       <td>9</td>
       <td>6</td>
-      <td>3</td>
       <td>0</td>
+      <td>3</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1831,8 +1849,8 @@ if (outputEl) {{
       <td>0</td>
       <td>16</td>
       <td>1</td>
-      <td>7</td>
       <td>0</td>
+      <td>7</td>
       <td>0</td>
       <td>2</td>
       <td>0</td>
@@ -1887,8 +1905,8 @@ if (outputEl) {{
       <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>8</td>
       <td>0</td>
+      <td>8</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -1915,8 +1933,8 @@ if (outputEl) {{
       <td>0</td>
       <td>0</td>
       <td>62</td>
-      <td>1</td>
       <td>64</td>
+      <td>1</td>
       <td>0</td>
       <td>10</td>
       <td>35</td>
@@ -1943,8 +1961,8 @@ if (outputEl) {{
       <td>25</td>
       <td>45</td>
       <td>0</td>
-      <td>2</td>
       <td>0</td>
+      <td>2</td>
       <td>0</td>
       <td>32</td>
       <td>0</td>
@@ -1999,8 +2017,8 @@ if (outputEl) {{
       <td>0</td>
       <td>0</td>
       <td>82</td>
-      <td>2</td>
       <td>4</td>
+      <td>2</td>
       <td>63</td>
       <td>41</td>
       <td>4</td>
@@ -2027,8 +2045,8 @@ if (outputEl) {{
       <td>5</td>
       <td>0</td>
       <td>1</td>
-      <td>0</td>
       <td>1</td>
+      <td>0</td>
       <td>0</td>
       <td>55</td>
       <td>6</td>
@@ -2111,8 +2129,8 @@ if (outputEl) {{
       <td>25</td>
       <td>0</td>
       <td>24</td>
-      <td>4</td>
       <td>3</td>
+      <td>4</td>
       <td>0</td>
       <td>8</td>
       <td>0</td>
@@ -2139,8 +2157,8 @@ if (outputEl) {{
       <td>0</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>12</td>
       <td>4</td>
@@ -2167,8 +2185,8 @@ if (outputEl) {{
       <td>21</td>
       <td>0</td>
       <td>1</td>
-      <td>1</td>
       <td>31</td>
+      <td>1</td>
       <td>2</td>
       <td>8</td>
       <td>17</td>
@@ -2243,34 +2261,6 @@ if (outputEl) {{
       <td>0</td>
     </tr>
     <tr>
-      <th>ii7</th>
-      <td>1</td>
-      <td>0</td>
-      <td>29</td>
-      <td>10</td>
-      <td>6</td>
-      <td>0</td>
-      <td>4</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
       <th>V65/iv</th>
       <td>0</td>
       <td>0</td>
@@ -2299,6 +2289,34 @@ if (outputEl) {{
       <td>0</td>
     </tr>
     <tr>
+      <th>ii7</th>
+      <td>1</td>
+      <td>0</td>
+      <td>29</td>
+      <td>10</td>
+      <td>6</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
       <th>V6</th>
       <td>23</td>
       <td>10</td>
@@ -2307,8 +2325,8 @@ if (outputEl) {{
       <td>9</td>
       <td>3</td>
       <td>0</td>
-      <td>1</td>
       <td>0</td>
+      <td>1</td>
       <td>0</td>
       <td>8</td>
       <td>0</td>
@@ -2335,8 +2353,8 @@ if (outputEl) {{
       <td>0</td>
       <td>2</td>
       <td>0</td>
-      <td>0</td>
       <td>6</td>
+      <td>0</td>
       <td>21</td>
       <td>0</td>
       <td>0</td>
@@ -2363,8 +2381,8 @@ if (outputEl) {{
       <td>0</td>
       <td>5</td>
       <td>4</td>
-      <td>17</td>
       <td>0</td>
+      <td>17</td>
       <td>5</td>
       <td>1</td>
       <td>0</td>
@@ -2388,11 +2406,11 @@ if (outputEl) {{
 </div>
 </section>
 <section id="normalized-counts">
-<h3>Normalized Counts<a class="headerlink" href="#normalized-counts" title="Permalink to this heading">#</a></h3>
+<h3>Normalized Counts<a class="headerlink" href="#normalized-counts" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">make_transition_matrix</span><span class="p">(</span>
-    <span class="n">chord_successions</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">distinct_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">2</span>
+    <span class="n">chord_successions</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">distinct_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">percent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -2423,8 +2441,8 @@ if (outputEl) {{
       <th>I6</th>
       <th>i6</th>
       <th>V43</th>
-      <th>V2</th>
       <th>ii65</th>
+      <th>V2</th>
       <th>ii%65</th>
       <th>V65</th>
       <th>IV</th>
@@ -2446,703 +2464,703 @@ if (outputEl) {{
   <tbody>
     <tr>
       <th>V</th>
-      <td>0.23</td>
-      <td>0.17</td>
-      <td>0.00</td>
-      <td>0.13</td>
-      <td>0.11</td>
-      <td>0.07</td>
-      <td>0.01</td>
-      <td>0.06</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
+      <td>22.8</td>
+      <td>17.4</td>
+      <td>0.0</td>
+      <td>12.8</td>
+      <td>10.6</td>
+      <td>7.2</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>5.7</td>
+      <td>0.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>2.1</td>
+      <td>1.0</td>
+      <td>0.4</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>0.1</td>
+      <td>0.4</td>
+      <td>0.1</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>0.1</td>
+      <td>1.2</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V7</th>
-      <td>0.50</td>
-      <td>0.30</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>50.2</td>
+      <td>30.2</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>1.2</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>I</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.24</td>
-      <td>0.04</td>
-      <td>0.10</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.01</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.07</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.06</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.01</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.02</td>
+      <td>0.0</td>
+      <td>0.4</td>
+      <td>23.7</td>
+      <td>4.2</td>
+      <td>10.5</td>
+      <td>0.0</td>
+      <td>3.1</td>
+      <td>5.2</td>
+      <td>1.1</td>
+      <td>0.0</td>
+      <td>6.5</td>
+      <td>6.9</td>
+      <td>6.5</td>
+      <td>0.1</td>
+      <td>5.7</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.6</td>
+      <td>0.6</td>
+      <td>2.0</td>
+      <td>0.1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>i</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.25</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.09</td>
-      <td>0.04</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.10</td>
-      <td>0.02</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.03</td>
-      <td>0.02</td>
-      <td>0.04</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>25.4</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>9.1</td>
+      <td>4.1</td>
+      <td>0.5</td>
+      <td>1.5</td>
+      <td>6.6</td>
+      <td>9.7</td>
+      <td>2.5</td>
+      <td>2.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.1</td>
+      <td>3.5</td>
+      <td>1.8</td>
+      <td>4.0</td>
+      <td>2.8</td>
+      <td>0.3</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V65</th>
-      <td>0.33</td>
-      <td>0.26</td>
-      <td>0.03</td>
-      <td>0.24</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>32.8</td>
+      <td>26.3</td>
+      <td>3.2</td>
+      <td>23.8</td>
+      <td>0.4</td>
+      <td>1.9</td>
+      <td>1.3</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>ii%65</th>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.53</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.09</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>3.9</td>
+      <td>52.8</td>
+      <td>1.7</td>
+      <td>0.0</td>
+      <td>6.9</td>
+      <td>0.4</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.6</td>
+      <td>2.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V(4)</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.79</td>
-      <td>0.16</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>78.9</td>
+      <td>15.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>0.0</td>
+      <td>1.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>ii65</th>
-      <td>0.03</td>
-      <td>0.01</td>
-      <td>0.51</td>
-      <td>0.03</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.11</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
+      <td>3.4</td>
+      <td>0.6</td>
+      <td>50.9</td>
+      <td>3.4</td>
+      <td>1.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>1.7</td>
+      <td>0.0</td>
+      <td>11.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>4.6</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>I6</th>
-      <td>0.21</td>
-      <td>0.00</td>
-      <td>0.08</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.15</td>
-      <td>0.00</td>
-      <td>0.15</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.08</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>20.8</td>
+      <td>0.0</td>
+      <td>7.7</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>15.0</td>
+      <td>15.5</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>2.4</td>
+      <td>8.5</td>
+      <td>2.4</td>
+      <td>0.2</td>
+      <td>3.1</td>
+      <td>3.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>3.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V43</th>
-      <td>0.28</td>
-      <td>0.28</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.08</td>
-      <td>0.15</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.11</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>27.7</td>
+      <td>28.1</td>
+      <td>1.3</td>
+      <td>1.0</td>
+      <td>8.3</td>
+      <td>14.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>10.6</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V2</th>
-      <td>0.01</td>
-      <td>0.02</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.38</td>
-      <td>0.47</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
+      <td>1.1</td>
+      <td>1.7</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>38.1</td>
+      <td>47.2</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>i6</th>
-      <td>0.00</td>
-      <td>0.14</td>
-      <td>0.06</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.21</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.16</td>
-      <td>0.10</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.01</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>14.1</td>
+      <td>5.9</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>21.0</td>
+      <td>1.0</td>
+      <td>0.5</td>
+      <td>16.1</td>
+      <td>10.5</td>
+      <td>1.0</td>
+      <td>0.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.8</td>
+      <td>1.0</td>
+      <td>1.8</td>
+      <td>0.0</td>
+      <td>2.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>IV6</th>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.05</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.54</td>
-      <td>0.06</td>
-      <td>0.03</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.02</td>
-      <td>0.00</td>
+      <td>3.9</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>4.9</td>
+      <td>4.9</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>53.9</td>
+      <td>5.9</td>
+      <td>2.9</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V(64)</th>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.78</td>
-      <td>0.12</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>78.3</td>
+      <td>11.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>ii%43</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.34</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.35</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>33.6</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>3.9</td>
+      <td>2.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>35.2</td>
+      <td>0.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>IV</th>
-      <td>0.06</td>
-      <td>0.00</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.13</td>
-      <td>0.00</td>
-      <td>0.12</td>
-      <td>0.02</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.21</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
+      <td>5.7</td>
+      <td>0.0</td>
+      <td>5.2</td>
+      <td>0.0</td>
+      <td>12.9</td>
+      <td>0.0</td>
+      <td>12.4</td>
+      <td>1.5</td>
+      <td>2.1</td>
+      <td>0.0</td>
+      <td>4.1</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>21.1</td>
+      <td>0.5</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.1</td>
+      <td>7.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>ii</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.36</td>
-      <td>0.12</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.11</td>
-      <td>0.04</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>36.2</td>
+      <td>12.4</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>11.4</td>
+      <td>3.8</td>
+      <td>6.7</td>
+      <td>0.0</td>
+      <td>4.8</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>1.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>vi</th>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.19</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.01</td>
-      <td>0.28</td>
-      <td>0.02</td>
-      <td>0.07</td>
-      <td>0.15</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.08</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.02</td>
+      <td>2.7</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>18.8</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>27.7</td>
+      <td>0.9</td>
+      <td>1.8</td>
+      <td>7.1</td>
+      <td>15.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>VIM7</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.65</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>64.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V43/V</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.89</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.09</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>ii7</th>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.45</td>
-      <td>0.15</td>
-      <td>0.09</td>
-      <td>0.00</td>
-      <td>0.06</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.08</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>88.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>8.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V65/iv</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.64</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>64.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>ii7</th>
+      <td>1.5</td>
+      <td>0.0</td>
+      <td>44.6</td>
+      <td>15.4</td>
+      <td>9.2</td>
+      <td>0.0</td>
+      <td>6.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>7.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>V6</th>
-      <td>0.16</td>
-      <td>0.07</td>
-      <td>0.18</td>
-      <td>0.03</td>
-      <td>0.06</td>
-      <td>0.02</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.05</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.06</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
+      <td>15.8</td>
+      <td>6.8</td>
+      <td>17.8</td>
+      <td>2.7</td>
+      <td>6.2</td>
+      <td>2.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>6.2</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4.1</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>VI</th>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.04</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.13</td>
-      <td>0.46</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.11</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4.3</td>
+      <td>0.0</td>
+      <td>13.0</td>
+      <td>0.0</td>
+      <td>45.7</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>10.9</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>i64</th>
-      <td>0.00</td>
-      <td>0.03</td>
-      <td>0.00</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.06</td>
-      <td>0.25</td>
-      <td>0.00</td>
-      <td>0.07</td>
-      <td>0.01</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.29</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <td>0.0</td>
+      <td>2.9</td>
+      <td>0.0</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>7.2</td>
+      <td>5.8</td>
+      <td>0.0</td>
+      <td>24.6</td>
+      <td>7.2</td>
+      <td>1.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>29.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
   </tbody>
 </table>
@@ -3150,7 +3168,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="entropy">
-<h3>Entropy<a class="headerlink" href="#entropy" title="Permalink to this heading">#</a></h3>
+<h3>Entropy<a class="headerlink" href="#entropy" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">make_transition_matrix</span><span class="p">(</span>
@@ -3185,8 +3203,8 @@ if (outputEl) {{
       <th>I6</th>
       <th>i6</th>
       <th>V43</th>
-      <th>V2</th>
       <th>ii65</th>
+      <th>V2</th>
       <th>ii%65</th>
       <th>V65</th>
       <th>IV</th>
@@ -3215,8 +3233,8 @@ if (outputEl) {{
       <td>3.50</td>
       <td>4.05</td>
       <td>6.83</td>
-      <td>4.39</td>
       <td>10.41</td>
+      <td>4.39</td>
       <td>8.83</td>
       <td>4.58</td>
       <td>10.41</td>
@@ -3243,8 +3261,8 @@ if (outputEl) {{
       <td>7.75</td>
       <td>6.75</td>
       <td>8.34</td>
-      <td>8.34</td>
       <td>9.34</td>
+      <td>8.34</td>
       <td>9.34</td>
       <td>6.02</td>
       <td>9.34</td>
@@ -3271,8 +3289,8 @@ if (outputEl) {{
       <td>3.65</td>
       <td>9.88</td>
       <td>5.36</td>
-      <td>6.71</td>
       <td>4.63</td>
+      <td>6.71</td>
       <td>9.88</td>
       <td>4.33</td>
       <td>4.24</td>
@@ -3299,8 +3317,8 @@ if (outputEl) {{
       <td>9.72</td>
       <td>3.91</td>
       <td>5.02</td>
-      <td>6.40</td>
       <td>7.72</td>
+      <td>6.40</td>
       <td>4.36</td>
       <td>3.81</td>
       <td>5.72</td>
@@ -3327,8 +3345,8 @@ if (outputEl) {{
       <td>7.87</td>
       <td>6.14</td>
       <td>6.65</td>
-      <td>7.46</td>
       <td>9.46</td>
+      <td>7.46</td>
       <td>9.46</td>
       <td>9.46</td>
       <td>9.46</td>
@@ -3355,8 +3373,8 @@ if (outputEl) {{
       <td>8.88</td>
       <td>4.79</td>
       <td>7.88</td>
-      <td>5.88</td>
       <td>8.88</td>
+      <td>5.88</td>
       <td>8.88</td>
       <td>7.29</td>
       <td>8.88</td>
@@ -3411,8 +3429,8 @@ if (outputEl) {{
       <td>6.69</td>
       <td>8.69</td>
       <td>8.69</td>
-      <td>5.52</td>
       <td>8.69</td>
+      <td>5.52</td>
       <td>8.69</td>
       <td>8.69</td>
       <td>8.69</td>
@@ -3439,8 +3457,8 @@ if (outputEl) {{
       <td>9.34</td>
       <td>9.34</td>
       <td>3.37</td>
-      <td>8.34</td>
       <td>3.32</td>
+      <td>8.34</td>
       <td>9.34</td>
       <td>5.88</td>
       <td>4.17</td>
@@ -3467,8 +3485,8 @@ if (outputEl) {{
       <td>4.38</td>
       <td>3.55</td>
       <td>9.08</td>
-      <td>7.49</td>
       <td>9.08</td>
+      <td>7.49</td>
       <td>9.08</td>
       <td>4.03</td>
       <td>9.08</td>
@@ -3523,8 +3541,8 @@ if (outputEl) {{
       <td>9.29</td>
       <td>9.29</td>
       <td>2.92</td>
-      <td>7.71</td>
       <td>6.97</td>
+      <td>7.71</td>
       <td>3.29</td>
       <td>3.90</td>
       <td>6.97</td>
@@ -3551,8 +3569,8 @@ if (outputEl) {{
       <td>5.82</td>
       <td>8.41</td>
       <td>7.41</td>
-      <td>8.41</td>
       <td>7.41</td>
+      <td>8.41</td>
       <td>8.41</td>
       <td>2.60</td>
       <td>5.60</td>
@@ -3635,8 +3653,8 @@ if (outputEl) {{
       <td>4.05</td>
       <td>8.75</td>
       <td>4.11</td>
-      <td>6.43</td>
       <td>6.75</td>
+      <td>6.43</td>
       <td>8.75</td>
       <td>5.58</td>
       <td>8.75</td>
@@ -3663,8 +3681,8 @@ if (outputEl) {{
       <td>8.42</td>
       <td>7.42</td>
       <td>8.42</td>
-      <td>7.42</td>
       <td>8.42</td>
+      <td>7.42</td>
       <td>8.42</td>
       <td>4.72</td>
       <td>6.10</td>
@@ -3691,8 +3709,8 @@ if (outputEl) {{
       <td>3.99</td>
       <td>8.45</td>
       <td>7.45</td>
-      <td>7.45</td>
       <td>3.45</td>
+      <td>7.45</td>
       <td>6.86</td>
       <td>5.28</td>
       <td>4.28</td>
@@ -3767,34 +3785,6 @@ if (outputEl) {{
       <td>8.09</td>
     </tr>
     <tr>
-      <th>ii7</th>
-      <td>7.24</td>
-      <td>8.24</td>
-      <td>3.33</td>
-      <td>4.78</td>
-      <td>5.43</td>
-      <td>8.24</td>
-      <td>5.92</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>5.65</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-      <td>8.24</td>
-    </tr>
-    <tr>
       <th>V65/iv</th>
       <td>8.14</td>
       <td>8.14</td>
@@ -3823,6 +3813,34 @@ if (outputEl) {{
       <td>8.14</td>
     </tr>
     <tr>
+      <th>ii7</th>
+      <td>7.24</td>
+      <td>8.24</td>
+      <td>3.33</td>
+      <td>4.78</td>
+      <td>5.43</td>
+      <td>8.24</td>
+      <td>5.92</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>5.65</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+      <td>8.24</td>
+    </tr>
+    <tr>
       <th>V6</th>
       <td>4.00</td>
       <td>5.12</td>
@@ -3831,8 +3849,8 @@ if (outputEl) {{
       <td>5.26</td>
       <td>6.58</td>
       <td>8.58</td>
-      <td>7.58</td>
       <td>8.58</td>
+      <td>7.58</td>
       <td>8.58</td>
       <td>5.41</td>
       <td>8.58</td>
@@ -3859,8 +3877,8 @@ if (outputEl) {{
       <td>8.14</td>
       <td>6.56</td>
       <td>8.14</td>
-      <td>8.14</td>
       <td>5.34</td>
+      <td>8.14</td>
       <td>3.69</td>
       <td>8.14</td>
       <td>8.14</td>
@@ -3887,8 +3905,8 @@ if (outputEl) {{
       <td>8.26</td>
       <td>5.67</td>
       <td>5.94</td>
-      <td>4.09</td>
       <td>8.26</td>
+      <td>4.09</td>
       <td>5.67</td>
       <td>7.26</td>
       <td>8.26</td>
@@ -3912,7 +3930,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="minor-vs-major">
-<h3>Minor vs. Major<a class="headerlink" href="#minor-vs-major" title="Permalink to this heading">#</a></h3>
+<h3>Minor vs. Major<a class="headerlink" href="#minor-vs-major" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">region_is_minor</span> <span class="o">=</span> <span class="p">(</span>
@@ -3982,14 +4000,14 @@ if (outputEl) {{
       <th>IV</th>
       <th>V(4)</th>
       <th>ii</th>
-      <th>ii%43</th>
-      <th>v6</th>
       <th>iv</th>
+      <th>v6</th>
+      <th>ii%43</th>
       <th>IV6</th>
       <th>VI</th>
       <th>ii43</th>
       <th>V(64)</th>
-      <th>vi6</th>
+      <th>ii7</th>
       <th>iii6</th>
     </tr>
   </thead>
@@ -4012,14 +4030,14 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.008475</td>
-      <td>0.008475</td>
-      <td>0.004237</td>
       <td>0.000000</td>
+      <td>0.004237</td>
+      <td>0.008475</td>
       <td>0.021186</td>
       <td>0.000000</td>
       <td>0.002119</td>
       <td>0.000000</td>
-      <td>0.004237</td>
+      <td>0.000000</td>
       <td>0.012712</td>
     </tr>
     <tr>
@@ -4068,14 +4086,42 @@ if (outputEl) {{
       <td>0.023256</td>
       <td>0.007752</td>
       <td>0.000000</td>
-      <td>0.034884</td>
-      <td>0.042636</td>
       <td>0.019380</td>
+      <td>0.042636</td>
+      <td>0.034884</td>
       <td>0.000000</td>
       <td>0.034884</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.003876</td>
       <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>I</th>
+      <td>0.000000</td>
+      <td>0.003378</td>
+      <td>0.236486</td>
+      <td>0.040541</td>
+      <td>0.118243</td>
+      <td>0.040541</td>
+      <td>0.000000</td>
+      <td>0.057432</td>
+      <td>0.064189</td>
+      <td>0.000000</td>
+      <td>0.074324</td>
+      <td>0.003378</td>
+      <td>0.067568</td>
+      <td>0.060811</td>
+      <td>0.050676</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.020270</td>
+      <td>0.000000</td>
+      <td>0.003378</td>
+      <td>0.000000</td>
+      <td>0.003378</td>
       <td>0.000000</td>
     </tr>
     <tr>
@@ -4107,34 +4153,6 @@ if (outputEl) {{
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>I</th>
-      <td>0.000000</td>
-      <td>0.003378</td>
-      <td>0.236486</td>
-      <td>0.040541</td>
-      <td>0.118243</td>
-      <td>0.040541</td>
-      <td>0.000000</td>
-      <td>0.057432</td>
-      <td>0.064189</td>
-      <td>0.000000</td>
-      <td>0.074324</td>
-      <td>0.003378</td>
-      <td>0.067568</td>
-      <td>0.060811</td>
-      <td>0.050676</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.020270</td>
-      <td>0.000000</td>
-      <td>0.003378</td>
-      <td>0.000000</td>
-      <td>0.020270</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
       <th>ii%65</th>
       <td>0.000000</td>
       <td>0.030612</td>
@@ -4152,13 +4170,41 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.091837</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.030612</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.071429</td>
+      <td>0.010204</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>V(4)</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.796296</td>
+      <td>0.185185</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.018519</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
     </tr>
@@ -4176,34 +4222,6 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.013072</td>
       <td>0.006536</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.006536</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>V(4)</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.796296</td>
-      <td>0.185185</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.018519</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4243,7 +4261,7 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.096386</td>
       <td>0.060241</td>
-      <td>0.000000</td>
+      <td>0.048193</td>
       <td>0.000000</td>
     </tr>
     <tr>
@@ -4271,7 +4289,7 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.005291</td>
       <td>0.015873</td>
-      <td>0.000000</td>
+      <td>0.026455</td>
       <td>0.000000</td>
     </tr>
     <tr>
@@ -4292,9 +4310,9 @@ if (outputEl) {{
       <td>0.006250</td>
       <td>0.018750</td>
       <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.000000</td>
       <td>0.025000</td>
+      <td>0.000000</td>
+      <td>0.012500</td>
       <td>0.000000</td>
       <td>0.025000</td>
       <td>0.000000</td>
@@ -4355,7 +4373,7 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.037037</td>
-      <td>0.000000</td>
+      <td>0.018519</td>
       <td>0.018519</td>
     </tr>
     <tr>
@@ -4415,34 +4433,6 @@ if (outputEl) {{
       <td>0.000000</td>
     </tr>
     <tr>
-      <th>ii</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.404762</td>
-      <td>0.071429</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.023810</td>
-      <td>0.000000</td>
-      <td>0.095238</td>
-      <td>0.000000</td>
-      <td>0.047619</td>
-      <td>0.023810</td>
-      <td>0.047619</td>
-      <td>0.023810</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.047619</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
       <th>vi</th>
       <td>0.017857</td>
       <td>0.000000</td>
@@ -4467,8 +4457,64 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.017857</td>
-      <td>0.017857</td>
+    </tr>
+    <tr>
+      <th>ii</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.404762</td>
+      <td>0.071429</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.023810</td>
+      <td>0.000000</td>
+      <td>0.095238</td>
+      <td>0.000000</td>
+      <td>0.047619</td>
+      <td>0.023810</td>
+      <td>0.047619</td>
+      <td>0.023810</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.047619</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.047619</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>IV</th>
+      <td>0.025000</td>
+      <td>0.000000</td>
+      <td>0.012500</td>
+      <td>0.000000</td>
+      <td>0.162500</td>
+      <td>0.137500</td>
+      <td>0.000000</td>
+      <td>0.025000</td>
+      <td>0.037500</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.025000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.012500</td>
+      <td>0.162500</td>
+      <td>0.012500</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.050000</td>
+      <td>0.000000</td>
+      <td>0.012500</td>
+      <td>0.000000</td>
+      <td>0.075000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>ii7</th>
@@ -4495,62 +4541,6 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.040000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>IV</th>
-      <td>0.025000</td>
-      <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.000000</td>
-      <td>0.162500</td>
-      <td>0.137500</td>
-      <td>0.000000</td>
-      <td>0.025000</td>
-      <td>0.037500</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.025000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.162500</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.050000</td>
-      <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.000000</td>
-      <td>0.012500</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>VI</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.038462</td>
-      <td>0.076923</td>
-      <td>0.000000</td>
-      <td>0.461538</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.192308</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
     </tr>
@@ -4583,6 +4573,34 @@ if (outputEl) {{
       <td>0.000000</td>
     </tr>
     <tr>
+      <th>VI</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.038462</td>
+      <td>0.076923</td>
+      <td>0.000000</td>
+      <td>0.461538</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.192308</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
       <th>VIM7</th>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4600,9 +4618,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.550000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4628,9 +4646,37 @@ if (outputEl) {{
       <td>0.150000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.550000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>I(4)</th>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4655,34 +4701,6 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.090909</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>V7/IV</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.833333</td>
-      <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4742,12 +4760,12 @@ if (outputEl) {{
       <th>V(4)</th>
       <th>ii%43</th>
       <th>v6</th>
+      <th>IV64</th>
       <th>IVM7</th>
       <th>i64</th>
-      <th>IV64</th>
-      <th>ii7</th>
-      <th>III</th>
       <th>V(64)</th>
+      <th>III</th>
+      <th>ii7</th>
     </tr>
   </thead>
   <tbody>
@@ -4772,9 +4790,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.009191</td>
       <td>0.005515</td>
+      <td>0.001838</td>
       <td>0.000000</td>
       <td>0.009191</td>
-      <td>0.001838</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -4829,11 +4847,11 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.025937</td>
-      <td>0.000000</td>
       <td>0.025937</td>
-      <td>0.005764</td>
       <td>0.000000</td>
       <td>0.023055</td>
+      <td>0.000000</td>
+      <td>0.005764</td>
     </tr>
     <tr>
       <th>V65</th>
@@ -4885,39 +4903,11 @@ if (outputEl) {{
       <td>0.042105</td>
       <td>0.042105</td>
       <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.010526</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <td>0.010526</td>
       <td>0.007018</td>
-      <td>0.010526</td>
-    </tr>
-    <tr>
-      <th>ii%65</th>
       <td>0.000000</td>
-      <td>0.051724</td>
-      <td>0.448276</td>
-      <td>0.017241</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.112069</td>
-      <td>0.034483</td>
-      <td>0.017241</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.094828</td>
-      <td>0.025862</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.043103</td>
-      <td>0.000000</td>
-      <td>0.008621</td>
-      <td>0.000000</td>
-      <td>0.051724</td>
     </tr>
     <tr>
       <th>V(4)</th>
@@ -4948,6 +4938,34 @@ if (outputEl) {{
       <td>0.000000</td>
     </tr>
     <tr>
+      <th>ii%65</th>
+      <td>0.000000</td>
+      <td>0.051724</td>
+      <td>0.448276</td>
+      <td>0.017241</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.112069</td>
+      <td>0.034483</td>
+      <td>0.017241</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.094828</td>
+      <td>0.025862</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.043103</td>
+      <td>0.051724</td>
+      <td>0.000000</td>
+      <td>0.008621</td>
+    </tr>
+    <tr>
       <th>I6</th>
       <td>0.227723</td>
       <td>0.000000</td>
@@ -4968,12 +4986,12 @@ if (outputEl) {{
       <td>0.024752</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.004950</td>
       <td>0.000000</td>
+      <td>0.024752</td>
       <td>0.000000</td>
       <td>0.029703</td>
-      <td>0.000000</td>
-      <td>0.024752</td>
     </tr>
     <tr>
       <th>i6</th>
@@ -4999,9 +5017,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.020408</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>ii65</th>
@@ -5027,9 +5045,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.051282</td>
-      <td>0.000000</td>
       <td>0.064103</td>
+      <td>0.000000</td>
+      <td>0.051282</td>
     </tr>
     <tr>
       <th>V43</th>
@@ -5053,8 +5071,8 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.022388</td>
       <td>0.000000</td>
+      <td>0.022388</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -5139,9 +5157,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.082474</td>
-      <td>0.000000</td>
       <td>0.010309</td>
+      <td>0.000000</td>
+      <td>0.082474</td>
     </tr>
     <tr>
       <th>ii%43</th>
@@ -5165,8 +5183,8 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.140625</td>
       <td>0.000000</td>
+      <td>0.140625</td>
       <td>0.015625</td>
       <td>0.000000</td>
       <td>0.015625</td>
@@ -5195,9 +5213,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.023810</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>V43/V</th>
@@ -5223,9 +5241,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.045455</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>ii</th>
@@ -5251,9 +5269,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.019608</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>V65/iv</th>
@@ -5305,8 +5323,8 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.050000</td>
       <td>0.000000</td>
-      <td>0.025000</td>
       <td>0.000000</td>
+      <td>0.025000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
@@ -5335,9 +5353,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
       <td>0.060606</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>VIM7</th>
@@ -5419,9 +5437,9 @@ if (outputEl) {{
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
       <td>0.034483</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>i64</th>
@@ -5457,7 +5475,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="chord-progressions-without-suspensions">
-<h3>Chord progressions without suspensions<a class="headerlink" href="#chord-progressions-without-suspensions" title="Permalink to this heading">#</a></h3>
+<h3>Chord progressions without suspensions<a class="headerlink" href="#chord-progressions-without-suspensions" title="Link to this heading">#</a></h3>
 <p>Here called <em>plain chords</em>, which consist only of numeral, inversion figures, and relative keys.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -5613,7 +5631,7 @@ Name: plain_chords, dtype: string
 </div>
 </div>
 <section id="most-frequent-3-4-and-5-grams-in-major">
-<h4>Most frequent 3-, 4-, and 5-grams in major<a class="headerlink" href="#most-frequent-3-4-and-5-grams-in-major" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 3-, 4-, and 5-grams in major<a class="headerlink" href="#most-frequent-3-4-and-5-grams-in-major" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">major_plain</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -6117,7 +6135,7 @@ Name: plain_chords, dtype: string
 </div>
 </section>
 <section id="most-frequent-3-4-and-5-grams-in-minor">
-<h4>Most frequent 3-, 4-, and 5-grams in minor<a class="headerlink" href="#most-frequent-3-4-and-5-grams-in-minor" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 3-, 4-, and 5-grams in minor<a class="headerlink" href="#most-frequent-3-4-and-5-grams-in-minor" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">minor_plain</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -6622,7 +6640,7 @@ Name: plain_chords, dtype: string
 </section>
 </section>
 <section id="counting-particular-progressions">
-<h3>Counting particular progressions<a class="headerlink" href="#counting-particular-progressions" title="Permalink to this heading">#</a></h3>
+<h3>Counting particular progressions<a class="headerlink" href="#counting-particular-progressions" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MEMORY</span> <span class="o">=</span> <span class="p">{}</span>
@@ -6705,7 +6723,7 @@ Name: plain_chords, dtype: string
 </div>
 </section>
 <section id="chord-progressions-preceding-phrase-endings">
-<h3>Chord progressions preceding phrase endings<a class="headerlink" href="#chord-progressions-preceding-phrase-endings" title="Permalink to this heading">#</a></h3>
+<h3>Chord progressions preceding phrase endings<a class="headerlink" href="#chord-progressions-preceding-phrase-endings" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">phraseending_progressions</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">):</span>
@@ -6821,11 +6839,10 @@ dtype: int64
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="bass_degrees.html"
@@ -6845,10 +6862,7 @@ dtype: int64
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -6858,6 +6872,7 @@ dtype: int64
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -6886,6 +6901,7 @@ dtype: int64
   </nav></div>
 
   <div class="sidebar-secondary-item">
+
   <div class="tocsection sourcelink">
     <a href="../_sources/notebooks/harmonies.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
@@ -6906,8 +6922,8 @@ dtype: int64
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -6915,6 +6931,7 @@ dtype: int64
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2025, Johannes Hentschel.
@@ -6924,8 +6941,9 @@ dtype: int64
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.0.
     <br/>
   </p>
 </div>
@@ -6933,10 +6951,12 @@ dtype: int64
     </div>
   
   
+  
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>

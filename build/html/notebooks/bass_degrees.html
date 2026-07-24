@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,36 +18,34 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pydata-sphinx-theme.css?v=07366fc5" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css?v=572af1d6" />
     <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=7bc9918e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=e09f69a6"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/thebelab-helper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/bass_degrees';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Harmonies" href="harmonies.html" />
@@ -63,6 +60,15 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -103,12 +109,15 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
   
 
 <a class="navbar-brand logo" href="../index.html">
+  
   
   
   
@@ -120,12 +129,12 @@
     
   </div>
   
-  
   <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -168,20 +177,20 @@
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="modulations.html">
+                      <a class="nav-link dropdown-item nav-internal" href="modulations.html">
                         Modulation Plans
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -193,23 +202,27 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
         <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -220,18 +233,21 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -251,7 +267,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -294,20 +311,20 @@ document.write(`
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="modulations.html">
+                      <a class="nav-link dropdown-item nav-internal" href="modulations.html">
                         Modulation Plans
                       </a>
                     </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -319,12 +336,13 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -357,8 +375,8 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -383,7 +401,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="bass-degrees">
-<h1>Bass degrees<a class="headerlink" href="#bass-degrees" title="Permalink to this heading">#</a></h1>
+<h1>Bass degrees<a class="headerlink" href="#bass-degrees" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -1380,7 +1398,7 @@ if (outputEl) {{
                         })                };                });            </script>        </div></div></div>
 </div>
 <section id="bass-degree-unigrams">
-<h2>Bass degree unigrams<a class="headerlink" href="#bass-degree-unigrams" title="Permalink to this heading">#</a></h2>
+<h2>Bass degree unigrams<a class="headerlink" href="#bass-degree-unigrams" title="Link to this heading">#</a></h2>
 <p>As expressed by the annotation labels.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2755,11 +2773,11 @@ if (outputEl) {{
 too, have 1 as the most frequent bass degree. This can be linked to frequent suspensions over bass degree 5.</strong></p>
 </section>
 <section id="intervals-between-adjacent-bass-notes">
-<h2>Intervals between adjacent bass notes<a class="headerlink" href="#intervals-between-adjacent-bass-notes" title="Permalink to this heading">#</a></h2>
+<h2>Intervals between adjacent bass notes<a class="headerlink" href="#intervals-between-adjacent-bass-notes" title="Link to this heading">#</a></h2>
 <section id="preparing-the-data">
-<h3>Preparing the data<a class="headerlink" href="#preparing-the-data" title="Permalink to this heading">#</a></h3>
+<h3>Preparing the data<a class="headerlink" href="#preparing-the-data" title="Link to this heading">#</a></h3>
 <section id="get-localkey-segments">
-<h4>Get localkey segments<a class="headerlink" href="#get-localkey-segments" title="Permalink to this heading">#</a></h4>
+<h4>Get localkey segments<a class="headerlink" href="#get-localkey-segments" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">group_keys</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">localkey</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
@@ -3081,7 +3099,7 @@ There are 0 non-chord labels which we are going to delete:
 </section>
 </section>
 <section id="get-bass-degree-progressions-intervals">
-<h3>Get bass degree progressions &amp; intervals<a class="headerlink" href="#get-bass-degree-progressions-intervals" title="Permalink to this heading">#</a></h3>
+<h3>Get bass degree progressions &amp; intervals<a class="headerlink" href="#get-bass-degree-progressions-intervals" title="Link to this heading">#</a></h3>
 <p>All scale degrees are expressed as fifth-intervals to the local tonic:</p>
 <table class="table">
 <thead>
@@ -3238,7 +3256,7 @@ There are 0 non-chord labels which we are going to delete:
 </div></div></div>
 </div>
 <section id="count-bass-intervals">
-<h4>Count bass intervals<a class="headerlink" href="#count-bass-intervals" title="Permalink to this heading">#</a></h4>
+<h4>Count bass intervals<a class="headerlink" href="#count-bass-intervals" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interval_counter</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
@@ -3528,7 +3546,7 @@ if (outputEl) {{
 </section>
 </section>
 <section id="checking-rare-intervals">
-<h3>Checking rare intervals<a class="headerlink" href="#checking-rare-intervals" title="Permalink to this heading">#</a></h3>
+<h3>Checking rare intervals<a class="headerlink" href="#checking-rare-intervals" title="Link to this heading">#</a></h3>
 <p><strong>occurrences of -9 (-A2)</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">c02n01_prelude</span></code> m. 12: <code class="docutils literal notranslate"><span class="pre">ii%</span></code> was corrected to <code class="docutils literal notranslate"><span class="pre">iii%</span></code></p></li>
@@ -4053,7 +4071,7 @@ if (outputEl) {{
 </div>
 </section>
 <section id="inspecting-stepwise-bass-movement">
-<h3>Inspecting stepwise bass movement<a class="headerlink" href="#inspecting-stepwise-bass-movement" title="Permalink to this heading">#</a></h3>
+<h3>Inspecting stepwise bass movement<a class="headerlink" href="#inspecting-stepwise-bass-movement" title="Link to this heading">#</a></h3>
 <p><strong>Add column with bass interval in semitones.</strong>
 It’s called <code class="docutils literal notranslate"><span class="pre">bass_interval_pc</span></code> as in “pitch class”</p>
 <div class="cell docutils container">
@@ -4253,7 +4271,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </div></div></div>
 </div>
 <section id="create-key-region-summary">
-<h4>Create key region summary<a class="headerlink" href="#create-key-region-summary" title="Permalink to this heading">#</a></h4>
+<h4>Create key region summary<a class="headerlink" href="#create-key-region-summary" title="Link to this heading">#</a></h4>
 <p><strong>With one row per key region and the following columns</strong></p>
 <table class="table">
 <thead>
@@ -4638,7 +4656,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </div>
 </section>
 <section id="all-stepwise-ascending-bass-progressions-in-minor">
-<h4>All stepwise ascending bass progressions in minor<a class="headerlink" href="#all-stepwise-ascending-bass-progressions-in-minor" title="Permalink to this heading">#</a></h4>
+<h4>All stepwise ascending bass progressions in minor<a class="headerlink" href="#all-stepwise-ascending-bass-progressions-in-minor" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ascending_minor</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -5088,7 +5106,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </div>
 </section>
 <section id="all-stepwise-ascending-bass-progressions-in-major">
-<h4>All stepwise ascending bass progressions in major<a class="headerlink" href="#all-stepwise-ascending-bass-progressions-in-major" title="Permalink to this heading">#</a></h4>
+<h4>All stepwise ascending bass progressions in major<a class="headerlink" href="#all-stepwise-ascending-bass-progressions-in-major" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ascending_major</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -5478,7 +5496,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </div>
 </section>
 <section id="all-stepwise-descending-bass-progressions-in-minor">
-<h4>All stepwise descending bass progressions in minor<a class="headerlink" href="#all-stepwise-descending-bass-progressions-in-minor" title="Permalink to this heading">#</a></h4>
+<h4>All stepwise descending bass progressions in minor<a class="headerlink" href="#all-stepwise-descending-bass-progressions-in-minor" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">descending_minor</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -5848,7 +5866,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </div>
 </section>
 <section id="all-stepwise-descending-bass-progressions-in-major">
-<h4>All stepwise descending bass progressions in major<a class="headerlink" href="#all-stepwise-descending-bass-progressions-in-major" title="Permalink to this heading">#</a></h4>
+<h4>All stepwise descending bass progressions in major<a class="headerlink" href="#all-stepwise-descending-bass-progressions-in-major" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">descending_major</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
@@ -6174,7 +6192,7 @@ It’s called <code class="docutils literal notranslate"><span class="pre">bass_
 </section>
 </section>
 <section id="transitions-between-bass-degrees">
-<h3>Transitions between bass degrees<a class="headerlink" href="#transitions-between-bass-degrees" title="Permalink to this heading">#</a></h3>
+<h3>Transitions between bass degrees<a class="headerlink" href="#transitions-between-bass-degrees" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">full_grams</span> <span class="o">=</span> <span class="p">{</span>
@@ -6253,7 +6271,7 @@ Name: bass_note, dtype: Int64
 </div>
 </div>
 <section id="most-frequent-2-grams">
-<h4>Most frequent 2-grams<a class="headerlink" href="#most-frequent-2-grams" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 2-grams<a class="headerlink" href="#most-frequent-2-grams" title="Link to this heading">#</a></h4>
 <p>Select number of first k transitions to display:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -6263,7 +6281,7 @@ Name: bass_note, dtype: Int64
 </div>
 </div>
 <section id="major">
-<h5>Major<a class="headerlink" href="#major" title="Permalink to this heading">#</a></h5>
+<h5>Major<a class="headerlink" href="#major" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_major</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -6433,7 +6451,7 @@ Name: bass_note, dtype: Int64
 </div>
 </section>
 <section id="minor">
-<h5>Minor<a class="headerlink" href="#minor" title="Permalink to this heading">#</a></h5>
+<h5>Minor<a class="headerlink" href="#minor" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_minor</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -6604,9 +6622,9 @@ Name: bass_note, dtype: Int64
 </section>
 </section>
 <section id="most-frequent-3-grams">
-<h4>Most frequent 3-grams<a class="headerlink" href="#most-frequent-3-grams" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 3-grams<a class="headerlink" href="#most-frequent-3-grams" title="Link to this heading">#</a></h4>
 <section id="id1">
-<h5>Major<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h5>
+<h5>Major<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_major</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -6776,7 +6794,7 @@ Name: bass_note, dtype: Int64
 </div>
 </section>
 <section id="id2">
-<h5>Minor<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h5>
+<h5>Minor<a class="headerlink" href="#id2" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_minor</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -6947,9 +6965,9 @@ Name: bass_note, dtype: Int64
 </section>
 </section>
 <section id="most-frequent-4-grams">
-<h4>Most frequent 4-grams<a class="headerlink" href="#most-frequent-4-grams" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 4-grams<a class="headerlink" href="#most-frequent-4-grams" title="Link to this heading">#</a></h4>
 <section id="id3">
-<h5>Major<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h5>
+<h5>Major<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_major</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
@@ -7119,7 +7137,7 @@ Name: bass_note, dtype: Int64
 </div>
 </section>
 <section id="id4">
-<h5>Minor<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h5>
+<h5>Minor<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_minor</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
@@ -7290,9 +7308,9 @@ Name: bass_note, dtype: Int64
 </section>
 </section>
 <section id="most-frequent-5-grams">
-<h4>Most frequent 5-grams<a class="headerlink" href="#most-frequent-5-grams" title="Permalink to this heading">#</a></h4>
+<h4>Most frequent 5-grams<a class="headerlink" href="#most-frequent-5-grams" title="Link to this heading">#</a></h4>
 <section id="id5">
-<h5>Major<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h5>
+<h5>Major<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_major</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -7462,7 +7480,7 @@ Name: bass_note, dtype: Int64
 </div>
 </section>
 <section id="id6">
-<h5>Minor<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h5>
+<h5>Minor<a class="headerlink" href="#id6" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">utils</span><span class="o">.</span><span class="n">sorted_gram_counts</span><span class="p">(</span><span class="n">full_grams_minor</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -7641,11 +7659,10 @@ Name: bass_note, dtype: Int64
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="scale_degrees.html"
@@ -7665,10 +7682,7 @@ Name: bass_note, dtype: Int64
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -7678,6 +7692,7 @@ Name: bass_note, dtype: Int64
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -7731,6 +7746,7 @@ Name: bass_note, dtype: Int64
   </nav></div>
 
   <div class="sidebar-secondary-item">
+
   <div class="tocsection sourcelink">
     <a href="../_sources/notebooks/bass_degrees.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
@@ -7751,8 +7767,8 @@ Name: bass_note, dtype: Int64
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -7760,6 +7776,7 @@ Name: bass_note, dtype: Int64
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2025, Johannes Hentschel.
@@ -7769,8 +7786,9 @@ Name: bass_note, dtype: Int64
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.0.
     <br/>
   </p>
 </div>
@@ -7778,10 +7796,12 @@ Name: bass_note, dtype: Int64
     </div>
   
   
+  
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>

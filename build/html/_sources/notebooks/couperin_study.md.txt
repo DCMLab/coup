@@ -5,11 +5,11 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.13
-    jupytext_version: 1.17.2
+    jupytext_version: 1.19.3
 kernelspec:
-  display_name: Python 3 (ipykernel)
+  display_name: revamp
   language: python
-  name: python3
+  name: revamp
 ---
 
 # Cou
@@ -62,13 +62,24 @@ def make_output_path(
 
 
 def save_figure_as(
-    fig, filename, formats=("png", "pdf"), directory=RESULTS_PATH, **kwargs
+    fig, filename, formats=("png", "pdf", "html"), directory=RESULTS_PATH, **kwargs
 ):
+    if not isinstance(formats, str) and "html" in formats:
+        formats = [f for f in formats if f != "html"]
+        html_path = os.path.join(directory, filename + ".html")
+        fig.write_html(html_path)
     if formats is not None:
         for fmt in formats:
             plotting.write_image(fig, filename, directory, format=fmt, **kwargs)
     else:
         plotting.write_image(fig, filename, directory, **kwargs)
+
+
+def save_table_as(styler, filename, formats=("html", "csv"), directory=RESULTS_PATH):
+    if "html" in formats:
+        styler.to_html(os.path.join(directory, filename + ".html"))
+    if "csv" in formats:
+        styler.data.to_csv(os.path.join(directory, filename + ".csv"))
 
 
 def style_plotly(
@@ -921,7 +932,12 @@ def get_color(chord, mode):
         return CATEGORY2COLOR[category]
 
 
-def style_unigram_table(df: pd.DataFrame):
+def style_unigram_table(
+    df: pd.DataFrame,
+    filename=None,
+    formats=("html", "csv"),
+    directory=RESULTS_PATH,
+):
 
     def color_regola_rows(row, mode):
         if pd.isna(row.iloc[0]):
@@ -933,10 +949,13 @@ def style_unigram_table(df: pd.DataFrame):
     new_index = pd.MultiIndex.from_product(
         [["Major", "Minor"], ["Unigram", "Occurrences", "Proportion"]]
     )
-    df = df.set_axis(new_index, axis=1)
-    return df.style.apply(
+    styled = df.set_axis(new_index, axis=1)
+    styled = styled.style.apply(
         color_regola_rows, axis=1, subset=["Major"], mode="major"
     ).apply(color_regola_rows, axis=1, subset=["Minor"], mode="minor")
+    if filename is not None:
+        save_table_as(styled, filename, formats=formats, directory=directory)
+    return styled
 
 
 def make_sankey_data(
@@ -1060,6 +1079,24 @@ def make_bass_degree_sankey(
     return fig
 ```
 
+### Numbers for the explainer
+
+```{code-cell}
+def value_counts(S):
+    return pd.concat([S.value_counts(), S.value_counts(normalize=True)], axis=1)
+
+
+example16_roo_mask = BN.roo_suspensions == "RoO chord"
+print(f"N = {example16_roo_mask.sum()}")
+value_counts(BN.loc[example16_roo_mask, "preceding_movement_category"])
+```
+
+```{code-cell}
+example16_leap_mask = BN.preceding_movement_category == "Diatonic leap"
+print(f"N = {example16_leap_mask.sum()}")
+value_counts(BN.loc[example16_leap_mask, "roo_suspensions"])
+```
+
 ```{code-cell}
 :tags: [hide-input]
 
@@ -1079,7 +1116,7 @@ unigram_occurrences = chord_labels.apply_step("Counter")
 occurrence_ranking = unigram_occurrences.make_ranking_table(
     drop_cols=["chord_and_mode", "proportion"], top_k=0
 )
-style_unigram_table(occurrence_ranking)
+style_unigram_table(occurrence_ranking.iloc[:50], "couperin_unigrams")
 ```
 
 ### Unigram movement Sankey
@@ -1360,7 +1397,12 @@ def degree_wise_top_k(BN, column="intervals_over_bass", k=None):
     return result
 
 
-def style_rank_table(df: pd.DataFrame):
+def style_rank_table(
+    df: pd.DataFrame,
+    filename=None,
+    formats=("html", "csv"),
+    directory=RESULTS_PATH,
+):
 
     def color_true_green(value):
         if value:
@@ -1375,7 +1417,7 @@ def style_rank_table(df: pd.DataFrame):
         rank_chord="Top",
     )
     df = df.rename_axis(index=new_index_names)
-    return (
+    styled = (
         df.style.format({"proportion_chord": "{:.1%}"})
         .format_index(
             axis=0,
@@ -1389,6 +1431,9 @@ def style_rank_table(df: pd.DataFrame):
         # .format_index_names(new_index_names, axis=0) # available in a future pandas version
         # https://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.format_index_names.html
     )
+    if filename is not None:
+        save_table_as(styled, filename, formats=formats, directory=directory)
+    return styled
 ```
 
 #### Major
@@ -1654,6 +1699,9 @@ minor_roo_chord2movement
 def style_mega_table(
     meta_table,
     mode,
+    filename=None,
+    formats=("html", "csv"),
+    directory=RESULTS_PATH,
 ):
     mega_styled = meta_table.set_index(meta_table.columns.to_list()[:4], append=True)
     mega_styled.index.names = ["B", "Chord", "R", "P", "E", "SR"]
@@ -1721,7 +1769,7 @@ def style_mega_table(
 
     def add_horizontal_lines(row):
         if row.name[-1] == 1:
-            return [f"border-top: 1px solid #000066"] * len(row)
+            return ["border-top: 1px solid #000066"] * len(row)
         return [""] * len(row)
 
     # roo_color_sublevels = ("Intervals", "P", "RoO", "E")
@@ -1737,7 +1785,7 @@ def style_mega_table(
     heatmap_color_columns = [
         (l0, l1) for l0, l1 in mega_styled.columns if l1 not in roo_color_sublevels
     ]
-    return (
+    styled = (
         mega_styled.style.format(format_dict)
         .format_index(
             axis=0,
@@ -1766,15 +1814,18 @@ def style_mega_table(
             }
         )
     )
+    if filename is not None:
+        save_table_as(styled, filename, formats=formats, directory=directory)
+    return styled
 
 
-style_mega_table(mega_major, "major")
+style_mega_table(mega_major, "major", "mega_table_major")
 ```
 
 ```{code-cell}
 :tags: [hide-input]
 
-style_mega_table(mega_minor, "minor")
+style_mega_table(mega_minor, "minor", "mega_table_minor")
 ```
 
 ```{code-cell}
@@ -1934,7 +1985,7 @@ def get_coverage_values(
                 bn_name, "minor_diatonic", minor_vocabulary, query=query
             )
     result = pd.Series(results, name="proportion")
-    result.index.names = ["mode", "coverage_of"]
+    result.index.names = ["mode", "subset_name"]
     return result
 ```
 
@@ -2071,7 +2122,7 @@ def make_coverage_plot_data_with_regola(bn_name):
 
 def plot_regola_vs_top_k_coverage(bn_name):
     result = make_coverage_plot_data_with_regola(bn_name)
-    plot_coverage_data(result, bn_name)
+    return plot_coverage_data(result, bn_name)
 
 
 def plot_coverage_data(
@@ -2088,7 +2139,7 @@ def plot_coverage_data(
         x="rank",
         y="proportion",
         markers=True,
-        color="coverage_of",
+        color="subset_name",
         facet_col="mode",
         facet_row=facet_row,
         hover_name="chord",
@@ -2125,7 +2176,7 @@ def plot_coverage_data_categorical(
         x="vocab",
         y="proportion",
         markers=True,
-        color="coverage_of",
+        color="subset_name",
         facet_col="mode",
         facet_row=facet_row,
         hover_name="chord",
@@ -2166,7 +2217,7 @@ feature_group = dict(
     to_and_from_descending="more",
 )
 coverage_data = make_coverage_plot_data_with_regola("couperin")
-coverage_data["comparison"] = coverage_data.coverage_of.map(feature_group)
+coverage_data["comparison"] = coverage_data.subset_name.map(feature_group)
 plot_coverage_data_categorical(
     coverage_data,
 )
@@ -2204,16 +2255,28 @@ for mode in ("major", "minor"):
     unigram_subset_sizes[(mode, "all")] = len(mask)
 
 unigram_subset_sizes = pd.Series(unigram_subset_sizes, name="N").rename_axis(
-    ["mode", "coverage_of"]
+    ["mode", "subset_name"]
 )
-unigram_subset_sizes
+unigram_subset_proportions = (
+    unigram_subset_sizes.groupby("mode", group_keys=False)
+    .apply(lambda S: S / S.xs("all", level=1))
+    .rename("proportion")
+)
+# unigram_subset_stats = pd.concat([unigram_subset_sizes, unigram_subset_proportions], axis=1)
+unigram_subset_stats = (
+    unigram_subset_sizes.astype(str)
+    + " ("
+    + unigram_subset_proportions.mul(100).round(1).astype(str)
+    + " %)"
+).rename("subset_size")
+unigram_subset_stats
 ```
 
 ```{code-cell}
 def prep_cov_data(S):
     return (
         S.reset_index(drop=True)
-        .set_index(["vocabulary", "mode", "coverage_of"])
+        .set_index(["vocabulary", "mode", "subset_name"])
         .proportion
     )
 
@@ -2226,9 +2289,9 @@ top_10_vals = prep_cov_data(
 )
 difference_roo_top10 = roo_vals - top_10_vals
 merged = pd.merge(
-    unigram_subset_sizes,
+    unigram_subset_stats,
     roo_vals.rename("RoO"),
-    on=["mode", "coverage_of"],
+    on=["mode", "subset_name"],
     how="right",
 )
 merged.index = roo_vals.index
@@ -2237,6 +2300,93 @@ inspect_difference = pd.concat(
     axis=1,
 )
 inspect_difference.sort_values("difference", ascending=False)
+```
+
+```{code-cell}
+display_difference = inspect_difference.droplevel(0)
+display_difference = pd.concat(
+    dict(major=display_difference.loc["major"], minor=display_difference.loc["minor"]),
+    axis=1,
+)
+display_difference = display_difference.sort_index(
+    key=lambda idx: (
+        display_difference[("major", "difference")]
+        + display_difference[("minor", "difference")] / 2
+    ).values,
+    ascending=False,
+)
+
+
+def style_difference_table(
+    df,
+    filename=None,
+    formats=("html", "csv"),
+    directory=RESULTS_PATH,
+):
+    from matplotlib.colors import LinearSegmentedColormap
+
+    pct_cols = [col for col in df.columns if col[1] in ("RoO", "top-10", "difference")]
+    diff_cols = [col for col in df.columns if col[1] == "difference"]
+    roo_cols = [col for col in df.columns if col[1] == "RoO"]
+    subset_size_cols = [col for col in df.columns if col[1] == "subset_size"]
+    first_data_col = df.columns[0]
+    minor_first_col = next(col for col in df.columns if col[0] == "minor")
+
+    diff_vals = df[diff_cols].values.astype(float)
+    vmax = float(max(abs(diff_vals.min()), abs(diff_vals.max())))
+    rdwtgn = LinearSegmentedColormap.from_list(
+        "RdWtGn", ["#d73027", "white", "#1a9850"]
+    )
+    wtbl = LinearSegmentedColormap.from_list("WtBl", ["white", "#4575b4"])
+
+    styled = (
+        df.style.format({col: "{:.1%}" for col in pct_cols})
+        .background_gradient(
+            cmap=rdwtgn,
+            subset=diff_cols,
+            axis=None,
+            vmin=-vmax,
+            vmax=vmax,
+        )
+        .background_gradient(
+            cmap=wtbl,
+            subset=roo_cols,
+            axis=None,
+            vmin=0.5,
+        )
+        .set_properties(subset=subset_size_cols, **{"font-weight": "bold"})
+        .set_table_styles(
+            [
+                {
+                    "selector": "thead tr:last-child th",
+                    "props": "border-bottom: 2px solid black",
+                }
+            ]
+        )
+        .set_table_styles(
+            {
+                first_data_col: [
+                    {"selector": "", "props": "border-left: 2px solid black"},
+                    {"selector": "td", "props": "border-left: 2px solid black"},
+                ],
+                minor_first_col: [
+                    {"selector": "", "props": "border-left: 2px solid black"},
+                    {"selector": "td", "props": "border-left: 2px solid black"},
+                ],
+            },
+            overwrite=False,
+        )
+    )
+    if filename is not None:
+        save_table_as(styled, filename, formats=formats, directory=directory)
+    return styled
+
+
+style_difference_table(display_difference, "differences_roo_top10")
+```
+
+```{code-cell}
+display_difference.astype(str).head()
 ```
 
 ```{code-cell}
